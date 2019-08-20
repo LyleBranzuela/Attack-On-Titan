@@ -633,16 +633,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: -5707368009456287781, guid: a4b4c806395d4f84ab7fe9ee3450af07,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0.14
-      objectReference: {fileID: 0}
-    - target: {fileID: -5707368009456287781, guid: a4b4c806395d4f84ab7fe9ee3450af07,
-        type: 3}
-      propertyPath: m_LocalScale.x
-      value: -1
-      objectReference: {fileID: 0}
     - target: {fileID: -6663476486060721386, guid: a4b4c806395d4f84ab7fe9ee3450af07,
         type: 3}
       propertyPath: m_SortingLayerID
@@ -677,6 +667,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_SortingLayer
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -5707368009456287781, guid: a4b4c806395d4f84ab7fe9ee3450af07,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.14
+      objectReference: {fileID: 0}
+    - target: {fileID: -5707368009456287781, guid: a4b4c806395d4f84ab7fe9ee3450af07,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: -1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: -5099941738686272846, guid: a4b4c806395d4f84ab7fe9ee3450af07,
@@ -951,6 +951,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4691121169399938228, guid: 7eb0de813e88c1b4d839dd15c4b3eab0,
+        type: 3}
+      propertyPath: m_Name
+      value: levi
+      objectReference: {fileID: 0}
     - target: {fileID: 28462504396956809, guid: 7eb0de813e88c1b4d839dd15c4b3eab0,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1185,11 +1190,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4691121169399938228, guid: 7eb0de813e88c1b4d839dd15c4b3eab0,
-        type: 3}
-      propertyPath: m_Name
-      value: levi
       objectReference: {fileID: 0}
     - target: {fileID: -4960849980385659932, guid: 7eb0de813e88c1b4d839dd15c4b3eab0,
         type: 3}
