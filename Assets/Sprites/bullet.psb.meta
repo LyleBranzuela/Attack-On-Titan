@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 889472a70da73024a94eb623590588ef
+guid: 4c0a59475c0788a4e8ab4f656e472334
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -86,7 +86,7 @@ ScriptedImporter:
     uvTransform: {x: 0, y: 0}
   mosaicSpriteImportData: []
   rigSpriteImportData:
-  - name: Layer 1
+  - name: Layer 0
     originalName: 
     pivot: {x: 0.5, y: 0.5}
     alignment: 0
@@ -95,9 +95,9 @@ ScriptedImporter:
       serializedVersion: 2
       x: 4
       y: 4
-      width: 656
-      height: 626
-    spriteID: f071e832fb4ad3846ab991614dd76fb4
+      width: 258
+      height: 195
+    spriteID: f233aaa87ac5377499bc2d584b58d87c
     internalID: 0
     spriteBone: []
     spriteOutline: []
@@ -107,30 +107,30 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: -46, y: -46}
+    uvTransform: {x: 4, y: 4}
   platformSettings: []
   mosaicLayers: 1
   documentPivot: {x: 0, y: 0}
   documentAlignment: 7
   importHiddenLayers: 0
-  importedTextureWidth: 1024
-  importedTextureHeight: 1024
-  documentSize: {x: 756, y: 726}
+  importedTextureWidth: 512
+  importedTextureHeight: 256
+  documentSize: {x: 258, y: 195}
   paperDollMode: 0
   spriteCategoryList:
     categories: []
-  textureActualWidth: 1024
-  textureActualHeight: 1024
+  textureActualWidth: 512
+  textureActualHeight: 256
   spritePackingTag: 
   resliceFromLayer: 0
   characterMode: 1
   mosaicPSDLayers: []
   rigPSDLayers:
-  - name: Layer 1
-    spriteName: Layer 1
+  - name: Layer 0
+    spriteName: Layer 0
     isGroup: 0
     parentIndex: -1
-    spriteID: f071e832fb4ad3846ab991614dd76fb4
+    spriteID: f233aaa87ac5377499bc2d584b58d87c
     layerID: 2
     mosaicPosition: {x: 4, y: 4}
   characterData:
@@ -140,6 +140,6 @@ ScriptedImporter:
     characterGroups: []
   boneGOs: []
   generateGOHierarchy: 0
-  textureAssetName: Cannonball
-  prefabAssetName: Cannonball_GO
+  textureAssetName: bullet
+  prefabAssetName: bullet_GO
   spriteLibAssetName: 

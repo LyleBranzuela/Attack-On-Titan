@@ -1925,7 +1925,7 @@ ScriptedImporter:
     - {x: 23, y: 64}
     tessellationDetail: 1
     parentGroupIndex: -1
-    uvTransform: {x: -368, y: -260}
+    uvTransform: {x: -387, y: -317}
   - name: Forearm
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -5077,7 +5077,7 @@ ScriptedImporter:
     - {x: 0, y: 29}
     tessellationDetail: 1
     parentGroupIndex: -1
-    uvTransform: {x: -185, y: -266}
+    uvTransform: {x: -239, y: -112}
   - name: head
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -5086,7 +5086,7 @@ ScriptedImporter:
     rect:
       serializedVersion: 2
       x: 198
-      y: 359
+      y: 361
       width: 107
       height: 112
     spriteID: 159f51af6230cb64c93e096edbcd9e25
@@ -5586,7 +5586,7 @@ ScriptedImporter:
     - {x: 34, y: 8}
     tessellationDetail: 1
     parentGroupIndex: -1
-    uvTransform: {x: 34, y: -84}
+    uvTransform: {x: 34, y: -82}
   - name: boots
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -5595,7 +5595,7 @@ ScriptedImporter:
     rect:
       serializedVersion: 2
       x: 313
-      y: 359
+      y: 361
       width: 65
       height: 141
     spriteID: 72367e9411860834fb32d7843cb78f85
@@ -6132,7 +6132,7 @@ ScriptedImporter:
     - {x: 0, y: 30}
     tessellationDetail: 1
     parentGroupIndex: -1
-    uvTransform: {x: 155, y: 330}
+    uvTransform: {x: 155, y: 332}
   - name: boots_1
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -8134,13 +8134,6 @@ ScriptedImporter:
     spriteID: 3180b519a6e72ff43ac90d80ba83e778
     layerID: 14
     mosaicPosition: {x: 4, y: 156}
-  - name: sword1
-    spriteName: sword1
-    isGroup: 0
-    parentIndex: 0
-    spriteID: 6d34735acbcffc74d90bd17897f147be
-    layerID: 63
-    mosaicPosition: {x: 4, y: 4}
   - name: Forearm
     spriteName: Forearm
     isGroup: 0
@@ -8155,6 +8148,13 @@ ScriptedImporter:
     spriteID: 8c8d02c89d104bd438b01e0b08f97e3e
     layerID: 87
     mosaicPosition: {x: 134, y: 403}
+  - name: sword2
+    spriteName: sword2
+    isGroup: 0
+    parentIndex: 0
+    spriteID: ba64804a95d34554b979f281ee0d4c27
+    layerID: 72
+    mosaicPosition: {x: 198, y: 132}
   - name: BODY
     spriteName: BODY
     isGroup: 0
@@ -8162,6 +8162,13 @@ ScriptedImporter:
     spriteID: 53eb0204b9d64f749ae5bf1badf7f670
     layerID: 83
     mosaicPosition: {x: 4, y: 284}
+  - name: sword1
+    spriteName: sword1
+    isGroup: 0
+    parentIndex: 0
+    spriteID: 6d34735acbcffc74d90bd17897f147be
+    layerID: 63
+    mosaicPosition: {x: 4, y: 4}
   - name: backArm
     spriteName: backArm
     isGroup: 0
@@ -8176,27 +8183,20 @@ ScriptedImporter:
     spriteID: 2d8c786caaeb8454380c39e42cb7a349
     layerID: 98
     mosaicPosition: {x: 4, y: 463}
-  - name: sword2
-    spriteName: sword2
-    isGroup: 0
-    parentIndex: 0
-    spriteID: ba64804a95d34554b979f281ee0d4c27
-    layerID: 72
-    mosaicPosition: {x: 198, y: 132}
   - name: head
     spriteName: head
     isGroup: 0
     parentIndex: 0
     spriteID: 159f51af6230cb64c93e096edbcd9e25
     layerID: 73
-    mosaicPosition: {x: 198, y: 359}
+    mosaicPosition: {x: 198, y: 361}
   - name: boots
     spriteName: boots
     isGroup: 0
     parentIndex: 0
     spriteID: 72367e9411860834fb32d7843cb78f85
     layerID: 101
-    mosaicPosition: {x: 313, y: 359}
+    mosaicPosition: {x: 313, y: 361}
   - name: boots
     spriteName: boots_1
     isGroup: 0

@@ -197,7 +197,7 @@ Canvas:
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_TargetDisplay: 0
 --- !u!224 &257384058
 RectTransform:
@@ -214,10 +214,10 @@ RectTransform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 258.5, y: 145.5}
-  m_SizeDelta: {x: 517, y: 291}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &519420028
 GameObject:
@@ -255,7 +255,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_BackGroundColor: {r: 0, g: 0, b: 0, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -296,7 +296,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 10.1, y: 10.2, z: -10}
+  m_LocalPosition: {x: -2.1, y: 10.1, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -362,7 +362,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1309629672}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0.62}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -389,12 +389,12 @@ PrefabInstance:
     - target: {fileID: 2102585044251236505, guid: a577b441bb2a14947bd7754777e5ee5c,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -246.19
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2102585044251236505, guid: a577b441bb2a14947bd7754777e5ee5c,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -145.5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2102585044251236505, guid: a577b441bb2a14947bd7754777e5ee5c,
         type: 3}
@@ -404,17 +404,17 @@ PrefabInstance:
     - target: {fileID: 2102585044251236505, guid: a577b441bb2a14947bd7754777e5ee5c,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2102585044251236505, guid: a577b441bb2a14947bd7754777e5ee5c,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2102585044251236505, guid: a577b441bb2a14947bd7754777e5ee5c,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2102585044251236505, guid: a577b441bb2a14947bd7754777e5ee5c,
         type: 3}
@@ -440,6 +440,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3952479508503113767, guid: a577b441bb2a14947bd7754777e5ee5c,
+        type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[229].y
+      value: -2.12
+      objectReference: {fileID: 0}
+    - target: {fileID: 3952479508503113767, guid: a577b441bb2a14947bd7754777e5ee5c,
+        type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[229].x
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 3952479508503113767, guid: a577b441bb2a14947bd7754777e5ee5c,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a577b441bb2a14947bd7754777e5ee5c, type: 3}
@@ -458,12 +473,12 @@ PrefabInstance:
     - target: {fileID: 5960258252359215441, guid: e3ad0b194aa400d4aa547331450efd93,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2.16
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5960258252359215441, guid: e3ad0b194aa400d4aa547331450efd93,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.93
+      value: 0.6
       objectReference: {fileID: 0}
     - target: {fileID: 5960258252359215441, guid: e3ad0b194aa400d4aa547331450efd93,
         type: 3}
@@ -510,330 +525,30 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6629947597137776046, guid: e3ad0b194aa400d4aa547331450efd93,
+    - target: {fileID: 6983133239517628735, guid: e3ad0b194aa400d4aa547331450efd93,
         type: 3}
-      propertyPath: m_Name
-      value: Right Arm
+      propertyPath: m_Offset.x
+      value: -1.1299254
       objectReference: {fileID: 0}
-    - target: {fileID: 752840460189603126, guid: e3ad0b194aa400d4aa547331450efd93,
+    - target: {fileID: 6983133239517628735, guid: e3ad0b194aa400d4aa547331450efd93,
         type: 3}
-      propertyPath: m_Name
-      value: Left Arm
+      propertyPath: m_Size.x
+      value: 3.889365
       objectReference: {fileID: 0}
-    - target: {fileID: 4341642335008831833, guid: e3ad0b194aa400d4aa547331450efd93,
+    - target: {fileID: 6983133239517628735, guid: e3ad0b194aa400d4aa547331450efd93,
         type: 3}
-      propertyPath: m_Name
-      value: Body
+      propertyPath: m_UsedByEffector
+      value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8420111313752172008, guid: e3ad0b194aa400d4aa547331450efd93,
+    - target: {fileID: 6983133239517628735, guid: e3ad0b194aa400d4aa547331450efd93,
         type: 3}
-      propertyPath: m_Name
-      value: Hip Bone
+      propertyPath: m_UsedByComposite
+      value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 956477284519087765, guid: e3ad0b194aa400d4aa547331450efd93,
+    - target: {fileID: 6983133239517628735, guid: e3ad0b194aa400d4aa547331450efd93,
         type: 3}
-      propertyPath: m_Name
-      value: Stomach Bone
-      objectReference: {fileID: 0}
-    - target: {fileID: 8120733891492724524, guid: e3ad0b194aa400d4aa547331450efd93,
-        type: 3}
-      propertyPath: m_Name
-      value: Chest Bone
-      objectReference: {fileID: 0}
-    - target: {fileID: 8933418531937531353, guid: e3ad0b194aa400d4aa547331450efd93,
-        type: 3}
-      propertyPath: m_Name
-      value: Head Bone
-      objectReference: {fileID: 0}
-    - target: {fileID: 7179954400131477960, guid: e3ad0b194aa400d4aa547331450efd93,
-        type: 3}
-      propertyPath: m_Name
-      value: Left Arm Bone
-      objectReference: {fileID: 0}
-    - target: {fileID: 3272723193282413772, guid: e3ad0b194aa400d4aa547331450efd93,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3272723193282413772, guid: e3ad0b194aa400d4aa547331450efd93,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0.94011533
-      objectReference: {fileID: 0}
-    - target: {fileID: 3272723193282413772, guid: e3ad0b194aa400d4aa547331450efd93,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.34085664
-      objectReference: {fileID: 0}
-    - target: {fileID: 3272723193282413772, guid: e3ad0b194aa400d4aa547331450efd93,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: -140.14201
-      objectReference: {fileID: 0}
-    - target: {fileID: 5069529609430596691, guid: e3ad0b194aa400d4aa547331450efd93,
-        type: 3}
-      propertyPath: m_Name
-      value: Left Forearm Bone
-      objectReference: {fileID: 0}
-    - target: {fileID: 2408520294456032197, guid: e3ad0b194aa400d4aa547331450efd93,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2408520294456032197, guid: e3ad0b194aa400d4aa547331450efd93,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2408520294456032197, guid: e3ad0b194aa400d4aa547331450efd93,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0.29163778
-      objectReference: {fileID: 0}
-    - target: {fileID: 2408520294456032197, guid: e3ad0b194aa400d4aa547331450efd93,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.9565289
-      objectReference: {fileID: 0}
-    - target: {fileID: 2408520294456032197, guid: e3ad0b194aa400d4aa547331450efd93,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 33.912003
-      objectReference: {fileID: 0}
-    - target: {fileID: 8226586908093034200, guid: e3ad0b194aa400d4aa547331450efd93,
-        type: 3}
-      propertyPath: m_Name
-      value: Right Arm Bone
-      objectReference: {fileID: 0}
-    - target: {fileID: 1143035922956218571, guid: e3ad0b194aa400d4aa547331450efd93,
-        type: 3}
-      propertyPath: m_Name
-      value: Right Forearm Bone
-      objectReference: {fileID: 0}
-    - target: {fileID: 6393832845051039941, guid: e3ad0b194aa400d4aa547331450efd93,
-        type: 3}
-      propertyPath: m_Name
-      value: 'Cape Bone '
-      objectReference: {fileID: 0}
-    - target: {fileID: 1561081801766417737, guid: e3ad0b194aa400d4aa547331450efd93,
-        type: 3}
-      propertyPath: m_Name
-      value: Cape Bone 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 5385603139360560991, guid: e3ad0b194aa400d4aa547331450efd93,
-        type: 3}
-      propertyPath: m_Name
-      value: Cape Bone 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 7964098322102918386, guid: e3ad0b194aa400d4aa547331450efd93,
-        type: 3}
-      propertyPath: m_Name
-      value: Right Thigh Bone
-      objectReference: {fileID: 0}
-    - target: {fileID: 2175275556380369431, guid: e3ad0b194aa400d4aa547331450efd93,
-        type: 3}
-      propertyPath: m_Name
-      value: Left Thigh Bone
-      objectReference: {fileID: 0}
-    - target: {fileID: 8108838088783907584, guid: e3ad0b194aa400d4aa547331450efd93,
-        type: 3}
-      propertyPath: m_Name
-      value: Left Knee Bone
-      objectReference: {fileID: 0}
-    - target: {fileID: 86107325119214515, guid: e3ad0b194aa400d4aa547331450efd93,
-        type: 3}
-      propertyPath: m_Name
-      value: Left Shin Bone
-      objectReference: {fileID: 0}
-    - target: {fileID: 4459825722232599368, guid: e3ad0b194aa400d4aa547331450efd93,
-        type: 3}
-      propertyPath: m_Name
-      value: Left Foot Bone
-      objectReference: {fileID: 0}
-    - target: {fileID: 6598108916701824801, guid: e3ad0b194aa400d4aa547331450efd93,
-        type: 3}
-      propertyPath: m_Name
-      value: Left Toe Bone
-      objectReference: {fileID: 0}
-    - target: {fileID: 7083688641341315045, guid: e3ad0b194aa400d4aa547331450efd93,
-        type: 3}
-      propertyPath: m_Name
-      value: Right Gear Bone
-      objectReference: {fileID: 0}
-    - target: {fileID: 92988193917715985, guid: e3ad0b194aa400d4aa547331450efd93,
-        type: 3}
-      propertyPath: m_Name
-      value: Left Gear Bone
-      objectReference: {fileID: 0}
-    - target: {fileID: 7231446151009845435, guid: e3ad0b194aa400d4aa547331450efd93,
-        type: 3}
-      propertyPath: m_Name
-      value: Left Blade
-      objectReference: {fileID: 0}
-    - target: {fileID: 3966459920488208055, guid: e3ad0b194aa400d4aa547331450efd93,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 3.5664039
-      objectReference: {fileID: 0}
-    - target: {fileID: 3966459920488208055, guid: e3ad0b194aa400d4aa547331450efd93,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -0.18572307
-      objectReference: {fileID: 0}
-    - target: {fileID: 5751485278971254331, guid: e3ad0b194aa400d4aa547331450efd93,
-        type: 3}
-      propertyPath: m_Name
-      value: Right Blade
-      objectReference: {fileID: 0}
-    - target: {fileID: 5049352227209825816, guid: e3ad0b194aa400d4aa547331450efd93,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5049352227209825816, guid: e3ad0b194aa400d4aa547331450efd93,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5049352227209825816, guid: e3ad0b194aa400d4aa547331450efd93,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0.38099885
-      objectReference: {fileID: 0}
-    - target: {fileID: 5049352227209825816, guid: e3ad0b194aa400d4aa547331450efd93,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.92457557
-      objectReference: {fileID: 0}
-    - target: {fileID: 5049352227209825816, guid: e3ad0b194aa400d4aa547331450efd93,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 44.791
-      objectReference: {fileID: 0}
-    - target: {fileID: 5049352227209825816, guid: e3ad0b194aa400d4aa547331450efd93,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -0.5512841
-      objectReference: {fileID: 0}
-    - target: {fileID: 5049352227209825816, guid: e3ad0b194aa400d4aa547331450efd93,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 3.008337
-      objectReference: {fileID: 0}
-    - target: {fileID: 8822557021804552553, guid: e3ad0b194aa400d4aa547331450efd93,
-        type: 3}
-      propertyPath: m_Name
-      value: Right Leg
-      objectReference: {fileID: 0}
-    - target: {fileID: 7668173720830759395, guid: e3ad0b194aa400d4aa547331450efd93,
-        type: 3}
-      propertyPath: m_Name
-      value: Left Leg
-      objectReference: {fileID: 0}
-    - target: {fileID: 61216550528313123, guid: e3ad0b194aa400d4aa547331450efd93,
-        type: 3}
-      propertyPath: m_Name
-      value: Right Forearm
-      objectReference: {fileID: 0}
-    - target: {fileID: 990793305829243983, guid: e3ad0b194aa400d4aa547331450efd93,
-        type: 3}
-      propertyPath: m_Name
-      value: Left Forearm
-      objectReference: {fileID: 0}
-    - target: {fileID: 7389076919307266799, guid: e3ad0b194aa400d4aa547331450efd93,
-        type: 3}
-      propertyPath: m_Name
-      value: Left Gear
-      objectReference: {fileID: 0}
-    - target: {fileID: 8565319400238555703, guid: e3ad0b194aa400d4aa547331450efd93,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -3.3594
-      objectReference: {fileID: 0}
-    - target: {fileID: 8565319400238555703, guid: e3ad0b194aa400d4aa547331450efd93,
-        type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1.4399884
-      objectReference: {fileID: 0}
-    - target: {fileID: 8565319400238555703, guid: e3ad0b194aa400d4aa547331450efd93,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 3.3677
-      objectReference: {fileID: 0}
-    - target: {fileID: 8565319400238555703, guid: e3ad0b194aa400d4aa547331450efd93,
-        type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.8611
-      objectReference: {fileID: 0}
-    - target: {fileID: 7345478641029897145, guid: e3ad0b194aa400d4aa547331450efd93,
-        type: 3}
-      propertyPath: m_Bounds.m_Center.x
-      value: 0.8684648
-      objectReference: {fileID: 0}
-    - target: {fileID: 7345478641029897145, guid: e3ad0b194aa400d4aa547331450efd93,
-        type: 3}
-      propertyPath: m_Bounds.m_Center.y
-      value: -0.2774362
-      objectReference: {fileID: 0}
-    - target: {fileID: 7345478641029897145, guid: e3ad0b194aa400d4aa547331450efd93,
-        type: 3}
-      propertyPath: m_Bounds.m_Extent.x
-      value: 1.0856034
-      objectReference: {fileID: 0}
-    - target: {fileID: 7345478641029897145, guid: e3ad0b194aa400d4aa547331450efd93,
-        type: 3}
-      propertyPath: m_Bounds.m_Extent.y
-      value: 0.463547
-      objectReference: {fileID: 0}
-    - target: {fileID: 2037404623919883112, guid: e3ad0b194aa400d4aa547331450efd93,
-        type: 3}
-      propertyPath: m_Name
-      value: Right Gear
-      objectReference: {fileID: 0}
-    - target: {fileID: 3761948526842728717, guid: e3ad0b194aa400d4aa547331450efd93,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 2.9314
-      objectReference: {fileID: 0}
-    - target: {fileID: 3761948526842728717, guid: e3ad0b194aa400d4aa547331450efd93,
-        type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.7134
-      objectReference: {fileID: 0}
-    - target: {fileID: 1780502434942555353, guid: e3ad0b194aa400d4aa547331450efd93,
-        type: 3}
-      propertyPath: m_Name
-      value: Head
-      objectReference: {fileID: 0}
-    - target: {fileID: 5838244106593143426, guid: e3ad0b194aa400d4aa547331450efd93,
-        type: 3}
-      propertyPath: m_Name
-      value: Chest
-      objectReference: {fileID: 0}
-    - target: {fileID: 6432273141721172237, guid: e3ad0b194aa400d4aa547331450efd93,
-        type: 3}
-      propertyPath: m_Name
-      value: Right Sword
-      objectReference: {fileID: 0}
-    - target: {fileID: 1074110888538214830, guid: e3ad0b194aa400d4aa547331450efd93,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 11
-      objectReference: {fileID: 0}
-    - target: {fileID: 1836994355443594307, guid: e3ad0b194aa400d4aa547331450efd93,
-        type: 3}
-      propertyPath: m_Name
-      value: Left Sword
-      objectReference: {fileID: 0}
-    - target: {fileID: 7163213537992245664, guid: e3ad0b194aa400d4aa547331450efd93,
-        type: 3}
-      propertyPath: m_Name
-      value: Left Thigh
-      objectReference: {fileID: 0}
-    - target: {fileID: 3618529070864579025, guid: e3ad0b194aa400d4aa547331450efd93,
-        type: 3}
-      propertyPath: m_Name
-      value: Right Thigh
+      propertyPath: m_AutoTiling
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e3ad0b194aa400d4aa547331450efd93, type: 3}
