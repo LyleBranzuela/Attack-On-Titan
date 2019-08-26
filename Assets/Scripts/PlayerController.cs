@@ -8,6 +8,7 @@ public class PlayerController : MonoBehaviour
     public float jumpSpeed = 5f;
     private float movement = 0f;
     private Rigidbody2D rigidBody;
+    public Animator animator;
 
     //Use this for initialization
     void Start()
@@ -19,6 +20,7 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
         movement = Input.GetAxis("Horizontal");
+        animator.SetFloat("Speed", Mathf.Abs(movement * speed));
         // Debug.Log(movement);
         if (movement > 0f) //if the movement is forward
         {

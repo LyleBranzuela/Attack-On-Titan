@@ -5,6 +5,7 @@ using UnityEngine;
 public class Health : MonoBehaviour
 {
     [SerializeField] float health = 100f;
+    [SerializeField] float armor = 0f;
     [SerializeField] GameObject deathVFX;
 
     public void DealDamage(float damage)
