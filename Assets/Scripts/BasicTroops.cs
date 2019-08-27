@@ -27,7 +27,7 @@ public class BasicTroops : Character
         this.type = type;
     }
 
-    public void getType()
+    public string getType()
     {
         return this.type;
     }

@@ -9,7 +9,7 @@ using UnityEngine;
  */
 public class Hero : Character
 {
-    private string name;
+
     private string desc;
     
     public string getHeroInfo()
@@ -17,9 +17,9 @@ public class Hero : Character
         return this.desc;
     }
 
-    public void useAbility();
+    //public void useAbility();
 
-    public void jump();
+    //public void jump();
 
     // Start is called before the first frame update
     void Start()

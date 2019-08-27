@@ -5,7 +5,7 @@ using UnityEngine;
 public class UXController : MonoBehaviour
 {
     //Prototype sound player
-    System.Media.SoundPlayer player; 
+   // System.Media.SoundPlayer player; 
     private string soundFilePath;
     private string animationFilePath;
     
@@ -13,8 +13,8 @@ public class UXController : MonoBehaviour
     public void playSound(string file)
     {
         this.soundFilePath = file;
-        player = new System.Media.SoundPlayer(this.soundFilePath);
-        player.Play();
+        //player = new System.Media.SoundPlayer(this.soundFilePath);
+        //player.Play();
     }
 
     //Takes a path to animation / image file and play that animation.
