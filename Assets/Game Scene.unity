@@ -515,10 +515,30 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4691121169399938228, guid: 7eb0de813e88c1b4d839dd15c4b3eab0,
+        type: 3}
+      propertyPath: m_Name
+      value: levi
+      objectReference: {fileID: 0}
     - target: {fileID: -7767816492917426865, guid: 7eb0de813e88c1b4d839dd15c4b3eab0,
         type: 3}
       propertyPath: m_Name
       value: upperBodyBone 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1248241396902207318, guid: 7eb0de813e88c1b4d839dd15c4b3eab0,
+        type: 3}
+      propertyPath: m_Name
+      value: Cape
+      objectReference: {fileID: 0}
+    - target: {fileID: 1580417235227608899, guid: 7eb0de813e88c1b4d839dd15c4b3eab0,
+        type: 3}
+      propertyPath: m_Name
+      value: Gear
+      objectReference: {fileID: 0}
+    - target: {fileID: -5971072007451400971, guid: 7eb0de813e88c1b4d839dd15c4b3eab0,
+        type: 3}
+      propertyPath: m_Name
+      value: Gear2
       objectReference: {fileID: 0}
     - target: {fileID: 1950325253717190014, guid: 7eb0de813e88c1b4d839dd15c4b3eab0,
         type: 3}
@@ -544,21 +564,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Head
-      objectReference: {fileID: 0}
-    - target: {fileID: 1248241396902207318, guid: 7eb0de813e88c1b4d839dd15c4b3eab0,
-        type: 3}
-      propertyPath: m_Name
-      value: Cape
-      objectReference: {fileID: 0}
-    - target: {fileID: 1580417235227608899, guid: 7eb0de813e88c1b4d839dd15c4b3eab0,
-        type: 3}
-      propertyPath: m_Name
-      value: Gear
-      objectReference: {fileID: 0}
-    - target: {fileID: -5971072007451400971, guid: 7eb0de813e88c1b4d839dd15c4b3eab0,
-        type: 3}
-      propertyPath: m_Name
-      value: Gear2
       objectReference: {fileID: 0}
     - target: {fileID: -8706767581734083085, guid: 7eb0de813e88c1b4d839dd15c4b3eab0,
         type: 3}
@@ -1289,11 +1294,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4691121169399938228, guid: 7eb0de813e88c1b4d839dd15c4b3eab0,
-        type: 3}
-      propertyPath: m_Name
-      value: levi
       objectReference: {fileID: 0}
     - target: {fileID: 5288708177081260553, guid: 7eb0de813e88c1b4d839dd15c4b3eab0,
         type: 3}
