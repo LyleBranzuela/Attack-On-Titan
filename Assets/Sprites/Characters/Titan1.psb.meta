@@ -3099,13 +3099,6 @@ ScriptedImporter:
     spriteID: ae14458cc5539dd4792a5c2b6b2da94f
     layerID: 12
     mosaicPosition: {x: 4, y: 4}
-  - name: Left leg
-    spriteName: Left leg
-    isGroup: 0
-    parentIndex: -1
-    spriteID: aba76996b73123d42aaf9b9b453edd32
-    layerID: 23
-    mosaicPosition: {x: 181, y: 270}
   - name: Left Arm
     spriteName: Left Arm
     isGroup: 0
@@ -3113,6 +3106,13 @@ ScriptedImporter:
     spriteID: ab40f7c61a30f2e439e5cd0fc35239ad
     layerID: 22
     mosaicPosition: {x: 344, y: 4}
+  - name: Left leg
+    spriteName: Left leg
+    isGroup: 0
+    parentIndex: -1
+    spriteID: aba76996b73123d42aaf9b9b453edd32
+    layerID: 23
+    mosaicPosition: {x: 181, y: 270}
   characterData:
     bones:
     - name: bone_1
