@@ -9,7 +9,7 @@ public class PlayerController : MonoBehaviour
     private float movement = 0f;
     private Rigidbody2D rigidBody;
     public Animator animator;
-
+    private bool facingRight = true;
     //Use this for initialization
     void Start()
     {
@@ -39,5 +39,26 @@ public class PlayerController : MonoBehaviour
         {
             rigidBody.velocity = new Vector2(rigidBody.velocity.x, jumpSpeed);
         }
+
+        //Flip the character if it is moving left
+        if (facingRight == false && movement > 0)
+        {
+            this.Flip();
+        }
+        else if (facingRight == true && movement < 0)
+        {
+            this.Flip();
+        }
+       
     }
+
+    void Flip()
+    {
+        facingRight = !facingRight;
+        Vector3 Scaler = transform.localScale;
+        Scaler.x *= -1;
+        transform.localScale = Scaler;
+        
+    }
+
 }
