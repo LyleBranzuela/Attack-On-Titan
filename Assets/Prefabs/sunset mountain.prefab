@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3232499022956257035}
   m_Layer: 0
-  m_Name: Sunset Mountain
+  m_Name: sunset mountain
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -44,7 +44,7 @@ GameObject:
   - component: {fileID: 717039790679073595}
   - component: {fileID: 2642857694613620235}
   - component: {fileID: 8399921203155244317}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: ground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
