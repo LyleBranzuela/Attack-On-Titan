@@ -51,6 +51,12 @@ TagManager:
   - name: Ground
     uniqueID: 3815642803
     locked: 0
-  - name: Character
+  - name: Human
+    uniqueID: 508286863
+    locked: 0
+  - name: Titan
+    uniqueID: 1067203385
+    locked: 0
+  - name: Character (Hero)
     uniqueID: 1090041753
     locked: 0
