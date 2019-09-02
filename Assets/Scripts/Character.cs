@@ -13,8 +13,8 @@ public class Character : MonoBehaviour
     private int damage;
     private int armor;
     private bool isDead;
-    private int moveSpeed;
-    private int attackSpeed;
+    [Range(0f, 5f)] public float moveSpeed = 1f;
+    [Range(0f, 5f)] public float attackSpeed = 1f;
     private int range;
     private string charDesc;
 

@@ -4,30 +4,16 @@ using UnityEngine;
 
 public class DefenderSpawner : MonoBehaviour
 {
-    [SerializeField] float minSpawnDelay = 1f;
-    [SerializeField] float maxSpawnDelay = 5f;
-    [SerializeField] Character character;
-    bool spawn = true;
+    private BasicTroops basicTroops;
 
-    IEnumerator Start()
+    public void SetSelectedDefender(BasicTroops troopToSelect)
     {
-        while (spawn)
-        {
-            // Randomizes the spawn point
-            yield return new WaitForSeconds(Random.Range(minSpawnDelay, maxSpawnDelay));
-            SpawnAttacker();
-        }
+        basicTroops = troopToSelect;
     }
 
-    // Spawns the attacker
-    private void SpawnAttacker()
+    // Spawns the defender
+    public void SpawnDefender()
     {
-        // Spawns the unit
-        Instantiate(character, transform.position, transform.rotation);
-    }
-
-    void Update()
-    {
-
+        BasicTroops newBasicTroop = Instantiate(basicTroops, transform.position, transform.rotation) as BasicTroops;
     }
 }

@@ -110,7 +110,7 @@ SpriteRenderer:
   m_Size: {x: 2.11, y: 1.7}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!114 &1757096494506539548
@@ -345,7 +345,7 @@ SpriteRenderer:
   m_Size: {x: 1.01, y: 2.31}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!114 &6407771285508591791
@@ -459,7 +459,7 @@ SpriteRenderer:
   m_Size: {x: 0.55, y: 1.1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!114 &1379238341968592676
@@ -603,7 +603,7 @@ SpriteRenderer:
   m_Size: {x: 1.92, y: 1.2}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!114 &5625889535815348756
@@ -808,7 +808,7 @@ SpriteRenderer:
   m_Size: {x: 0.96, y: 1.21}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!114 &5946478816633831729
@@ -952,7 +952,7 @@ SpriteRenderer:
   m_Size: {x: 1.22, y: 1.71}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!114 &3173063897641886148
@@ -1066,7 +1066,7 @@ SpriteRenderer:
   m_Size: {x: 0.65, y: 1.41}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!114 &2158076673461646740
@@ -1301,7 +1301,7 @@ SpriteRenderer:
   m_Size: {x: 1.91, y: 1.2}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!114 &8132527207979663488
@@ -1475,7 +1475,7 @@ SpriteRenderer:
   m_Size: {x: 0.49, y: 0.57}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!114 &30717099598050927
@@ -1649,7 +1649,7 @@ SpriteRenderer:
   m_Size: {x: 0.55, y: 1.11}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!114 &3303009934993440382
@@ -1793,7 +1793,7 @@ SpriteRenderer:
   m_Size: {x: 0.83, y: 0.97}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!114 &4308506221592392903
@@ -1842,6 +1842,7 @@ GameObject:
   - component: {fileID: 3801205936555751650}
   - component: {fileID: 3801205936555751677}
   - component: {fileID: 3801205936555751676}
+  - component: {fileID: -1595436145240011066}
   m_Layer: 0
   m_Name: Blond Haired Soldier
   m_TagString: Untagged
@@ -1986,6 +1987,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: afb6404781555c04b94d057ffb3676d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &-1595436145240011066
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8356683731917000938}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c980e811417751944a260ef08656c731, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 1
+  attackSpeed: 1
 --- !u!1 &8491487813449207384
 GameObject:
   m_ObjectHideFlags: 0
@@ -2157,7 +2172,7 @@ SpriteRenderer:
   m_Size: {x: 0.65, y: 1.41}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!114 &8574053806937520925
@@ -2270,7 +2285,7 @@ SpriteRenderer:
   m_Size: {x: 0.6, y: 0.41}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!114 &8446467616651275810

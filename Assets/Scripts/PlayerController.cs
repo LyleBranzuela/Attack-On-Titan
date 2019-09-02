@@ -60,7 +60,6 @@ public class PlayerController : MonoBehaviour
         {
             rigidBody.velocity = new Vector2(rigidBody.velocity.x, jumpSpeed);
         }
-        Debug.Log(isGrounded);
         //Flip the character if it is moving left
         if (facingRight == false && movement > 0)
         {
@@ -74,11 +73,16 @@ public class PlayerController : MonoBehaviour
     }
 
     void Flip()
-    {
-        facingRight = !facingRight;
+    { 
         Vector3 Scaler = transform.localScale;
         Scaler.x *= -1;
         transform.localScale = Scaler;
+
+        // Adjusts the turn position
+        float positionChange = (facingRight) ? transform.position.x - 2.5f : transform.position.x + 2.5f;
+        transform.position = new Vector3(positionChange, transform.position.y, transform.position.z);
+
+        facingRight = !facingRight;
     }
 
 }

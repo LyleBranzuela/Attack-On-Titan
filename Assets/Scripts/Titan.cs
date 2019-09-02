@@ -6,10 +6,10 @@ using UnityEngine;
  * A class for Titans 
  * Inherits from character abstract class
  */
-public class Titans : Character
+public class Titan : Character
 {
     private string type;
-    private int goldReward;
+    [SerializeField] private int goldReward;
 
     public int getGoldReward()
     {
@@ -45,6 +45,6 @@ public class Titans : Character
     // Update is called once per frame
     void Update()
     {
-        
+        transform.Translate(Vector2.left * moveSpeed * Time.deltaTime);
     }
 }
