@@ -1027,8 +1027,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3537409314506247351}
+  - component: {fileID: 7063827229325910990}
   m_Layer: 11
-  m_Name: demon soldier (Sword)
+  m_Name: Demon Soldier (Sword)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1065,6 +1066,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7063827229325910990
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4680649799074451767}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c980e811417751944a260ef08656c731, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 1
+  attackSpeed: 1
 --- !u!1 &5132667240803925661
 GameObject:
   m_ObjectHideFlags: 0

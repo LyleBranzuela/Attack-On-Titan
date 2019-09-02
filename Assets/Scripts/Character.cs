@@ -9,14 +9,14 @@ using UnityEngine;
 public class Character : MonoBehaviour
 {
     // Setting up the Variables
-    private Health health;
-    private int damage;
-    private int armor;
-    private bool isDead;
+    protected Health health;
+    protected int damage;
+    protected int armor;
+    protected bool isDead;
     [Range(0f, 5f)] public float moveSpeed = 1f;
     [Range(0f, 5f)] public float attackSpeed = 1f;
-    private int range;
-    private string charDesc;
+    protected int range;
+    protected string charDesc;
 
     //Function for other classes to retrieve info.
     public void getCharInfo()
