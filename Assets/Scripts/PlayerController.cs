@@ -22,6 +22,7 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
         rigidBody = GetComponent<Rigidbody2D>();
+        animator = GetComponent<Animator>();
         extraJumpValue = extraJumps;
     }
     
@@ -47,17 +48,26 @@ public class PlayerController : MonoBehaviour
         }
 
         //Jump Function
-        if(isGrounded == true) {
+        if (isGrounded == true)
+        {
+            animator.SetBool("isJumping", false);
+
             extraJumps = extraJumpValue;
         }
+        else
+        {
+            animator.SetBool("isJumping", true);
 
-        if (Input.GetButtonDown("Jump") && extraJumps > 0)
+        }
+
+        if (Input.GetButtonDown("Jump") && extraJumps > 0)//fly
         {
             rigidBody.velocity = new Vector2(rigidBody.velocity.x, jumpSpeed);
             extraJumps--;
         }
-        else if (Input.GetButtonDown("Jump") && extraJumps == 0 && isGrounded == true)
+        else if (Input.GetButtonDown("Jump") && extraJumps == 0 && isGrounded == true)//normal jump
         {
+            animator.SetTrigger("takeOf");
             rigidBody.velocity = new Vector2(rigidBody.velocity.x, jumpSpeed);
         }
         Debug.Log(isGrounded);
