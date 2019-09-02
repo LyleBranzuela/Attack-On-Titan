@@ -129,7 +129,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1090041753
-  m_SortingLayer: 4
+  m_SortingLayer: 6
   m_SortingOrder: 5
   m_Sprite: {fileID: -7268781811638556313, guid: 08fc143f7fd22e443b3b52c25357ea31,
     type: 3}
@@ -304,7 +304,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1090041753
-  m_SortingLayer: 4
+  m_SortingLayer: 6
   m_SortingOrder: 6
   m_Sprite: {fileID: -2325820215434537827, guid: 08fc143f7fd22e443b3b52c25357ea31,
     type: 3}
@@ -359,6 +359,7 @@ GameObject:
   - component: {fileID: 5784920440238549494}
   - component: {fileID: 948532510258070309}
   - component: {fileID: 948532510001034867}
+  - component: {fileID: 1030592122369269852}
   m_Layer: 0
   m_Name: Titan
   m_TagString: Untagged
@@ -421,6 +422,32 @@ MonoBehaviour:
   moveSpeed: 1
   attackSpeed: 1
   goldReward: 0
+--- !u!61 &1030592122369269852
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3169437385429968592}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 1
+  m_Offset: {x: 0.21653676, y: 3.6190658}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 2.0035672, y: 5.7144403}
+  m_EdgeRadius: 0
 --- !u!1 &3444124935054255088
 GameObject:
   m_ObjectHideFlags: 0
@@ -554,7 +581,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1090041753
-  m_SortingLayer: 4
+  m_SortingLayer: 6
   m_SortingOrder: 2
   m_Sprite: {fileID: -2450140895976712293, guid: 08fc143f7fd22e443b3b52c25357ea31,
     type: 3}
@@ -668,7 +695,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1090041753
-  m_SortingLayer: 4
+  m_SortingLayer: 6
   m_SortingOrder: 1
   m_Sprite: {fileID: 6357600615391744147, guid: 08fc143f7fd22e443b3b52c25357ea31,
     type: 3}
@@ -814,7 +841,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1090041753
-  m_SortingLayer: 4
+  m_SortingLayer: 6
   m_SortingOrder: 4
   m_Sprite: {fileID: -7834577945069329040, guid: 08fc143f7fd22e443b3b52c25357ea31,
     type: 3}
@@ -989,7 +1016,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1090041753
-  m_SortingLayer: 4
+  m_SortingLayer: 6
   m_SortingOrder: 3
   m_Sprite: {fileID: -6810732654076881282, guid: 08fc143f7fd22e443b3b52c25357ea31,
     type: 3}

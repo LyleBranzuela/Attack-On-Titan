@@ -27,7 +27,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3750018181972014115}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -11.16, y: 4.02, z: -0.28}
+  m_LocalPosition: {x: 0, y: 0, z: -0.24}
   m_LocalScale: {x: 9, y: 1.026, z: 1}
   m_Children:
   - {fileID: 3750018182757336209}
@@ -121,7 +121,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3750018182757336208}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.224, y: 0.007, z: 0.28}
+  m_LocalPosition: {x: -0.224, y: 0.007, z: -0.24}
   m_LocalScale: {x: 0.086991124, y: 0.69828004, z: 0.8464}
   m_Children: []
   m_Father: {fileID: 3750018181972014112}
@@ -165,7 +165,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 5
-  m_Sprite: {fileID: -7364647541508974897, guid: dd3dfe0b95fcbbd4aa29a5fc809e66cb,
+  m_Sprite: {fileID: 5649701758581286702, guid: 7eb0de813e88c1b4d839dd15c4b3eab0,
     type: 3}
   m_Color: {r: 0.34117648, g: 0.3372549, b: 0.3372549, a: 1}
   m_FlipX: 0
@@ -194,7 +194,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.96, y: 1.21}
+    oldSize: {x: 1.07, y: 1.12}
     newSize: {x: 0.96, y: 1.21}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -215,8 +215,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 788753b8020a98149935fa7315bb7651, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  basicTroopPrefab: {fileID: -1595436145240011066, guid: 26f78e0984743484cbe05d7112a51aae,
-    type: 3}
+  basicTroopPrefab: {fileID: 0}
 --- !u!1 &3750018183932277378
 GameObject:
   m_ObjectHideFlags: 0

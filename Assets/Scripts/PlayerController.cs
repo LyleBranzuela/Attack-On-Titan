@@ -51,25 +51,24 @@ public class PlayerController : MonoBehaviour
         if (isGrounded == true)
         {
             animator.SetBool("isJumping", false);
-
             extraJumps = extraJumpValue;
         }
         else
         {
             animator.SetBool("isJumping", true);
-
         }
-
-        if (Input.GetButtonDown("Jump") && extraJumps > 0)//fly
-        {
-            rigidBody.velocity = new Vector2(rigidBody.velocity.x, jumpSpeed);
-            extraJumps--;
-        }
-        else if (Input.GetButtonDown("Jump") && extraJumps == 0 && isGrounded == true)//normal jump
+        
+        if (Input.GetButtonDown("Jump") && extraJumps == extraJumpValue && isGrounded == true) //normal jump
         {
             animator.SetTrigger("takeOf");
             rigidBody.velocity = new Vector2(rigidBody.velocity.x, jumpSpeed);
         }
+        else if (Input.GetButtonDown("Jump") && extraJumps > 0) //fly
+        {
+            rigidBody.velocity = new Vector2(rigidBody.velocity.x, jumpSpeed);
+            extraJumps--;
+        }
+
         //Flip the character if it is moving left
         if (facingRight == false && movement > 0)
         {
