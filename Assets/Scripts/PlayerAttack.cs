@@ -7,15 +7,18 @@ public class PlayerAttack : MonoBehaviour
 
     private float timeBtwAttack;
     public float startTimeBtwAttack;
+    public Animator playerAnim;
 
     public Transform attackPos;
     public LayerMask whatIsEnemies;
     public float attackRange;
     public int damage;
-    // Start is called before the first frame update
-    void Start()
+
+
+    void OnDrawGizmosSelected()
     {
-        
+        Gizmos.color = Color.red;
+        Gizmos.DrawWireSphere(attackPos.position, attackRange);
     }
 
     // Update is called once per frame
@@ -26,8 +29,19 @@ public class PlayerAttack : MonoBehaviour
             //then can attack
             if (Input.GetKey(KeyCode.Q))
             {
-
+                playerAnim.SetTrigger("attack");
+                // detects how many enemies are to be damaged
+                Collider2D[] enemiesToDamage = Physics2D.OverlapCircleAll(attackPos.position, attackRange, whatIsEnemies);
+                for (int counter = 0; counter < enemiesToDamage.Length; counter++)
+                {
+                    enemiesToDamage[counter].GetComponent<Titan>().receiveDamage(damage);
+                }
             }
+            timeBtwAttack = startTimeBtwAttack;
+        }
+        else
+        {
+            timeBtwAttack -= Time.deltaTime;
         }
             
     }

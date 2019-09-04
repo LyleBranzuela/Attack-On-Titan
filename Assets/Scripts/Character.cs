@@ -9,7 +9,7 @@ using UnityEngine;
 public class Character : MonoBehaviour
 {
     // Setting up the Variables
-    protected Health health;
+    protected int health;
     protected int damage;
     protected int armor;
     protected bool isDead;
@@ -25,7 +25,7 @@ public class Character : MonoBehaviour
     }
 
     //Setting info for a character.
-    public void setCharInfo(Health health, int dmg, int armor, int aSpeed, int mSpeed, string desc, int range)
+    public void setCharInfo(int health, int dmg, int armor, int aSpeed, int mSpeed, string desc, int range)
     {
         this.health = health;
         this.damage = dmg;
@@ -68,6 +68,11 @@ public class Character : MonoBehaviour
     public void receiveDamage(int damage)
     {
         //Current health = health - damage;
+        health -= damage;
+        if (health <= 0)
+        {
+            Destroy(gameObject);
+        }
     }
 
 }
