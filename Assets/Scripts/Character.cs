@@ -9,14 +9,13 @@ using UnityEngine;
 public class Character : MonoBehaviour
 {
     // Setting up the Variables
-    protected int health;
-    protected int damage;
-    protected int armor;
-    protected bool isDead;
+    public int health;
+    public int damage;
+    public int armor;
     [Range(0f, 5f)] public float moveSpeed = 1f;
     [Range(0f, 5f)] public float attackSpeed = 1f;
-    protected int range;
-    protected string charDesc;
+    [Range(0f, 5f)] public float range;
+    public string charDesc;
 
     //Function for other classes to retrieve info.
     public void getCharInfo()
@@ -36,33 +35,10 @@ public class Character : MonoBehaviour
         this.range = range;
     }
 
-    public bool checkCharStatus()
-    {
-        //TODO: Code to check HP to see if its 0.
-        return isDead;
-    }
-
-    public void moveRight(int speed)
-    {
-
-    }
-
-    public void moveLeft(int speed)
-    {
-
-    }
-
     public void attack(Character target)
     {
         //TODO: Code to subtract this.dmg from char's health upon success hit.
        
-    }
-
-    public void detectOpponent(int range)
-    {
-        //If-else to check if enemy is in attack range.
-        //True = attack() enemy
-        //False = idle animation.
     }
 
     public void receiveDamage(int damage)

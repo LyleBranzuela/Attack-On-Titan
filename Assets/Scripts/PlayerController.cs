@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    public float speed = 5f;
+    public Hero specifiedHero;  
     public float jumpSpeed = 5f;
     private float movement = 0f;
     private Rigidbody2D rigidBody;
@@ -32,15 +32,15 @@ public class PlayerController : MonoBehaviour
         isGrounded = Physics2D.OverlapCircle(groundCheck.position, CheckRadius, whatIsGround);
 
         movement = Input.GetAxis("Horizontal");
-        animator.SetFloat("Speed", Mathf.Abs(movement * speed));
+        animator.SetFloat("Speed", Mathf.Abs(movement * specifiedHero.moveSpeed));
         // Debug.Log(movement);
         if (movement > 0f) //if the movement is forward
         {
-            rigidBody.velocity = new Vector2(movement * speed, rigidBody.velocity.y);
+            rigidBody.velocity = new Vector2(movement * specifiedHero.moveSpeed, rigidBody.velocity.y);
         }
         else if (movement < 0f) // go backward
         {
-            rigidBody.velocity = new Vector2(movement * speed, rigidBody.velocity.y);
+            rigidBody.velocity = new Vector2(movement * specifiedHero.moveSpeed, rigidBody.velocity.y);
         }
         else //stay idle
         {

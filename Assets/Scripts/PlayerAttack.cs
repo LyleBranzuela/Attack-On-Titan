@@ -4,21 +4,19 @@ using UnityEngine;
 
 public class PlayerAttack : MonoBehaviour
 {
+    public Hero specifiedHero;
 
     private float timeBtwAttack;
-    public float startTimeBtwAttack;
     public Animator playerAnim;
-
     public Transform attackPos;
     public LayerMask whatIsEnemies;
-    public float attackRange;
-    public int damage;
 
 
+    // Draws the red area for reference
     void OnDrawGizmosSelected()
     {
         Gizmos.color = Color.red;
-        Gizmos.DrawWireSphere(attackPos.position, attackRange);
+        Gizmos.DrawWireSphere(attackPos.position, specifiedHero.range);
     }
 
     // Update is called once per frame
@@ -31,13 +29,13 @@ public class PlayerAttack : MonoBehaviour
             {
                 playerAnim.SetTrigger("attack");
                 // detects how many enemies are to be damaged
-                Collider2D[] enemiesToDamage = Physics2D.OverlapCircleAll(attackPos.position, attackRange, whatIsEnemies);
+                Collider2D[] enemiesToDamage = Physics2D.OverlapCircleAll(attackPos.position, specifiedHero.range, whatIsEnemies);
                 for (int counter = 0; counter < enemiesToDamage.Length; counter++)
                 {
-                    enemiesToDamage[counter].GetComponent<Titan>().receiveDamage(damage);
+                    enemiesToDamage[counter].GetComponent<Titan>().receiveDamage(specifiedHero.damage);
                 }
             }
-            timeBtwAttack = startTimeBtwAttack;
+            timeBtwAttack = specifiedHero.attackSpeed;
         }
         else
         {
