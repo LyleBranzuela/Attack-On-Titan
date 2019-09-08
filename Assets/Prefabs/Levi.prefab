@@ -9878,6 +9878,7 @@ GameObject:
   - component: {fileID: 5033710361571091338}
   - component: {fileID: 2349244219584323268}
   - component: {fileID: 2420009227082827674}
+  - component: {fileID: 5938973920873788182}
   m_Layer: 17
   m_Name: FlyingDustEffect
   m_TagString: Untagged
@@ -9915,7 +9916,7 @@ ParticleSystem:
   ringBufferLoopRange: {x: 0, y: 1}
   looping: 1
   prewarm: 0
-  playOnAwake: 1
+  playOnAwake: 0
   useUnscaledTime: 0
   autoRandomSeed: 1
   useRigidbodyForVelocity: 1
@@ -14620,6 +14621,18 @@ ParticleSystemRenderer:
   m_Mesh2: {fileID: 0}
   m_Mesh3: {fileID: 0}
   m_MaskInteraction: 0
+--- !u!114 &5938973920873788182
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 804764333555540277}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 60ed086d1915bd3478df63c18084bf0f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &879331372715866939
 GameObject:
   m_ObjectHideFlags: 0
@@ -16101,6 +16114,7 @@ GameObject:
   - component: {fileID: 2928067519448623146}
   - component: {fileID: 8375846449582089575}
   - component: {fileID: 4377240653530149867}
+  - component: {fileID: 3233521372069071694}
   m_Layer: 17
   m_Name: FlyingDustEffect
   m_TagString: Untagged
@@ -16138,7 +16152,7 @@ ParticleSystem:
   ringBufferLoopRange: {x: 0, y: 1}
   looping: 1
   prewarm: 0
-  playOnAwake: 1
+  playOnAwake: 0
   useUnscaledTime: 0
   autoRandomSeed: 1
   useRigidbodyForVelocity: 1
@@ -20843,6 +20857,18 @@ ParticleSystemRenderer:
   m_Mesh2: {fileID: 0}
   m_Mesh3: {fileID: 0}
   m_MaskInteraction: 0
+--- !u!114 &3233521372069071694
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6787956546819253902}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 60ed086d1915bd3478df63c18084bf0f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &6942858853389819551
 GameObject:
   m_ObjectHideFlags: 0
