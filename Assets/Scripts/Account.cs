@@ -11,6 +11,7 @@ public class Account : MonoBehaviour
     private int currentWave;
     private int currentGems;
     private int currentUpgrades;
+    private int gold;
 
     // Returns the name
     public string getName()
@@ -60,4 +61,15 @@ public class Account : MonoBehaviour
         currentUpgrades = upgrades;
     }
 
+    // Get current gold
+    public int getGold()
+    {
+        return gold;
+    }
+
+    // Sets current gold
+    public void setGold(int gold)
+    {
+        this.gold = gold;
+    }
 }
