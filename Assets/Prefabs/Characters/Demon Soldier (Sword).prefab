@@ -1474,7 +1474,7 @@ MonoBehaviour:
   attackSpeed: 0.4
   range: 1.3
   charDesc: 
-  anim: {fileID: 0}
+  anim: {fileID: 1865849271369145964}
   attackPos: {fileID: 7761697525179842}
   whatIsEnemies:
     serializedVersion: 2

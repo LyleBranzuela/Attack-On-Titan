@@ -502,7 +502,7 @@ MonoBehaviour:
   damage: 1
   armor: 0
   moveSpeed: 2
-  attackSpeed: 0.55
+  attackSpeed: 3.06
   range: 1.64
   charDesc: 
   anim: {fileID: 948532510258070309}

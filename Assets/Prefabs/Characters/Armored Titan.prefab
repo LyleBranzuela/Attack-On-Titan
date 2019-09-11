@@ -749,7 +749,7 @@ GameObject:
   - component: {fileID: -1461090216430411089}
   - component: {fileID: 6770187761056863583}
   m_Layer: 15
-  m_Name: Armed Titan 1
+  m_Name: Armored Titan
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -841,7 +841,7 @@ MonoBehaviour:
   attackSpeed: 1
   range: 6.3
   charDesc: 
-  anim: {fileID: 0}
+  anim: {fileID: 5369169965745922039}
   attackPos: {fileID: 8252900207652657893}
   whatIsEnemies:
     serializedVersion: 2
