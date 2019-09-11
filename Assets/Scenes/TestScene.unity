@@ -132,6 +132,7 @@ GameObject:
   - component: {fileID: 5212111}
   - component: {fileID: 5212110}
   - component: {fileID: 5212109}
+  - component: {fileID: 5212112}
   m_Layer: 5
   m_Name: Button 1
   m_TagString: Untagged
@@ -253,6 +254,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5212107}
   m_CullTransparentMesh: 0
+--- !u!114 &5212112
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5212107}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 788753b8020a98149935fa7315bb7651, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  basicTroopPrefab: {fileID: 0}
 --- !u!1 &242109846
 GameObject:
   m_ObjectHideFlags: 0
@@ -265,6 +279,7 @@ GameObject:
   - component: {fileID: 242109850}
   - component: {fileID: 242109849}
   - component: {fileID: 242109848}
+  - component: {fileID: 242109851}
   m_Layer: 5
   m_Name: Button 2
   m_TagString: Untagged
@@ -375,6 +390,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 242109846}
   m_CullTransparentMesh: 0
+--- !u!114 &242109851
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 242109846}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 788753b8020a98149935fa7315bb7651, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  basicTroopPrefab: {fileID: 1482805798, guid: 26c7118a7aec1824d86acb83064fe31d, type: 3}
 --- !u!1 &357438782
 GameObject:
   m_ObjectHideFlags: 0
@@ -784,6 +812,7 @@ GameObject:
   - component: {fileID: 1044558943}
   - component: {fileID: 1044558942}
   - component: {fileID: 1044558941}
+  - component: {fileID: 1044558944}
   m_Layer: 5
   m_Name: Button 3
   m_TagString: Untagged
@@ -905,6 +934,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1044558939}
   m_CullTransparentMesh: 0
+--- !u!114 &1044558944
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1044558939}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 788753b8020a98149935fa7315bb7651, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  basicTroopPrefab: {fileID: 2225158430300596934, guid: ad6d5ff4a6e881845b39332a74ba4cfb,
+    type: 3}
 --- !u!1 &1101586318
 GameObject:
   m_ObjectHideFlags: 0

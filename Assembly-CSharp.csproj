@@ -78,6 +78,7 @@
     <Compile Include="Assets\Scripts\DustParticleControll.cs" />
     <Compile Include="Assets\Scripts\HUD.cs" />
     <Compile Include="Assets\Scripts\Settings.cs" />
+    <Compile Include="Assets\Scripts\ShopController.cs" />
     <Compile Include="Assets\Scripts\UIController.cs" />
     <Compile Include="Assets\Scripts\UXController.cs" />
     <Compile Include="Assets\Scripts\Wave.cs" />
