@@ -5,7 +5,7 @@ using UnityEngine;
 /*
     Class for holding the Player's account for saving and loading.
  */
-public class Account : MonoBehaviour
+public class Account
 {
     private string accountName;
     private int currentWave;

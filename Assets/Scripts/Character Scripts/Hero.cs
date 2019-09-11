@@ -40,7 +40,7 @@ public class Hero : Character
                 // PlayerController.setIsAttacking(false);
             }
         }
-        else
+        else 
         {
             PlayerController.setIsAttacking(false);
             timeBtwAttack -= Time.deltaTime;
