@@ -80,6 +80,7 @@
     <Compile Include="Assets\Scripts\RuningDustEffectControl.cs" />
     <Compile Include="Assets\Scripts\Settings.cs" />
     <Compile Include="Assets\Scripts\ShopController.cs" />
+    <Compile Include="Assets\Scripts\StopRuningDustEffectControl.cs" />
     <Compile Include="Assets\Scripts\TrailEffectControll.cs" />
     <Compile Include="Assets\Scripts\UIController.cs" />
     <Compile Include="Assets\Scripts\UXController.cs" />
