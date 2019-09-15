@@ -2,10 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class RuningDustEffectControl : MonoBehaviour
+public class JumpingDustEffectControl : MonoBehaviour
 {
-    private ParticleSystem ps;
 
+    private ParticleSystem ps;
     // Start is called before the first frame update
     void Start()
     {
@@ -17,11 +17,12 @@ public class RuningDustEffectControl : MonoBehaviour
     {
       ps = GetComponent<ParticleSystem>();
 
-      //Check if the boot has moved more than have frame. If yes, turn on the effect.
-      if(Input.GetKeyDown(KeyCode.RightArrow)||Input.GetKeyDown(KeyCode.LeftArrow))
+      //Check if the Space has presseed. If yes, turn on the effect.
+      if(Input.GetKeyDown(KeyCode.Space))
       {
           ps.Play();
       }
-
     }
+
+
 }
