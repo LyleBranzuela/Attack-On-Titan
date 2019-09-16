@@ -19,6 +19,8 @@ public abstract class Character : MonoBehaviour
     public Animator anim;
     public Transform attackPos;
     public LayerMask whatIsEnemies;
+    protected Collider2D[] enemiesToDamage;
+
 
     //Function for other classes to retrieve info.
     public void getCharInfo()

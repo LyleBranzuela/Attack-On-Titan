@@ -25,7 +25,7 @@ public class Hero : Character
                 anim.SetTrigger("attack");
 
                 // detects how many enemies are to be damaged
-                Collider2D[] enemiesToDamage = Physics2D.OverlapCircleAll(attackPos.position, range, whatIsEnemies);
+                enemiesToDamage = Physics2D.OverlapCircleAll(attackPos.position, range, whatIsEnemies);
                 for (int counter = 0; counter < enemiesToDamage.Length; counter++)
                 {
                     if (enemiesToDamage[counter].GetComponent<Character>().GetType() == typeof(Titan))
@@ -53,16 +53,10 @@ public class Hero : Character
     }
 
 
-    //public void useAbility();
-
-    //public void jump();
 
     // Start is called before the first frame update
     void Start()
     {
-        // Ignore Allied Layers (10 - Projectiles, 11 - Humans, 12 - Heroes)
-        Physics2D.IgnoreLayerCollision(10, 12);
-
         // Can always attack immediately after spawning
         timeBtwAttack = 0;
     }

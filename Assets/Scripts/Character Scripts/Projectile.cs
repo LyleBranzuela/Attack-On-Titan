@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Projectile : MonoBehaviour
 {
-    [SerializeField] [Range(0f, 10f)] private float speed = 1f;
+    [SerializeField] [Range(0f, 50f)] private float speed;
     public int damage;
 
     // Sets how much damage the projectile deals
@@ -40,6 +40,11 @@ public class Projectile : MonoBehaviour
         {
             otherCollider.GetComponent<Titan>().receiveDamage(damage);
             Destroy(gameObject);
+        }
+        else 
+        {
+            // Destroy in 5 seconds if it didn't come in contact with anything
+            Destroy(gameObject, 5.0f);
         }
     }
 }
