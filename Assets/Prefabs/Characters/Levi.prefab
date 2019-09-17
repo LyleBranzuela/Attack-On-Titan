@@ -15760,7 +15760,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5285679149064853971}
   m_LocalRotation: {x: 0.95098996, y: 0.22606112, z: 0.20673007, w: -0.0421566}
-  m_LocalPosition: {x: -0.74, y: 1.69, z: 0.34}
+  m_LocalPosition: {x: -0.548, y: 1.672, z: 0.415}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 6120871403773708124}
@@ -15849,7 +15849,7 @@ ParticleSystem:
     startLifetime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 0.25
+      scalar: 0.5
       minScalar: 5
       maxCurve:
         serializedVersion: 2
@@ -15902,7 +15902,7 @@ ParticleSystem:
     startSpeed:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 3
+      scalar: 2
       minScalar: 5
       maxCurve:
         serializedVersion: 2
@@ -16599,7 +16599,7 @@ ParticleSystem:
     rateOverTime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 10
+      scalar: 5
       minScalar: 10
       maxCurve:
         serializedVersion: 2
@@ -31186,7 +31186,6 @@ GameObject:
   - component: {fileID: 4866506455937443416}
   - component: {fileID: 8487052748954259585}
   - component: {fileID: 6757719264037150140}
-  - component: {fileID: 7692239582364264321}
   m_Layer: 12
   m_Name: StartRuningDustEffect
   m_TagString: Untagged
@@ -31344,7 +31343,7 @@ ParticleSystem:
     startSpeed:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 5
+      scalar: 3
       minScalar: 5
       maxCurve:
         serializedVersion: 2
@@ -35999,18 +35998,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 62596a6c918721d4785baad91d8169a1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &7692239582364264321
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8013337161551280438}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5d0244b450acbf647a012fabb2f241be, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &8258649476273753061
 GameObject:
   m_ObjectHideFlags: 0
@@ -36341,7 +36328,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9187899555587873028}
   m_LocalRotation: {x: 0.09087309, y: 0.2033446, z: -0.08239088, w: -0.9713932}
-  m_LocalPosition: {x: -2.4, y: 1.69, z: -0.21}
+  m_LocalPosition: {x: -2.573, y: 1.69, z: -0.289}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 6120871403773708124}
@@ -36430,7 +36417,7 @@ ParticleSystem:
     startLifetime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 0.25
+      scalar: 0.5
       minScalar: 5
       maxCurve:
         serializedVersion: 2
@@ -36483,7 +36470,7 @@ ParticleSystem:
     startSpeed:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 3
+      scalar: 2
       minScalar: 5
       maxCurve:
         serializedVersion: 2
@@ -37180,7 +37167,7 @@ ParticleSystem:
     rateOverTime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 10
+      scalar: 5
       minScalar: 10
       maxCurve:
         serializedVersion: 2
