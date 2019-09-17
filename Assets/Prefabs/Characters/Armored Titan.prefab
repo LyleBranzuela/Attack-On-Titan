@@ -263,7 +263,7 @@ Transform:
   m_GameObject: {fileID: 2309739489299230439}
   m_LocalRotation: {x: -0, y: -0, z: 0.031154254, w: 0.99951464}
   m_LocalPosition: {x: 1.6219112, y: -0.055218276, z: 0}
-  m_LocalScale: {x: 0.99999994, y: 0.99999994, z: 1}
+  m_LocalScale: {x: 0.9999999, y: 0.9999999, z: 1}
   m_Children:
   - {fileID: 5220739675366129578}
   m_Father: {fileID: 5990270299928856074}
@@ -787,7 +787,7 @@ Animator:
   m_GameObject: {fileID: 5369169965745922038}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 354b7d185db203d45a7efd8c8dd77d33, type: 2}
+  m_Controller: {fileID: 9100000, guid: 808d6ec717b46e6409a2b2e1f8249a02, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -809,7 +809,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 14.4, y: 8.7}
+  m_Offset: {x: 13.955192, y: 7.963046}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -820,7 +820,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 6.2, y: 19.8}
+  m_Size: {x: 7.089617, y: 21.273905}
   m_EdgeRadius: 0
 --- !u!114 &6770187761056863583
 MonoBehaviour:
@@ -834,12 +834,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 885ac2bcf92c9584e8d69c13f6d326b6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 1
+  health: 100
   damage: 1
   armor: 1
-  moveSpeed: 4
-  attackSpeed: 1
-  range: 6.3
+  moveSpeed: 5
+  attackSpeed: 5.02
+  range: 6.1
   charDesc: 
   anim: {fileID: 5369169965745922039}
   attackPos: {fileID: 8252900207652657893}
@@ -1283,7 +1283,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8957921242189027529}
   m_LocalRotation: {x: 0, y: 0, z: -0.70027584, w: 0.7138724}
-  m_LocalPosition: {x: 15.15822, y: 14.907912, z: 0}
+  m_LocalPosition: {x: 14.3475, y: 13.63591, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 5225203955598489050}

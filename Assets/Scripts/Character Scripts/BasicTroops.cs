@@ -32,35 +32,37 @@ public class BasicTroops : Character
         this.ranged = isRanged;
     }
 
+    // Function to be used as an animation event
+    public void fireProjectile()
+    {
+        projectile.setProjectileDamage(damage);
+        Instantiate(projectile, gun.transform.position, gun.transform.rotation);
+    }
 
     // Attacks all titans within range of the characters
     public override void attack()
     {
+        bool hasAttacked = false;
         if (timeBtwAttack <= 0)
         {
             // Loop Through all the Collided Entities
-            bool hasShot = false;
             for (int counter = 0; counter < enemiesToDamage.Length; counter++)
             {
                 // If it's a titan within range
                 if (enemiesToDamage[counter].GetComponent<Character>().GetType() == typeof(Titan))
                 {
-                    anim.SetTrigger("attack");
-                    anim.SetBool("isAttacking", true);
+                    // Ensures they dont attack twice in a row
+                    if (hasAttacked == false)
+                    {
+                        anim.SetTrigger("attack");
+                        anim.SetBool("isAttacking", true);
 
-                    // Deal Damage to Titans depending if they're melee or not
-                    if (ranged)
-                    {
-                        if (!hasShot)
+                        // Deal Damage to Titans depending if they're melee or not
+                        if (!ranged)
                         {
-                            projectile.setProjectileDamage(damage);
-                            Instantiate(projectile, gun.transform.position, gun.transform.rotation);
-                            hasShot = true;
+                            enemiesToDamage[counter].GetComponent<Character>().receiveDamage(damage);
                         }
-                    }
-                    else
-                    {
-                        enemiesToDamage[counter].GetComponent<Character>().receiveDamage(damage);
+                        hasAttacked = true;
                     }
                     timeBtwAttack = attackSpeed;
                 }
@@ -83,6 +85,7 @@ public class BasicTroops : Character
     void Update()
     {
         enemiesToDamage = Physics2D.OverlapCircleAll(attackPos.position, range, whatIsEnemies);
+        attack();
 
         // Checks if there's any enemies in the vicinity
         if (enemiesToDamage.Length == 0)
@@ -91,6 +94,5 @@ public class BasicTroops : Character
             transform.Translate(Vector2.right * moveSpeed * Time.deltaTime);
         }
 
-        attack();
     }
 }

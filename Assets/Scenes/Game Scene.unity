@@ -120,76 +120,12 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &20950858 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3069511504809090104, guid: d5c7ca3b89a039f42af1a2f2a44531a4,
-    type: 3}
-  m_PrefabInstance: {fileID: 2826221306986411803}
-  m_PrefabAsset: {fileID: 0}
---- !u!61 &20950860
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 20950858}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: -21.413708, y: 11.212241}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 2.7394257, y: 22.390234}
-  m_EdgeRadius: 0
 --- !u!4 &211623599 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6120871403773708124, guid: 7ba52306741db2f49a80d45d09acd8db,
     type: 3}
   m_PrefabInstance: {fileID: 7399328422423871469}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &444983846 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5648842512633132029, guid: d5c7ca3b89a039f42af1a2f2a44531a4,
-    type: 3}
-  m_PrefabInstance: {fileID: 2826221306986411803}
-  m_PrefabAsset: {fileID: 0}
---- !u!61 &444983848
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 444983846}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: -21.27374, y: 11.1299095}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 2.3315468, y: 22.374481}
-  m_EdgeRadius: 0
 --- !u!1001 &678030918
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -210,7 +146,7 @@ PrefabInstance:
     - target: {fileID: 6150950761030072978, guid: 7d447fbef53d4a1448a970dda7ab03e5,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.8908324
+      value: 2.67
       objectReference: {fileID: 0}
     - target: {fileID: 6150950761030072978, guid: 7d447fbef53d4a1448a970dda7ab03e5,
         type: 3}
@@ -257,11 +193,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5369169965745922039, guid: 7d447fbef53d4a1448a970dda7ab03e5,
-        type: 3}
-      propertyPath: m_Controller
-      value: 
-      objectReference: {fileID: 9100000, guid: 808d6ec717b46e6409a2b2e1f8249a02, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7d447fbef53d4a1448a970dda7ab03e5, type: 3}
 --- !u!1001 &755595644
@@ -275,6 +206,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Titan (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3169437385429968592, guid: 4b3abaaffb82e56419fcf0ffab41b9f1,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5784920440238549494, guid: 4b3abaaffb82e56419fcf0ffab41b9f1,
         type: 3}
@@ -330,11 +266,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 948532510001034867, guid: 4b3abaaffb82e56419fcf0ffab41b9f1,
-        type: 3}
-      propertyPath: attackSpeed
-      value: 3.06
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4b3abaaffb82e56419fcf0ffab41b9f1, type: 3}
@@ -419,12 +350,12 @@ PrefabInstance:
     - target: {fileID: 55439135480083704, guid: b72f1a2d4b832bb48933b26a94d4d3e6,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -11.637156
+      value: -11.636083
       objectReference: {fileID: 0}
     - target: {fileID: 55439137197524931, guid: b72f1a2d4b832bb48933b26a94d4d3e6,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -11.637156
+      value: -11.636083
       objectReference: {fileID: 0}
     - target: {fileID: 55439135752185113, guid: b72f1a2d4b832bb48933b26a94d4d3e6,
         type: 3}
@@ -444,11 +375,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Red Hair (Gun)
-      objectReference: {fileID: 0}
-    - target: {fileID: 1745661210100728353, guid: 26c7118a7aec1824d86acb83064fe31d,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4902300089408960041, guid: 26c7118a7aec1824d86acb83064fe31d,
         type: 3}
@@ -657,11 +583,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Blond Hair (Cannon)
       objectReference: {fileID: 0}
-    - target: {fileID: 5226516615148128223, guid: 0e0d6e43e0085b1448d72fb9f77377e5,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 4949089409480464605, guid: 0e0d6e43e0085b1448d72fb9f77377e5,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -670,7 +591,7 @@ PrefabInstance:
     - target: {fileID: 4949089409480464605, guid: 0e0d6e43e0085b1448d72fb9f77377e5,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.6865392
+      value: 2.686539
       objectReference: {fileID: 0}
     - target: {fileID: 4949089409480464605, guid: 0e0d6e43e0085b1448d72fb9f77377e5,
         type: 3}
@@ -716,16 +637,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1130454183042716584, guid: 0e0d6e43e0085b1448d72fb9f77377e5,
-        type: 3}
-      propertyPath: attackSpeed
-      value: 5.8
-      objectReference: {fileID: 0}
-    - target: {fileID: 1130454183042716584, guid: 0e0d6e43e0085b1448d72fb9f77377e5,
-        type: 3}
-      propertyPath: damage
-      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0e0d6e43e0085b1448d72fb9f77377e5, type: 3}

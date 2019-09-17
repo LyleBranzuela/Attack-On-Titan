@@ -76,6 +76,7 @@
     <Compile Include="Assets\Scripts\DefenderButton.cs" />
     <Compile Include="Assets\Scripts\DefenderSpawner.cs" />
     <Compile Include="Assets\Scripts\DustParticleControll.cs" />
+    <Compile Include="Assets\Scripts\GoldManager.cs" />
     <Compile Include="Assets\Scripts\HUD.cs" />
     <Compile Include="Assets\Scripts\JumpingDustEffectControl.cs" />
     <Compile Include="Assets\Scripts\Main Menu Scripts\FadeInEffects.cs" />

@@ -437,7 +437,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1130454184198151571}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.04, y: 6.42, z: 0}
+  m_LocalPosition: {x: 0.52, y: 6.58, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1978429412611244389}
@@ -1156,10 +1156,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 1
-  damage: 1
+  damage: 5
   armor: 0
-  moveSpeed: 1
-  attackSpeed: 10
+  moveSpeed: 0
+  attackSpeed: 5.8
   range: 29.5
   charDesc: 
   anim: {fileID: 1130454183042716585}
@@ -2107,16 +2107,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.68764
       objectReference: {fileID: 0}
-    - target: {fileID: 5077207630190523413, guid: 34f06a7d126270b47874b3c0bc009555,
-        type: 3}
-      propertyPath: m_SortingLayerID
-      value: 508286863
-      objectReference: {fileID: 0}
-    - target: {fileID: 5077207630190523413, guid: 34f06a7d126270b47874b3c0bc009555,
-        type: 3}
-      propertyPath: m_SortingLayer
-      value: 4
-      objectReference: {fileID: 0}
     - target: {fileID: -8295502193349822, guid: 34f06a7d126270b47874b3c0bc009555,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2126,6 +2116,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalPosition.y
       value: 4.931673
+      objectReference: {fileID: 0}
+    - target: {fileID: 5077207630190523413, guid: 34f06a7d126270b47874b3c0bc009555,
+        type: 3}
+      propertyPath: m_SortingLayerID
+      value: 508286863
+      objectReference: {fileID: 0}
+    - target: {fileID: 5077207630190523413, guid: 34f06a7d126270b47874b3c0bc009555,
+        type: 3}
+      propertyPath: m_SortingLayer
+      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 1501561811438088063, guid: 34f06a7d126270b47874b3c0bc009555,
