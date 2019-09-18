@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Audio;
 
 public class sound : MonoBehaviour
 {
@@ -18,6 +19,7 @@ public class sound : MonoBehaviour
     public AudioSource arrow;
     public AudioSource musicsource;
     public AudioSource backGround;
+    public float selectedSoundVolume = 1.0f;
 
     public void PlayBlock_sound()
     {
@@ -72,5 +74,11 @@ public class sound : MonoBehaviour
     public void SetMusicVolume(float volume)
     {
         musicsource.volume = volume;
+        selectedSoundVolume = volume;
+    }
+
+    private void Update()
+    {
+        AudioListener.volume = selectedSoundVolume;
     }
 }

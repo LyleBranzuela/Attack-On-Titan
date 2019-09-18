@@ -2215,6 +2215,7 @@ GameObject:
   - component: {fileID: 519420032}
   - component: {fileID: 519420031}
   - component: {fileID: 519420029}
+  - component: {fileID: 519420030}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -2230,6 +2231,32 @@ AudioListener:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_Enabled: 1
+--- !u!114 &519420030
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 519420028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c8cc63f2c6562e439978164d82347a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  block: {fileID: 0}
+  click: {fileID: 0}
+  wire: {fileID: 0}
+  slash: {fileID: 0}
+  cannon: {fileID: 0}
+  gun: {fileID: 0}
+  victory: {fileID: 0}
+  lose: {fileID: 0}
+  normal_stage: {fileID: 0}
+  boss_stage: {fileID: 0}
+  arrow: {fileID: 0}
+  musicsource: {fileID: 0}
+  backGround: {fileID: 0}
+  selectedSoundVolume: 1
 --- !u!20 &519420031
 Camera:
   m_ObjectHideFlags: 0
@@ -5951,6 +5978,7 @@ MonoBehaviour:
   arrow: {fileID: 1612893296}
   musicsource: {fileID: 36878963}
   backGround: {fileID: 36878963}
+  selectedSoundVolume: 1
 --- !u!1 &1351655047
 GameObject:
   m_ObjectHideFlags: 0
