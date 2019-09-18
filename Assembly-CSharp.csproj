@@ -78,6 +78,8 @@
     <Compile Include="Assets\Scripts\Database Scripts\DatabaseManager.cs" />
     <Compile Include="Assets\Scripts\DustParticleControll.cs" />
     <Compile Include="Assets\Scripts\GoldManager.cs" />
+    <Compile Include="Assets\Scripts\HealthBarController.cs" />
+    <Compile Include="Assets\Scripts\HealthSystem.cs" />
     <Compile Include="Assets\Scripts\HUD.cs" />
     <Compile Include="Assets\Scripts\JumpingDustEffectControl.cs" />
     <Compile Include="Assets\Scripts\Main Menu Scripts\FadeInEffects.cs" />

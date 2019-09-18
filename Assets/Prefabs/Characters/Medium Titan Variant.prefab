@@ -92,6 +92,16 @@ PrefabInstance:
       propertyPath: damage
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 948532510001034867, guid: 4b3abaaffb82e56419fcf0ffab41b9f1,
+        type: 3}
+      propertyPath: armor
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 948532510001034867, guid: 4b3abaaffb82e56419fcf0ffab41b9f1,
+        type: 3}
+      propertyPath: attackSpeed
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 810141087, guid: 4b3abaaffb82e56419fcf0ffab41b9f1, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.11
