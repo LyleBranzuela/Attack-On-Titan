@@ -17,7 +17,6 @@ public class JumpingDustEffectControl : MonoBehaviour
     void Update()
     {
       ps = GetComponent<ParticleSystem>();
-      print(old_pos);
 
       //Check if the Space has presseed. If yes, turn on the effect.
       if(Input.GetKeyDown(KeyCode.Space))
