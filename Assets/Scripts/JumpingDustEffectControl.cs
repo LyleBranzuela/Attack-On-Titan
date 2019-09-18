@@ -6,6 +6,7 @@ public class JumpingDustEffectControl : MonoBehaviour
 {
 
     private ParticleSystem ps;
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -20,8 +21,13 @@ public class JumpingDustEffectControl : MonoBehaviour
       //Check if the Space has presseed. If yes, turn on the effect.
       if(Input.GetKeyDown(KeyCode.Space))
       {
+        if(transform.position.y<=1.5)
+        {
           ps.Play();
+        }
       }
+
+
     }
 
 
