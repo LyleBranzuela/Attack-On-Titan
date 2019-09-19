@@ -15412,7 +15412,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da5b678dadd563e4386580de345edb1a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 8
+  hp: 8
+  health: {fileID: 0}
   damage: 4
   armor: 2
   moveSpeed: 5
@@ -15424,6 +15425,7 @@ MonoBehaviour:
   whatIsEnemies:
     serializedVersion: 2
     m_Bits: 49152
+  isDead: 0
 --- !u!114 &7399328423124144747
 MonoBehaviour:
   m_ObjectHideFlags: 0

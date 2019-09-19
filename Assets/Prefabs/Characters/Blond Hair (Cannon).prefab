@@ -1155,7 +1155,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c980e811417751944a260ef08656c731, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 2
+  hp: 2
+  health: {fileID: 0}
   damage: 5
   armor: 0
   moveSpeed: 0
@@ -1167,6 +1168,7 @@ MonoBehaviour:
   whatIsEnemies:
     serializedVersion: 2
     m_Bits: 49152
+  isDead: 0
   ranged: 1
   projectile: {fileID: 122910054, guid: 7eb01e06963c9bd419a5caf528513c17, type: 3}
   gun: {fileID: 1130454184198151571}
@@ -1992,20 +1994,25 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4949089409480464605}
     m_Modifications:
+    - target: {fileID: 8031253559481276921, guid: 34f06a7d126270b47874b3c0bc009555,
+        type: 3}
+      propertyPath: m_Name
+      value: cannon
+      objectReference: {fileID: 0}
+    - target: {fileID: 8031253559481276921, guid: 34f06a7d126270b47874b3c0bc009555,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 5411533433574445726, guid: 34f06a7d126270b47874b3c0bc009555,
         type: 3}
       propertyPath: m_Layer
       value: 11
       objectReference: {fileID: 0}
-    - target: {fileID: -8295502193349822, guid: 34f06a7d126270b47874b3c0bc009555,
+    - target: {fileID: -8852750227693167825, guid: 34f06a7d126270b47874b3c0bc009555,
         type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -9.050145
-      objectReference: {fileID: 0}
-    - target: {fileID: -8295502193349822, guid: 34f06a7d126270b47874b3c0bc009555,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 4.931673
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: -7726799242683584367, guid: 34f06a7d126270b47874b3c0bc009555,
         type: 3}
@@ -2077,16 +2084,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.6390253
       objectReference: {fileID: 0}
-    - target: {fileID: 8031253559481276921, guid: 34f06a7d126270b47874b3c0bc009555,
-        type: 3}
-      propertyPath: m_Name
-      value: cannon
-      objectReference: {fileID: 0}
-    - target: {fileID: 8031253559481276921, guid: 34f06a7d126270b47874b3c0bc009555,
-        type: 3}
-      propertyPath: m_Layer
-      value: 11
-      objectReference: {fileID: 0}
     - target: {fileID: 6309196393219718006, guid: 34f06a7d126270b47874b3c0bc009555,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2112,10 +2109,15 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.68764
       objectReference: {fileID: 0}
-    - target: {fileID: -8852750227693167825, guid: 34f06a7d126270b47874b3c0bc009555,
+    - target: {fileID: -8295502193349822, guid: 34f06a7d126270b47874b3c0bc009555,
         type: 3}
-      propertyPath: m_Layer
-      value: 11
+      propertyPath: m_LocalPosition.x
+      value: -9.050145
+      objectReference: {fileID: 0}
+    - target: {fileID: -8295502193349822, guid: 34f06a7d126270b47874b3c0bc009555,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 4.931673
       objectReference: {fileID: 0}
     - target: {fileID: 5077207630190523413, guid: 34f06a7d126270b47874b3c0bc009555,
         type: 3}

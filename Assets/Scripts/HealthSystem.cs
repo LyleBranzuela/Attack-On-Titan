@@ -36,7 +36,9 @@ public class HealthSystem : MonoBehaviour
         health -= dmg;
         if (health < 0) //Prevents health from going negative.
         {
-            health = 0;
+            health = 0;     
+            Destroy(gameObject);
+            
         }
         if(onHealthChanged != null)
         {
