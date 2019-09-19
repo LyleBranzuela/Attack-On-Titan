@@ -40,6 +40,7 @@ public class Titan : Character
     // Attacks all defenders within range of the charaxt
     public override void attack()
     {
+        bool hasAttacked = false;
         // Attack if attack time is not on cooldown
         if (timeBtwAttack <= 0)
         {
@@ -50,10 +51,16 @@ public class Titan : Character
                 if (enemiesToDamage[counter].GetComponent<Character>().GetType() == typeof(Hero) ||
                     enemiesToDamage[counter].GetComponent<Character>().GetType() == typeof(BasicTroops))
                 {
-                    // Deal Damage to Hero or Basic Troops
-                    anim.SetTrigger("attack");
-                    anim.SetBool("isAttacking", true);
-                    enemiesToDamage[counter].GetComponent<Character>().receiveDamage(damage);
+                    // Ensures they dont attack twice in a row
+                    if (hasAttacked == false)
+                    {                        
+                        // Deal Damage to Hero or Basic Troops and Trigger the Animation
+                        anim.SetTrigger("attack");
+                        anim.SetBool("isAttacking", true);
+                        enemiesToDamage[counter].GetComponent<Character>().receiveDamage(damage);
+                        hasAttacked = true;
+                    }
+
                     timeBtwAttack = attackSpeed;
                 }
             }
@@ -76,6 +83,7 @@ public class Titan : Character
     void Update()
     {
         enemiesToDamage = Physics2D.OverlapCircleAll(attackPos.position, range, whatIsEnemies);
+        attack();
 
         // Checks if there's any enemies in the vicinity
         if (enemiesToDamage.Length == 0)
@@ -84,6 +92,5 @@ public class Titan : Character
             transform.Translate(Vector2.left * moveSpeed * Time.deltaTime);
         }
 
-        attack();
     }
 }

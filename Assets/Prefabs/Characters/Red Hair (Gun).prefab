@@ -549,12 +549,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c980e811417751944a260ef08656c731, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 1
-  damage: 1
+  health: 2
+  damage: 3
   armor: 0
-  moveSpeed: 5
+  moveSpeed: 3
   attackSpeed: 4
-  range: 20
+  range: 14.8
   charDesc: Ranged Troop (Gun)
   anim: {fileID: 1745661210100728354}
   attackPos: {fileID: 1426819681}

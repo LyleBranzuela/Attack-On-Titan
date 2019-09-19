@@ -1467,9 +1467,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c980e811417751944a260ef08656c731, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 200
-  damage: 1
-  armor: 0
+  health: 3
+  damage: 2
+  armor: 1
   moveSpeed: 5
   attackSpeed: 2.51
   range: 1.3
