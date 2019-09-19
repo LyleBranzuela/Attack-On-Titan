@@ -1467,7 +1467,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c980e811417751944a260ef08656c731, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 3
+  hp: 3
+  health: {fileID: 0}
   damage: 2
   armor: 1
   moveSpeed: 5
@@ -1479,6 +1480,7 @@ MonoBehaviour:
   whatIsEnemies:
     serializedVersion: 2
     m_Bits: 49152
+  isDead: 0
   ranged: 0
   projectile: {fileID: 0}
   gun: {fileID: 0}
