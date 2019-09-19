@@ -57,6 +57,7 @@ public class Titan : Character
                         // Deal Damage to Hero or Basic Troops and Trigger the Animation
                         anim.SetTrigger("attack");
                         anim.SetBool("isAttacking", true);
+
                         enemiesToDamage[counter].GetComponent<Character>().receiveDamage(damage);
                         hasAttacked = true;
                     }

@@ -41,7 +41,7 @@ public class BasicTroops : Character
 
     // Attacks all titans within range of the characters
     public override void attack()
-    {
+    {   
         bool hasAttacked = false;
         if (timeBtwAttack <= 0)
         {
@@ -88,7 +88,7 @@ public class BasicTroops : Character
         attack();
 
         // Checks if there's any enemies in the vicinity
-        if (enemiesToDamage.Length == 0)
+        if (enemiesToDamage.Length <= 0)
         {
             anim.SetBool("isAttacking", false);
             transform.Translate(Vector2.right * moveSpeed * Time.deltaTime);

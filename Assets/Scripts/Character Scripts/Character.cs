@@ -49,6 +49,11 @@ public abstract class Character : MonoBehaviour
         health -= damage;
         if (health <= 0)
         {
+            if (gameObject.GetType() == typeof(Titan))
+            {
+                Titan titan = gameObject.GetComponent<Titan>();
+                titan.getGoldReward();
+            }
             Destroy(gameObject);
         }
     }

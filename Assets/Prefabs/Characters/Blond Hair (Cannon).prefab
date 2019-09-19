@@ -1063,6 +1063,7 @@ GameObject:
   - component: {fileID: 1130454183042716585}
   - component: {fileID: -3396220577473376603}
   - component: {fileID: 1130454183042716584}
+  - component: {fileID: 1926350730}
   m_Layer: 11
   m_Name: Blond Hair (Cannon)
   m_TagString: Untagged
@@ -1130,7 +1131,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -1.3219233, y: 1.1317496}
+  m_Offset: {x: -2.3064146, y: 1.1317496}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -1141,7 +1142,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 8.882959, y: 4.687724}
+  m_Size: {x: 6.9139767, y: 4.687724}
   m_EdgeRadius: 0
 --- !u!114 &1130454183042716584
 MonoBehaviour:
@@ -1170,6 +1171,27 @@ MonoBehaviour:
   ranged: 1
   projectile: {fileID: 122910054, guid: 7eb01e06963c9bd419a5caf528513c17, type: 3}
   gun: {fileID: 1130454184198151571}
+--- !u!50 &1926350730
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5226516615148128223}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &5337759585772926296
 GameObject:
   m_ObjectHideFlags: 0
@@ -1992,20 +2014,25 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4949089409480464605}
     m_Modifications:
+    - target: {fileID: 8031253559481276921, guid: 34f06a7d126270b47874b3c0bc009555,
+        type: 3}
+      propertyPath: m_Name
+      value: cannon
+      objectReference: {fileID: 0}
+    - target: {fileID: 8031253559481276921, guid: 34f06a7d126270b47874b3c0bc009555,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 5411533433574445726, guid: 34f06a7d126270b47874b3c0bc009555,
         type: 3}
       propertyPath: m_Layer
       value: 11
       objectReference: {fileID: 0}
-    - target: {fileID: -8295502193349822, guid: 34f06a7d126270b47874b3c0bc009555,
+    - target: {fileID: -8852750227693167825, guid: 34f06a7d126270b47874b3c0bc009555,
         type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -9.050145
-      objectReference: {fileID: 0}
-    - target: {fileID: -8295502193349822, guid: 34f06a7d126270b47874b3c0bc009555,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 4.931673
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: -7726799242683584367, guid: 34f06a7d126270b47874b3c0bc009555,
         type: 3}
@@ -2077,16 +2104,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.6390253
       objectReference: {fileID: 0}
-    - target: {fileID: 8031253559481276921, guid: 34f06a7d126270b47874b3c0bc009555,
-        type: 3}
-      propertyPath: m_Name
-      value: cannon
-      objectReference: {fileID: 0}
-    - target: {fileID: 8031253559481276921, guid: 34f06a7d126270b47874b3c0bc009555,
-        type: 3}
-      propertyPath: m_Layer
-      value: 11
-      objectReference: {fileID: 0}
     - target: {fileID: 6309196393219718006, guid: 34f06a7d126270b47874b3c0bc009555,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2112,10 +2129,15 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.68764
       objectReference: {fileID: 0}
-    - target: {fileID: -8852750227693167825, guid: 34f06a7d126270b47874b3c0bc009555,
+    - target: {fileID: -8295502193349822, guid: 34f06a7d126270b47874b3c0bc009555,
         type: 3}
-      propertyPath: m_Layer
-      value: 11
+      propertyPath: m_LocalPosition.x
+      value: -9.050145
+      objectReference: {fileID: 0}
+    - target: {fileID: -8295502193349822, guid: 34f06a7d126270b47874b3c0bc009555,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 4.931673
       objectReference: {fileID: 0}
     - target: {fileID: 5077207630190523413, guid: 34f06a7d126270b47874b3c0bc009555,
         type: 3}
