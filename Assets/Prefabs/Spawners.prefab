@@ -46,6 +46,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   attackerSpawner: {fileID: 6701059268611641191}
+  victoryPanel: {fileID: 0}
+  defeatPanel: {fileID: 0}
   hero: {fileID: 0}
   lowLevelTitan: {fileID: 948532510001034867, guid: 4b3abaaffb82e56419fcf0ffab41b9f1,
     type: 3}
@@ -73,12 +75,12 @@ PrefabInstance:
     - target: {fileID: 1253644470007384085, guid: f7ffdc3990173d045a407483d3e1678a,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -22
+      value: -21.87
       objectReference: {fileID: 0}
     - target: {fileID: 1253644470007384085, guid: f7ffdc3990173d045a407483d3e1678a,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.41
+      value: 0.72
       objectReference: {fileID: 0}
     - target: {fileID: 1253644470007384085, guid: f7ffdc3990173d045a407483d3e1678a,
         type: 3}

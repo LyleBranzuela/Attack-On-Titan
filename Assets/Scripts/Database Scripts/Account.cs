@@ -22,10 +22,10 @@ public class Account
 
         newAccount.setName(name);
         newAccount.setCurrentWave(1);
-        newAccount.setCurrentGems(1);
+        newAccount.setCurrentGems(0);
         int[] upgrades = { 0, 0, 0 };
         newAccount.setUpgrades(upgrades);
-        newAccount.setGold(250);
+        newAccount.setGold(0);
 
         currentAccount = newAccount;
     }

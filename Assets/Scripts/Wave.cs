@@ -14,8 +14,10 @@ public class Wave : MonoBehaviour
     private bool isCompleted;  //Boolean to check if wave was won or lost.
     private int titanDeadCount; //Count number of dead Titans.
     private string waveDesc; //Wave description text
-    private bool isFinishedSpawning;
-    public AttackerSpawner attackerSpawner;
+    private bool isFinishedSpawning; // A boolean to check whether they're still spawning or not
+    public AttackerSpawner attackerSpawner; // Where the attackers should spawn
+    public GameObject victoryPanel, defeatPanel; // The Victory and Defeat Screens
+    private int startingGold; // The starting gold the player had when he started the wave
 
     public Hero hero; // Hero to Keep Track of (Hero dies = Game Over)
     [SerializeField] private Titan lowLevelTitan; // Low Level Titan to be Spawned in
@@ -32,9 +34,14 @@ public class Wave : MonoBehaviour
     // Function to start the wave
     public void startWave()
     {
+        // Save the starting gold in case they restart
+        startingGold = Account.currentAccount.getGold() - 250;
+
         // Sets up what the wave needs before starting the spawners
         waveLevel = Account.currentAccount.getCurrentWave();
         isFinishedSpawning = false;
+        Account.currentAccount.setGold(250 + Account.currentAccount.getGold());
+
 
         updateWave();
         attackerSpawner.startWaveSpawners();
@@ -60,20 +67,12 @@ public class Wave : MonoBehaviour
         if (titanDeadCount == titans.Count) // All titans are dead = Win
         {
             isCompleted = true;
-            if (Account.currentAccount.getCurrentWave() <= 5)
-            {
-                Debug.Log(Account.currentAccount.getCurrentWave());
-                Account.currentAccount.setCurrentWave(Account.currentAccount.getCurrentWave() + 1);
-                SceneManager.LoadScene("GameScene");
-                startWave();
-            }
+            victoryPanel.gameObject.SetActive(true);
         }
         else if (hero.isCharDead()) // Hero Dies = Game Over
         {
             isCompleted = true;
-            //TODO: play Defeat Screen
-            SceneManager.LoadScene("GameScene");
-            startWave();
+            defeatPanel.gameObject.SetActive(true);
         }
         else // Game is still not finished
         {
@@ -186,12 +185,47 @@ public class Wave : MonoBehaviour
         attackerSpawner.setTitansToSpawn(titans);
     }
 
+    // Restarts the Game Scene and Wave
+    public void restartWave()
+    {
+        SceneManager.LoadScene("GameScene");
+        Account.currentAccount.setGold(startingGold);
+        startWave();
+    }
+
+    // Starts the next wave
+    public void nextWave()
+    {
+        if (Account.currentAccount.getCurrentWave() <= 5)
+        {
+            Account.currentAccount.setCurrentWave(Account.currentAccount.getCurrentWave() + 1);
+            Account.currentAccount.setCurrentGems(Account.currentAccount.getCurrentGems() + 1);
+            SceneManager.LoadScene("GameScene");
+        }
+        else
+        {
+            SceneManager.LoadScene("Main Menu");
+        }
+    }
+
+    // Hides the victory and defeat Panels
+    public void hidePanels()
+    {
+        victoryPanel.gameObject.SetActive(false);
+        defeatPanel.gameObject.SetActive(false);
+    }
+
+    public void returnToMainMenu()
+    {
+        SceneManager.LoadScene("MainMenu");
+    }
+
     // Start is called before the first frame update
     void Start()
     {
         if (Account.currentAccount == null)
         {
-            Account.newAccount("Default");
+            Account.newAccount("Player");
         }
         startWave();
     }
@@ -199,7 +233,7 @@ public class Wave : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (isFinishedSpawning)
+        if (isFinishedSpawning && !isCompleted)
         {
             isStageCompleted();
         }

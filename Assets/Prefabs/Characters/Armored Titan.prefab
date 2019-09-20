@@ -764,8 +764,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5369169965745922038}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.14641, y: 2.8059, z: 0}
-  m_LocalScale: {x: 0.7592285, y: 0.763125, z: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.8, y: 0.8, z: 1}
   m_Children:
   - {fileID: 297301780840420796}
   - {fileID: 7928019949217813306}
@@ -869,8 +869,7 @@ MonoBehaviour:
   whatIsEnemies:
     serializedVersion: 2
     m_Bits: 6144
-  isDead: 0
-  goldReward: 35
+  goldReward: 0
 --- !u!1 &5373777829451211606
 GameObject:
   m_ObjectHideFlags: 0

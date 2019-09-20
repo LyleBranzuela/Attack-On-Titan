@@ -40,7 +40,7 @@ PrefabInstance:
     - target: {fileID: 948532510001034867, guid: 4b3abaaffb82e56419fcf0ffab41b9f1,
         type: 3}
       propertyPath: goldReward
-      value: 25
+      value: 200
       objectReference: {fileID: 0}
     - target: {fileID: 810141087, guid: 4b3abaaffb82e56419fcf0ffab41b9f1, type: 3}
       propertyPath: m_LocalPosition.x
@@ -127,7 +127,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 594324915, guid: 4b3abaaffb82e56419fcf0ffab41b9f1, type: 3}
       propertyPath: m_BodyType
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 594324915, guid: 4b3abaaffb82e56419fcf0ffab41b9f1, type: 3}
       propertyPath: m_Mass

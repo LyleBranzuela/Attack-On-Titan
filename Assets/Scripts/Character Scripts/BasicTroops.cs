@@ -78,38 +78,41 @@ public class BasicTroops : Character
     // Updates the troop based on the upgrades
     public void updateTroop()
     {
-        int[] upgrades = Account.currentAccount.getUpgrades();
-        int whichToUpgrade = -1; // 0 = Sword, 1 = Sniper, 2 = Siege
-        switch (charDesc)
+        if (Account.currentAccount != null)
         {
-            case "sword":
-                hp = 3;
-                damage = 2;
-                armor = 1;
-                whichToUpgrade = 0;
-                break;
-                    
-            case "sniper":
-                hp = 2;
-                damage = 3;
-                armor = 0;
-                whichToUpgrade = 1;
-                break;
+            int[] upgrades = Account.currentAccount.getUpgrades();
+            int whichToUpgrade = -1; // 0 = Sword, 1 = Sniper, 2 = Siege
+            switch (charDesc)
+            {
+                case "sword":
+                    hp = 3;
+                    damage = 2;
+                    armor = 1;
+                    whichToUpgrade = 0;
+                    break;
 
-            case "siege":
-                hp = 2;
-                damage = 5;
-                armor = 0;
-                whichToUpgrade = 2;
-                break;
-        }
+                case "sniper":
+                    hp = 2;
+                    damage = 3;
+                    armor = 0;
+                    whichToUpgrade = 1;
+                    break;
 
-        if (whichToUpgrade != -1)
-        {            
-            // Upgrade the values
-            hp += upgrades[whichToUpgrade];
-            damage += upgrades[whichToUpgrade];
-            armor += upgrades[whichToUpgrade];
+                case "siege":
+                    hp = 2;
+                    damage = 5;
+                    armor = 0;
+                    whichToUpgrade = 2;
+                    break;
+            }
+
+            if (whichToUpgrade != -1)
+            {
+                // Upgrade the values
+                hp += upgrades[whichToUpgrade];
+                damage += upgrades[whichToUpgrade];
+                armor += upgrades[whichToUpgrade];
+            }
         }
     }
 
