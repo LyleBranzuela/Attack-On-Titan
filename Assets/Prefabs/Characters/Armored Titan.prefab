@@ -856,7 +856,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 885ac2bcf92c9584e8d69c13f6d326b6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 35
+  hp: 35
+  health: {fileID: 0}
   damage: 10
   armor: 5
   moveSpeed: 3
@@ -868,7 +869,8 @@ MonoBehaviour:
   whatIsEnemies:
     serializedVersion: 2
     m_Bits: 6144
-  goldReward: 0
+  isDead: 0
+  goldReward: 35
 --- !u!1 &5373777829451211606
 GameObject:
   m_ObjectHideFlags: 0

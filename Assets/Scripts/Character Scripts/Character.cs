@@ -8,7 +8,7 @@ using UnityEngine;
  */
 public abstract class Character : MonoBehaviour
 {
-    // Setting up the Variables
+    // Setting up the Variables for Stats
     public int hp;
     public HealthSystem health;
     public int damage;
@@ -16,13 +16,15 @@ public abstract class Character : MonoBehaviour
     [Range(0f, 10f)] public float moveSpeed = 1f;
     [Range(0f, 10f)] public float attackSpeed = 1f;
     [Range(0f, 50f)] public float range;
-    public string charDesc;
-    public Animator anim;
-    public Transform attackPos;
-    public LayerMask whatIsEnemies;
-    protected Collider2D[] enemiesToDamage;
 
-    public bool isDead;
+    // Setting up the variabels for other references
+    public string charDesc;
+    public Animator anim; // Animator of the Character
+    public Transform attackPos; // Attack Position of the Character
+    public LayerMask whatIsEnemies; // Lists what enemies to be detected
+    protected Collider2D[] enemiesToDamage; // The collided enemies array
+    private Color originalColor;
+    private bool isDead;
 
 
     //Function for other classes to retrieve info.
@@ -46,28 +48,52 @@ public abstract class Character : MonoBehaviour
     // Abstract Attack to be inherited by the characters
     abstract public void attack();
 
+    // Function for the character to receive damage in
     public void receiveDamage(int damage)
     {
-        //Current health = health - damage;
+        ////Current health = health - damage;
+        //originalColor = gameObject.GetComponent<MeshRenderer>().material.color;
+        //gameObject.GetComponent<MeshRenderer>().material.color = Color.red;
+        //Invoke("ResetColor", 2f);
+
         hp -= damage;
         if (hp <= 0)
         {
+            // Ensures the HP stays to 0
             hp = 0;
-            Destroy(gameObject);
+
+            // Checking if it's a titan or not, add the gold to the account if it was
+            Titan titan = gameObject.GetComponent<Titan>();
+            if (titan)
+            {
+                Account.currentAccount.setGold(titan.getGoldReward() + Account.currentAccount.getGold());
+                Debug.Log(Account.currentAccount.getGold());
+            }
+            //Destroy(gameObject);
         }
     }
 
+    // Function to be referenced for invocation
+    void resetColor()
+    {
+        gameObject.GetComponent<MeshRenderer>().material.color = originalColor;
+    }
+
+    // Checks if the character is dead or not
     public bool isCharDead()
     {
-        if (hp == 0)
+        if (hp <= 0)
         {
             isDead = true;
         }
         else
+        {
             isDead = false;
+        }
 
         return isDead;
     }
+
     // Draws the red area for reference
     void OnDrawGizmosSelected()
     {

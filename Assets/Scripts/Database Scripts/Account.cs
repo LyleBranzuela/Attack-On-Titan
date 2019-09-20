@@ -7,6 +7,9 @@ using UnityEngine;
  */
 public class Account
 {
+    // This account will be the current account that will be running across all states
+    public static Account currentAccount = new Account();
+
     private string accountName;
     private int currentWave;
     private int currentGems;

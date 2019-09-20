@@ -46,6 +46,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   attackerSpawner: {fileID: 6701059268611641191}
+  hero: {fileID: 0}
   lowLevelTitan: {fileID: 948532510001034867, guid: 4b3abaaffb82e56419fcf0ffab41b9f1,
     type: 3}
   mediumLevelTitan: {fileID: 269234125830936676, guid: b3c70b29250db914a8461a8f1a4720e9,
@@ -64,15 +65,20 @@ PrefabInstance:
       propertyPath: m_Name
       value: Defender Spawner
       objectReference: {fileID: 0}
+    - target: {fileID: 1253644470007384084, guid: f7ffdc3990173d045a407483d3e1678a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 1253644470007384085, guid: f7ffdc3990173d045a407483d3e1678a,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -24.42
+      value: -22
       objectReference: {fileID: 0}
     - target: {fileID: 1253644470007384085, guid: f7ffdc3990173d045a407483d3e1678a,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.56
+      value: 2.67
       objectReference: {fileID: 0}
     - target: {fileID: 1253644470007384085, guid: f7ffdc3990173d045a407483d3e1678a,
         type: 3}
@@ -142,12 +148,12 @@ PrefabInstance:
     - target: {fileID: 2930837432270569332, guid: 21f78c4498d4dd5498a0deb47ab99f46,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 50.12
+      value: 49.57
       objectReference: {fileID: 0}
     - target: {fileID: 2930837432270569332, guid: 21f78c4498d4dd5498a0deb47ab99f46,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 3.77
+      value: 3.96
       objectReference: {fileID: 0}
     - target: {fileID: 2930837432270569332, guid: 21f78c4498d4dd5498a0deb47ab99f46,
         type: 3}

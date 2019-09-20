@@ -10,15 +10,15 @@ public static class DatabaseManager
     // NOTE: Application.persistentDataPath points to %userprofile%\AppData\Local\Packages\<productname>\LocalState
 
     // Function for saving accounts
-    public static void saveAccount(Account account)
+    public static void saveAccount()
     {
-        string path = Application.persistentDataPath + "/" + account.getName() + ".save";
+        string path = Application.persistentDataPath + "/" + Account.currentAccount.getName() + ".save";
         BinaryFormatter formatter = new BinaryFormatter();
         // File Mode = Create, means to create a new save file if it doesn't exist, and overwrite if it does exist
         FileStream stream = new FileStream(path, FileMode.Create);
 
         // Formats into Binary and saves into the designated path
-        AccountData data = new AccountData(account);
+        AccountData data = new AccountData(Account.currentAccount);
         formatter.Serialize(stream, data);
         stream.Close();
     }
