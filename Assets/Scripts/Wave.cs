@@ -196,7 +196,7 @@ public class Wave : MonoBehaviour
     // Starts the next wave
     public void nextWave()
     {
-        if (Account.currentAccount.getCurrentWave() <= 5)
+        if (Account.currentAccount.getCurrentWave() < 5)
         {
             Account.currentAccount.setCurrentWave(Account.currentAccount.getCurrentWave() + 1);
             Account.currentAccount.setCurrentGems(Account.currentAccount.getCurrentGems() + 1);
@@ -204,7 +204,8 @@ public class Wave : MonoBehaviour
         }
         else
         {
-            SceneManager.LoadScene("Main Menu");
+            SceneManager.LoadScene("MainMenu");
+            Account.newAccount("Player");
         }
     }
 
