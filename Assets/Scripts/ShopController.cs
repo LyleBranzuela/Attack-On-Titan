@@ -10,6 +10,7 @@ public class ShopController : MonoBehaviour
     private bool canAffordTroops;
     private BasicTroops basicTroops;
     public GameObject Panel;
+    public GameObject buyButton;
 
     public void showhidePanel()
     {
@@ -26,11 +27,11 @@ public class ShopController : MonoBehaviour
     {
         if(canAffordTroops == false)
         {
-            //TODO: Code to set button to unclickable
+            buyButton.SetActive(false);
         }
         else
         {
-            //TODO: Code to set button to clickable
+            buyButton.SetActive(true);
         }
 
     }
