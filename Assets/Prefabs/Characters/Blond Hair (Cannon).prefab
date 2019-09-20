@@ -1184,7 +1184,7 @@ MonoBehaviour:
   moveSpeed: 0
   attackSpeed: 6
   range: 20
-  charDesc: 
+  charDesc: siege
   anim: {fileID: 1130454183042716585}
   attackPos: {fileID: 1737711861}
   whatIsEnemies:

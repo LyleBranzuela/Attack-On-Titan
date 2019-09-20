@@ -11,7 +11,7 @@ public class AccountData
     public string accountName;
     public int currentWave;
     public int currentGems;
-    public int currentUpgrades;
+    public int[] currentUpgrades;
     public int gold;
 
     public AccountData (Account account)

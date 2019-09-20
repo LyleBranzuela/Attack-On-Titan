@@ -67,7 +67,6 @@
     <Compile Include="Assets\Scripts\Character Scripts\AttackerSpawner.cs" />
     <Compile Include="Assets\Scripts\Character Scripts\BasicTroops.cs" />
     <Compile Include="Assets\Scripts\Character Scripts\Character.cs" />
-    <Compile Include="Assets\Scripts\Character Scripts\DefenderButton.cs" />
     <Compile Include="Assets\Scripts\Character Scripts\DefenderSpawner.cs" />
     <Compile Include="Assets\Scripts\Character Scripts\Hero.cs" />
     <Compile Include="Assets\Scripts\Character Scripts\PlayerAttack.cs" />
@@ -78,7 +77,6 @@
     <Compile Include="Assets\Scripts\Database Scripts\AccountData.cs" />
     <Compile Include="Assets\Scripts\Database Scripts\DatabaseManager.cs" />
     <Compile Include="Assets\Scripts\DustParticleControll.cs" />
-    <Compile Include="Assets\Scripts\GoldManager.cs" />
     <Compile Include="Assets\Scripts\HealthBarController.cs" />
     <Compile Include="Assets\Scripts\HealthSystem.cs" />
     <Compile Include="Assets\Scripts\HUD.cs" />
@@ -89,7 +87,8 @@
     <Compile Include="Assets\Scripts\Main Menu Scripts\sound.cs" />
     <Compile Include="Assets\Scripts\RuningDustEffectControl.cs" />
     <Compile Include="Assets\Scripts\Settings.cs" />
-    <Compile Include="Assets\Scripts\ShopController.cs" />
+    <Compile Include="Assets\Scripts\Shop Scripts\ShopController.cs" />
+    <Compile Include="Assets\Scripts\Shop Scripts\StatDisplay.cs" />
     <Compile Include="Assets\Scripts\StopRuningDustEffectControl.cs" />
     <Compile Include="Assets\Scripts\TrailEffectControll.cs" />
     <Compile Include="Assets\Scripts\UIController.cs" />

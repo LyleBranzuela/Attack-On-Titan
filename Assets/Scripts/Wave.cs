@@ -32,7 +32,6 @@ public class Wave : MonoBehaviour
     public void startWave()
     {
         // Sets up what the wave needs before starting the spawners
-        Account.currentAccount.setCurrentWave(2);
         waveLevel = Account.currentAccount.getCurrentWave();
         isFinishedSpawning = false;
 
@@ -47,7 +46,7 @@ public class Wave : MonoBehaviour
     }
 
     //Function that modifies isCompleted boolean to check if wave is completed.
-    public bool isStageCompleted()
+    public void isStageCompleted()
     {
         // Ensures the counter resets whenever it's called
         titanDeadCount = 0;
@@ -78,8 +77,6 @@ public class Wave : MonoBehaviour
         {
             isCompleted = false;
         }
-
-        return isCompleted;
     }
 
     //Function that returns the gem reward for winning a wave.
@@ -164,9 +161,10 @@ public class Wave : MonoBehaviour
                 titansToSpawn.Add(mediumLevelTitan);
                 break;
 
-            // 1 Medium Level Titan and 2 Gems Reward
+            // 2 Medium Level Titan and 2 Gems Reward
             case 4:
                 waveReward = 2;
+                titansToSpawn.Add(mediumLevelTitan);
                 titansToSpawn.Add(mediumLevelTitan);
                 break;
 

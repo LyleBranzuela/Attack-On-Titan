@@ -13,16 +13,21 @@ public class Account
     private string accountName;
     private int currentWave;
     private int currentGems;
-    private int currentUpgrades;
+    private int[] currentUpgrades; // 000 (1st Number = Sword, 2nd Number = Sniper, 3rd Number = Siege)
     private int gold;
 
-    public void newPlayer()
+    public static void newAccount(string name)
     {
-        accountName = "placeholder";
-        currentWave = 1;
-        currentGems = 0;
-        currentUpgrades = 0;
-        gold = 0;
+        Account newAccount = new Account();
+
+        newAccount.setName(name);
+        newAccount.setCurrentWave(1);
+        newAccount.setCurrentGems(1);
+        int[] upgrades = { 0, 0, 0 };
+        newAccount.setUpgrades(upgrades);
+        newAccount.setGold(250);
+
+        currentAccount = newAccount;
     }
 
     // Returns the name
@@ -62,13 +67,13 @@ public class Account
     }
 
     // Returns the current upgrades
-    public int getUpgrades()
+    public int[] getUpgrades()
     {
         return currentUpgrades;
     }
 
     // Sets the upgrades
-    public void setUpgrades(int upgrades)
+    public void setUpgrades(int[] upgrades)
     {
         currentUpgrades = upgrades;
     }

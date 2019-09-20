@@ -8,7 +8,6 @@ using UnityEngine;
  */
 public class Titan : Character
 {
-    private string type;
     [SerializeField] private int goldReward;
     private float timeBtwAttack;
 
@@ -22,19 +21,10 @@ public class Titan : Character
         this.goldReward = gold;
     }
 
-    public string getTitanType()
-    {
-        return this.type;
-    }
 
-    public void setTitanType(string type)
-    {
-        this.type = type;
-    }
-
+    // Buffs the character depending on what wave it is
     public void getWaveBuff()
     {
-        //TODO: get wavemodifier from Wave and change stats.
     }
 
     // Attacks all defenders within range of the charaxt
@@ -77,7 +67,6 @@ public class Titan : Character
     {
         // Can always attack immediately after spawning
         timeBtwAttack = 0;
-
         setupCharacter();
     }
 
