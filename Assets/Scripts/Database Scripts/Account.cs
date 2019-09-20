@@ -16,6 +16,15 @@ public class Account
     private int currentUpgrades;
     private int gold;
 
+    public void newPlayer()
+    {
+        accountName = "placeholder";
+        currentWave = 1;
+        currentGems = 0;
+        currentUpgrades = 0;
+        gold = 0;
+    }
+
     // Returns the name
     public string getName()
     {

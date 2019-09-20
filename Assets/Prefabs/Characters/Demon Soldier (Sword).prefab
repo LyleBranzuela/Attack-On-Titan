@@ -1480,7 +1480,8 @@ MonoBehaviour:
   whatIsEnemies:
     serializedVersion: 2
     m_Bits: 49152
-  isDead: 0
+  cost: 150
+  upgrades: 0
   ranged: 0
   projectile: {fileID: 0}
   gun: {fileID: 0}

@@ -11,6 +11,7 @@ public class AttackerSpawner : MonoBehaviour
     private ArrayList titansToSpawn;
     private ArrayList spawnedTitans;
 
+    // Starts the wave spawner, spawning the titans depending on the randomized delay
     public void startWaveSpawners()
     {
         spawnedTitans = new ArrayList();

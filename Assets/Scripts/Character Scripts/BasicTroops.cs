@@ -9,9 +9,9 @@ using UnityEngine;
  */
 public class BasicTroops : Character
 {
-    private int cost;
-    private float timeBtwAttack;
+    [SerializeField] private int cost;
     [SerializeField] private int upgrades;
+    private float timeBtwAttack;
     // Ignore fields if melee
     public bool ranged;
     public Projectile projectile;

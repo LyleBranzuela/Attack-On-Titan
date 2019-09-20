@@ -398,10 +398,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Panel: {fileID: 1494131759}
-  upgradeButton: {fileID: 1983395424}
-  troop: {fileID: 0}
   basicTroopPrefab: {fileID: 421321435871696133, guid: 328e5fb0332033f488943b80da029f14,
     type: 3}
+  buyButton: {fileID: 13453542}
+  upgradeButton: {fileID: 1983395424}
+  isShopButton: 0
 --- !u!1 &22703891
 GameObject:
   m_ObjectHideFlags: 0
@@ -629,7 +630,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 47.77794, y: -1.271283}
+  m_AnchoredPosition: {x: 52.7, y: -1.271283}
   m_SizeDelta: {x: 18.1, y: 18.113}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &39346524
@@ -1024,7 +1025,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -258, y: 109}
+  m_AnchoredPosition: {x: -360.2, y: 213.9}
   m_SizeDelta: {x: 63.7, y: 26.2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &203462245
@@ -1070,7 +1071,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1494131761}
+      - m_Target: {fileID: 203462248}
         m_MethodName: showhidePanel
         m_Mode: 1
         m_Arguments:
@@ -1131,9 +1132,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Panel: {fileID: 1494131759}
-  upgradeButton: {fileID: 0}
-  troop: {fileID: 0}
   basicTroopPrefab: {fileID: 0}
+  buyButton: {fileID: 0}
+  upgradeButton: {fileID: 0}
+  isShopButton: 1
 --- !u!4 &211623599 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6120871403773708124, guid: 7ba52306741db2f49a80d45d09acd8db,
@@ -1341,10 +1343,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Panel: {fileID: 1494131759}
-  upgradeButton: {fileID: 1983395424}
-  troop: {fileID: 1130454183042716584, guid: 0e0d6e43e0085b1448d72fb9f77377e5, type: 3}
   basicTroopPrefab: {fileID: 1130454183042716584, guid: 0e0d6e43e0085b1448d72fb9f77377e5,
     type: 3}
+  buyButton: {fileID: 549367409}
+  upgradeButton: {fileID: 1345059477}
+  isShopButton: 0
 --- !u!114 &549367409
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2053,9 +2056,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Panel: {fileID: 1494131759}
-  upgradeButton: {fileID: 1983395424}
-  troop: {fileID: 1482805798, guid: 26c7118a7aec1824d86acb83064fe31d, type: 3}
   basicTroopPrefab: {fileID: 1482805798, guid: 26c7118a7aec1824d86acb83064fe31d, type: 3}
+  buyButton: {fileID: 990870484}
+  upgradeButton: {fileID: 9132392}
+  isShopButton: 0
 --- !u!114 &990870484
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2617,12 +2621,12 @@ PrefabInstance:
     - target: {fileID: 55439135480083704, guid: b72f1a2d4b832bb48933b26a94d4d3e6,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -11.77148
+      value: -11.589283
       objectReference: {fileID: 0}
     - target: {fileID: 55439137197524931, guid: b72f1a2d4b832bb48933b26a94d4d3e6,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -11.77148
+      value: -11.589283
       objectReference: {fileID: 0}
     - target: {fileID: 55439137197524930, guid: b72f1a2d4b832bb48933b26a94d4d3e6,
         type: 3}
@@ -2718,7 +2722,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1345059478}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_MethodName: showhidePanel
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1345059478
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3143,7 +3158,6 @@ GameObject:
   - component: {fileID: 1494131760}
   - component: {fileID: 1494131763}
   - component: {fileID: 1494131762}
-  - component: {fileID: 1494131761}
   m_Layer: 5
   m_Name: Panel
   m_TagString: Untagged
@@ -3173,22 +3187,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1494131761
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1494131759}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6c07060bd2d3fe34080b155b380798e1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Panel: {fileID: 1494131759}
-  upgradeButton: {fileID: 0}
-  troop: {fileID: 0}
-  basicTroopPrefab: {fileID: 0}
 --- !u!114 &1494131762
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3391,6 +3389,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1636459480}
   m_CullTransparentMesh: 0
+--- !u!114 &1685024788 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8329574115765567041, guid: 7ba52306741db2f49a80d45d09acd8db,
+    type: 3}
+  m_PrefabInstance: {fileID: 7399328422423871469}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da5b678dadd563e4386580de345edb1a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1687035255
 GameObject:
   m_ObjectHideFlags: 0
@@ -4665,31 +4675,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5592106132818400520, guid: 9892162ae5981604ea6148db400f9328,
+    - target: {fileID: 6701059268281015692, guid: 9892162ae5981604ea6148db400f9328,
         type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -22
-      objectReference: {fileID: 0}
-    - target: {fileID: 5592106132818400520, guid: 9892162ae5981604ea6148db400f9328,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 2.67
-      objectReference: {fileID: 0}
-    - target: {fileID: 6701059268611641176, guid: 9892162ae5981604ea6148db400f9328,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 49.57
-      objectReference: {fileID: 0}
-    - target: {fileID: 6701059268611641176, guid: 9892162ae5981604ea6148db400f9328,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 3.96
-      objectReference: {fileID: 0}
-    - target: {fileID: 5592106132818400521, guid: 9892162ae5981604ea6148db400f9328,
-        type: 3}
-      propertyPath: m_Layer
-      value: 5
-      objectReference: {fileID: 0}
+      propertyPath: hero
+      value: 
+      objectReference: {fileID: 1685024788}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9892162ae5981604ea6148db400f9328, type: 3}
 --- !u!1001 &7399328422423871469
@@ -4758,16 +4748,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8329574115765567041, guid: 7ba52306741db2f49a80d45d09acd8db,
-        type: 3}
-      propertyPath: range
-      value: 2.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8329574115765567041, guid: 7ba52306741db2f49a80d45d09acd8db,
-        type: 3}
-      propertyPath: hp
-      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7ba52306741db2f49a80d45d09acd8db, type: 3}

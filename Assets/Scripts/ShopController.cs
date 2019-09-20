@@ -5,15 +5,14 @@ using UnityEngine.UI;
 
 public class ShopController : MonoBehaviour
 {
-    private int cost;
     private int counter = 0;
     private bool canAffordTroops;
-    private BasicTroops basicTroops;
     public GameObject Panel;
-    public Button upgradeButton;
     public Account player;
-    public BasicTroops troop;
     [SerializeField] BasicTroops basicTroopPrefab;
+    public Button buyButton;
+    public Button upgradeButton;
+    public bool isShopButton;
 
     public void showhidePanel()
     {
@@ -33,9 +32,9 @@ public class ShopController : MonoBehaviour
     }
 
     //Check player's gold to see if they can buy that troop
-    public bool canAfford(Account account, BasicTroops troop)
+    public bool canAfford()
     {
-        if (account.getGold() - troop.getCost() >= 0)
+        if (Account.currentAccount.getGold() - basicTroopPrefab.getCost() >= 0)
         {
             canAffordTroops = true;
         }
@@ -45,9 +44,9 @@ public class ShopController : MonoBehaviour
         return this.canAffordTroops;
     }
 
-    public bool canUpgrade(Account account)
+    public bool canUpgrade()
     {
-        if (account.getCurrentGems() > 0)
+        if (Account.currentAccount.getCurrentGems() > 0)
         {
             return true;
         }
@@ -55,14 +54,14 @@ public class ShopController : MonoBehaviour
             return false;
     }
 
-    public void upgradeTroops(BasicTroops troop, Account account)
+    public void upgradeTroops(BasicTroops troop)
     {
-        if (canUpgrade(account))
+        if (canUpgrade())
         {
             troop.hp += 1;
             troop.armor += 1;
             troop.damage += 1;
-            account.setCurrentGems(account.getCurrentGems() - 1);
+            Account.currentAccount.setCurrentGems(Account.currentAccount.getCurrentGems() - 1);
         }
     }
     
@@ -75,6 +74,10 @@ public class ShopController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-     
+        if (!isShopButton)
+        {
+            buyButton.interactable = canAfford() ? true : false;
+            upgradeButton.interactable = canUpgrade() ? true : false;
+        }
     }
 }

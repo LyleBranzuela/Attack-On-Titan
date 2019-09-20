@@ -1062,8 +1062,8 @@ GameObject:
   - component: {fileID: 4949089409480464605}
   - component: {fileID: 1130454183042716585}
   - component: {fileID: -3396220577473376603}
-  - component: {fileID: 1130454183042716584}
   - component: {fileID: 1926350730}
+  - component: {fileID: 1130454183042716584}
   m_Layer: 11
   m_Name: Blond Hair (Cannon)
   m_TagString: Untagged
@@ -1144,6 +1144,27 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 6.9139767, y: 4.687724}
   m_EdgeRadius: 0
+--- !u!50 &1926350730
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5226516615148128223}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!114 &1130454183042716584
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1169,31 +1190,11 @@ MonoBehaviour:
   whatIsEnemies:
     serializedVersion: 2
     m_Bits: 49152
-  isDead: 0
+  cost: 200
+  upgrades: 0
   ranged: 1
   projectile: {fileID: 122910054, guid: 7eb01e06963c9bd419a5caf528513c17, type: 3}
   gun: {fileID: 1130454184198151571}
---- !u!50 &1926350730
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5226516615148128223}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 1
-  m_Material: {fileID: 0}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
 --- !u!1 &5337759585772926296
 GameObject:
   m_ObjectHideFlags: 0
