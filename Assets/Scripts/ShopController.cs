@@ -10,7 +10,10 @@ public class ShopController : MonoBehaviour
     private bool canAffordTroops;
     private BasicTroops basicTroops;
     public GameObject Panel;
-    public GameObject buyButton;
+    public Button upgradeButton;
+    public Account player;
+    public BasicTroops troop;
+    [SerializeField] BasicTroops basicTroopPrefab;
 
     public void showhidePanel()
     {
@@ -23,17 +26,10 @@ public class ShopController : MonoBehaviour
             Panel.gameObject.SetActive(true);
     }
 
-    public void setClickable()
+    public void spawnTroops()
     {
-        if(canAffordTroops == false)
-        {
-            buyButton.SetActive(false);
-        }
-        else
-        {
-            buyButton.SetActive(true);
-        }
-
+        FindObjectOfType<DefenderSpawner>().SetSelectedDefender(basicTroopPrefab);
+        FindObjectOfType<DefenderSpawner>().SpawnDefender();
     }
 
     //Check player's gold to see if they can buy that troop
@@ -59,23 +55,15 @@ public class ShopController : MonoBehaviour
             return false;
     }
 
-    public void SetSelectedDefender(BasicTroops troopToSelect)
+    public void upgradeTroops(BasicTroops troop, Account account)
     {
-        basicTroops = troopToSelect;
-    }
-
-    // Spawns the defender
-    public void SpawnDefender(Account account, BasicTroops troop)
-    {
-        if (canAfford(account, troop))
+        if (canUpgrade(account))
         {
-            BasicTroops newBasicTroop = Instantiate(basicTroops, transform.position, transform.rotation) as BasicTroops;
+            troop.hp += 1;
+            troop.armor += 1;
+            troop.damage += 1;
+            account.setCurrentGems(account.getCurrentGems() - 1);
         }
-        else
-        {
-            //TODO: Play error sound when failed to select something.
-        }
-        
     }
     
     // Start is called before the first frame update
@@ -87,7 +75,6 @@ public class ShopController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //canUpgrade();
-        //canAfford();
+     
     }
 }
