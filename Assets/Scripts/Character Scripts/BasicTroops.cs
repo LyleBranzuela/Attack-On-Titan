@@ -11,6 +11,7 @@ public class BasicTroops : Character
 {
     private int cost;
     private float timeBtwAttack;
+    [SerializeField] private int upgrades;
     // Ignore fields if melee
     public bool ranged;
     public Projectile projectile;
@@ -79,6 +80,7 @@ public class BasicTroops : Character
     {
         // Can always attack immediately after spawning
         timeBtwAttack = 0;
+        setupCharacter();
     }
 
     // Update is called once per frame
@@ -93,6 +95,5 @@ public class BasicTroops : Character
             anim.SetBool("isAttacking", false);
             transform.Translate(Vector2.right * moveSpeed * Time.deltaTime);
         }
-
     }
 }

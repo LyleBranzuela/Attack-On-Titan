@@ -77,6 +77,8 @@ public class Titan : Character
     {
         // Can always attack immediately after spawning
         timeBtwAttack = 0;
+
+        setupCharacter();
     }
 
 
@@ -92,6 +94,5 @@ public class Titan : Character
             anim.SetBool("isAttacking", false);
             transform.Translate(Vector2.left * moveSpeed * Time.deltaTime);
         }
-
     }
 }

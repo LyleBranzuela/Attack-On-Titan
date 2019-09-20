@@ -13,6 +13,7 @@ public class Wave : MonoBehaviour
     private bool isCompleted;  //Boolean to check if wave was won or lost.
     private int titanDeadCount; //Count number of dead Titans.
     private string waveDesc; //Wave description text
+    private bool isFinishedSpawning;
     public AttackerSpawner attackerSpawner;
 
     public Hero hero; // Hero to Keep Track of (Hero dies = Game Over)
@@ -21,12 +22,19 @@ public class Wave : MonoBehaviour
     [SerializeField] private Titan bossTitan; // Boss Titan to be Spawned in
     private ArrayList titans;
 
+    // Sets the spawn status of the spawner, true if it finished spawning all titans, false if not
+    public void setSpawnStatus(bool isFinishedSpawning)
+    {
+        this.isFinishedSpawning = isFinishedSpawning;
+    }
 
     // Function to start the wave
     public void startWave()
     {
+        // Sets up what the wave needs before starting the spawners
         Account.currentAccount.setCurrentWave(2);
         waveLevel = Account.currentAccount.getCurrentWave();
+        isFinishedSpawning = false;
 
         updateWave();
         attackerSpawner.startWaveSpawners();
@@ -41,9 +49,11 @@ public class Wave : MonoBehaviour
     //Function that modifies isCompleted boolean to check if wave is completed.
     public bool isStageCompleted()
     {
+        // Ensures the counter resets whenever it's called
         titanDeadCount = 0;
 
         Titan titan;
+        // Loops through the loop and checks if they're dead or not
         for (int counter = 0; counter < titans.Count; counter++)
         {
             titan = (Titan)titans[counter];
@@ -51,20 +61,8 @@ public class Wave : MonoBehaviour
             {
                 titanDeadCount += 1;
             }
-            Debug.Log("Is he dead? " + titan.hp);
         }
 
-        //foreach (Titan titan in titans)
-        //{
-        //    
-        //    if (titan.isCharDead())
-        //    {
-        //        titanDeadCount += 1;
-        //    }
-        //}
-
-        Debug.Log("Count: " + titans.Count);
-        Debug.Log("titanDeadCount: " + titanDeadCount);
         if (titanDeadCount == titans.Count) // All titans are dead = Win
         {
             isCompleted = true;
@@ -139,11 +137,6 @@ public class Wave : MonoBehaviour
       this.titans = enemyArray;
     }
 
-    public Titan titanFactory(Titan prefabTitan)
-    {
-        return Instantiate(prefabTitan) as Titan;
-    }
-
     // Updates the wave depending on the wave level
     private void updateWave()
     {
@@ -155,31 +148,31 @@ public class Wave : MonoBehaviour
             // 1 Low Level Titan and 1 Gem Reward
             case 1:
                 waveReward = 1;
-                titansToSpawn.Add(titanFactory(lowLevelTitan));
+                titansToSpawn.Add(lowLevelTitan);
                 break;
 
             // 2 Low Level Titan and 1 Gem Reward
             case 2:
                 waveReward = 1;
-                titansToSpawn.Add(titanFactory(lowLevelTitan));
-                titansToSpawn.Add(titanFactory(lowLevelTitan));
+                titansToSpawn.Add(lowLevelTitan);
+                titansToSpawn.Add(lowLevelTitan);
                 break;
 
             // 1 Medium Level Titan and 1 Gem Reward
             case 3:
                 waveReward = 1;
-                titansToSpawn.Add(titanFactory(mediumLevelTitan));
+                titansToSpawn.Add(mediumLevelTitan);
                 break;
 
             // 1 Medium Level Titan and 2 Gems Reward
             case 4:
                 waveReward = 2;
-                titansToSpawn.Add(titanFactory(mediumLevelTitan));
+                titansToSpawn.Add(mediumLevelTitan);
                 break;
 
             // 1 Boss Level Titan
             case 5:
-                titansToSpawn.Add(titanFactory(bossTitan));
+                titansToSpawn.Add(bossTitan);
                 break;
 
             default:
@@ -193,6 +186,7 @@ public class Wave : MonoBehaviour
         attackerSpawner.setTitansToSpawn(titans);
     }
 
+    // Start is called before the first frame update
     void Start()
     {
         startWave();
@@ -201,9 +195,9 @@ public class Wave : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        isStageCompleted();
-        //TODO: Function to constantly check damage calculation.
-        //TODO: Function to check HP of both sides.
-        //TODO: Function to constantly check and determine winner.
+        if (isFinishedSpawning)
+        {
+            isStageCompleted();
+        }
     }
 }

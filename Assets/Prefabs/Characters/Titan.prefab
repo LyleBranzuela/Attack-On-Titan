@@ -511,7 +511,6 @@ MonoBehaviour:
   whatIsEnemies:
     serializedVersion: 2
     m_Bits: 6144
-  isDead: 0
   goldReward: 15
 --- !u!1 &3444124935054255088
 GameObject:

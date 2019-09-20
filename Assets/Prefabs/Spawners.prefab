@@ -60,16 +60,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 6701059268281015693}
     m_Modifications:
-    - target: {fileID: 1253644470007384084, guid: f7ffdc3990173d045a407483d3e1678a,
-        type: 3}
-      propertyPath: m_Name
-      value: Defender Spawner
-      objectReference: {fileID: 0}
-    - target: {fileID: 1253644470007384084, guid: f7ffdc3990173d045a407483d3e1678a,
-        type: 3}
-      propertyPath: m_Layer
-      value: 5
-      objectReference: {fileID: 0}
     - target: {fileID: 1253644470007384085, guid: f7ffdc3990173d045a407483d3e1678a,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -125,6 +115,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1253644470007384084, guid: f7ffdc3990173d045a407483d3e1678a,
+        type: 3}
+      propertyPath: m_Name
+      value: Defender Spawner
+      objectReference: {fileID: 0}
+    - target: {fileID: 1253644470007384084, guid: f7ffdc3990173d045a407483d3e1678a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f7ffdc3990173d045a407483d3e1678a, type: 3}
 --- !u!4 &5592106132818400520 stripped
@@ -140,11 +140,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 6701059268281015693}
     m_Modifications:
-    - target: {fileID: 2930837432270569333, guid: 21f78c4498d4dd5498a0deb47ab99f46,
-        type: 3}
-      propertyPath: m_Name
-      value: Attacker Spawner
-      objectReference: {fileID: 0}
     - target: {fileID: 2930837432270569332, guid: 21f78c4498d4dd5498a0deb47ab99f46,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -199,6 +194,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2930837432270569333, guid: 21f78c4498d4dd5498a0deb47ab99f46,
+        type: 3}
+      propertyPath: m_Name
+      value: Attacker Spawner
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 21f78c4498d4dd5498a0deb47ab99f46, type: 3}

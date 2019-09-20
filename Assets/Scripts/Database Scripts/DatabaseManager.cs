@@ -24,7 +24,7 @@ public static class DatabaseManager
     }
 
     // Function for loading a specific account based on the name
-    public static Account loadAcccount(string accountName)
+    public static void loadAcccount(string accountName)
     {
         string path = Application.persistentDataPath + "/" + accountName + ".save";
         if (File.Exists(path))
@@ -45,12 +45,12 @@ public static class DatabaseManager
             account.setUpgrades(data.currentUpgrades);
             account.setGold(data.gold);
 
-            return account;
+            // Loads the account to the current account
+            Account.currentAccount = account;
         }
-        else
+        else // File doesn't exist
         {
             Debug.LogError("Save File not found in " + path);
-            return null;
         }
     }
 

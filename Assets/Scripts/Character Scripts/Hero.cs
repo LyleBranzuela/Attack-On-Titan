@@ -59,6 +59,8 @@ public class Hero : Character
     {
         // Can always attack immediately after spawning
         timeBtwAttack = 0;
+
+        setupCharacter();
     }
 
     // Update is called once per frame

@@ -15418,14 +15418,13 @@ MonoBehaviour:
   armor: 2
   moveSpeed: 5
   attackSpeed: 1.5
-  range: 1.6
+  range: 2.1
   charDesc: 
   anim: {fileID: 7399328423124144746}
   attackPos: {fileID: 1160815946}
   whatIsEnemies:
     serializedVersion: 2
     m_Bits: 49152
-  isDead: 0
 --- !u!114 &7399328423124144747
 MonoBehaviour:
   m_ObjectHideFlags: 0

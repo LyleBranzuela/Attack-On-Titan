@@ -23,9 +23,23 @@ public abstract class Character : MonoBehaviour
     public Transform attackPos; // Attack Position of the Character
     public LayerMask whatIsEnemies; // Lists what enemies to be detected
     protected Collider2D[] enemiesToDamage; // The collided enemies array
-    private Color originalColor;
     private bool isDead;
+    protected SpriteRenderer[] spriteRenderers;
+    protected Color[] spriteOriginalColors;
 
+    protected void setupCharacter()
+    {
+        // Setting up the renderers and the original colors
+        spriteRenderers = gameObject.GetComponentsInChildren<SpriteRenderer>();
+        spriteOriginalColors = new Color[spriteRenderers.Length];
+
+        int spriteCounter = 0;
+        foreach (SpriteRenderer renderer in spriteRenderers)
+        {
+            spriteOriginalColors[spriteCounter] = renderer.color;
+            spriteCounter++;
+        }
+    }
 
     //Function for other classes to retrieve info.
     public void getCharInfo()
@@ -51,11 +65,14 @@ public abstract class Character : MonoBehaviour
     // Function for the character to receive damage in
     public void receiveDamage(int damage)
     {
-        ////Current health = health - damage;
-        //originalColor = gameObject.GetComponent<MeshRenderer>().material.color;
-        //gameObject.GetComponent<MeshRenderer>().material.color = Color.red;
-        //Invoke("ResetColor", 2f);
+        // Turns the sprite red when hit
+        foreach (SpriteRenderer renderer in spriteRenderers)
+        {
+            renderer.color = Color.red;
+        }
+        Invoke("resetColor", 0.3f);
 
+        //Current health = health - damage;
         hp -= damage;
         if (hp <= 0)
         {
@@ -67,16 +84,21 @@ public abstract class Character : MonoBehaviour
             if (titan)
             {
                 Account.currentAccount.setGold(titan.getGoldReward() + Account.currentAccount.getGold());
-                Debug.Log(Account.currentAccount.getGold());
             }
-            //Destroy(gameObject);
+            Destroy(gameObject);
         }
     }
 
     // Function to be referenced for invocation
-    void resetColor()
+    public void resetColor()
     {
-        gameObject.GetComponent<MeshRenderer>().material.color = originalColor;
+        int spriteCounter = 0;
+        // For each renderer, change them back to the original color set
+        foreach (SpriteRenderer renderer in spriteRenderers)
+        {
+            renderer.color = spriteOriginalColors[spriteCounter];
+            spriteCounter++;
+        }
     }
 
     // Checks if the character is dead or not
@@ -100,4 +122,5 @@ public abstract class Character : MonoBehaviour
         Gizmos.color = Color.red;
         Gizmos.DrawWireSphere(attackPos.position, range);
     }
+
 }
