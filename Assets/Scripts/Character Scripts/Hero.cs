@@ -5,7 +5,7 @@ using UnityEngine;
 /*
  * A class for the HERO unit that the player can control
  * Inherits from character abstract class.
- * 
+ *
  */
 public class Hero : Character
 {
@@ -40,7 +40,7 @@ public class Hero : Character
                 // PlayerController.setIsAttacking(false);
             }
         }
-        else 
+        else
         {
             PlayerController.setIsAttacking(false);
             timeBtwAttack -= Time.deltaTime;
