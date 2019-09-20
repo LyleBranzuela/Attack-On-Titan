@@ -66,27 +66,28 @@ public class ShopController : MonoBehaviour
     {
         if (canUpgrade())
         {
-            Debug.Log("It worked");
+            // Reduce the Gmes
             Account.currentAccount.setCurrentGems(Account.currentAccount.getCurrentGems() - 1);
 
             int upgradeIndex = 0;
             switch (whichTroop)
             { 
-                case "sword": // The Troop is The Sword Troop
+                case "sword": // The Troop is The Sword Troop word,Sniper,Siege]
                     upgradeIndex = 0;
                     break;
 
-                case "sniper": // The Troop is The Sniper/Gun Troop
+                case "sniper": // The Troop is The Sniper/Gun Troop [Sword,Sniper,Siege]
                     upgradeIndex = 1;
                     break;
 
                 case "siege":
-                    upgradeIndex = 2; // The Troop is The Siege/Cannon Troop
+                    upgradeIndex = 2; // The Troop is The Siege/Cannon Troop [Sword,Sniper,Siege]
                     break;
             }
+
+            // Adds them based on the index
             int[] upgradeValues = Account.currentAccount.getUpgrades();
             upgradeValues[upgradeIndex] += 1;
-            Debug.Log("Upgrade Values: " + upgradeValues[0] + upgradeValues[1] + upgradeValues[2]);
             Account.currentAccount.setUpgrades(upgradeValues);
             basicTroopPrefab.updateTroop();
         }
@@ -95,7 +96,6 @@ public class ShopController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Account.newAccount("Test");
     }
 
     // Update is called once per frame

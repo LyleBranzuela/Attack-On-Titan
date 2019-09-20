@@ -105,8 +105,7 @@ public class BasicTroops : Character
         }
 
         if (whichToUpgrade != -1)
-        {
-            Debug.Log(upgrades[0] + upgrades[1] + upgrades[2]);
+        {            
             // Upgrade the values
             hp += upgrades[whichToUpgrade];
             damage += upgrades[whichToUpgrade];

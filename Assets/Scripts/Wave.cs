@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 /*
     The class for the base design of a wave.
@@ -65,13 +66,20 @@ public class Wave : MonoBehaviour
         if (titanDeadCount == titans.Count) // All titans are dead = Win
         {
             isCompleted = true;
-            Debug.Log("They git wiped");
-            //TODO: play Victory screen
+            if (Account.currentAccount.getCurrentWave() <= 5)
+            {
+                Debug.Log(Account.currentAccount.getCurrentWave());
+                Account.currentAccount.setCurrentWave(Account.currentAccount.getCurrentWave() + 1);
+                SceneManager.LoadScene("GameScene");
+                startWave();
+            }
         }
         else if (hero.isCharDead()) // Hero Dies = Game Over
         {
             isCompleted = true;
-            Debug.Log("Hero died bruh");
+            //TODO: play Defeat Screen
+            SceneManager.LoadScene("GameScene");
+            startWave();
         }
         else // Game is still not finished
         {
@@ -187,6 +195,10 @@ public class Wave : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        if (Account.currentAccount == null)
+        {
+            Account.newAccount("Default");
+        }
         startWave();
     }
 
