@@ -4,7 +4,7 @@ using UnityEngine;
 
 /*
  * An abstract class that acts as template for all characters
- * 
+ *
  */
 public abstract class Character : MonoBehaviour
 {
@@ -45,6 +45,9 @@ public abstract class Character : MonoBehaviour
     public void getCharInfo()
     {
         //TODO: Code to serialize charInfo for other classes to use.
+        print("Current HP: " + this.hp);
+        print("Damage: " + this.damage);
+        print("Armor: " + this.armor);
     }
 
     // Setting info for a character.

@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    public Hero specifiedHero;  
+    public Hero specifiedHero;
     public float jumpSpeed = 5f;
     private float movement = 0f;
     private Rigidbody2D rigidBody;
@@ -53,7 +53,7 @@ public class PlayerController : MonoBehaviour
         extraJumpValue = extraJumps;
         isAttacking = false;
     }
-    
+
     //Update is called once per frame
     void Update()
     {
@@ -84,7 +84,7 @@ public class PlayerController : MonoBehaviour
         {
             animator.SetBool("isJumping", true);
         }
-        
+
         if (Input.GetButtonDown("Jump") && extraJumps == extraJumpValue && isGrounded == true) //normal jump
         {
             animator.SetTrigger("takeOf");
@@ -105,7 +105,9 @@ public class PlayerController : MonoBehaviour
         {
             this.Flip();
         }
-       
+
+        
+
     }
 
 }
