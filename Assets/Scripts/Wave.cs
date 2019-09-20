@@ -40,12 +40,6 @@ public class Wave : MonoBehaviour
         attackerSpawner.startWaveSpawners();
     }
 
-    //Function that creates a notification informing players of incoming enemies.
-    public void waveInfo()
-    {
-      //TODO: Code to create a wave notification pop-up.
-    }
-
     //Function that modifies isCompleted boolean to check if wave is completed.
     public void isStageCompleted()
     {

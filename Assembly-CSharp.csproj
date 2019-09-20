@@ -85,6 +85,7 @@
     <Compile Include="Assets\Scripts\Main Menu Scripts\FadeOutEffects.cs" />
     <Compile Include="Assets\Scripts\Main Menu Scripts\MainMenu.cs" />
     <Compile Include="Assets\Scripts\Main Menu Scripts\sound.cs" />
+    <Compile Include="Assets\Scripts\PauseScript.cs" />
     <Compile Include="Assets\Scripts\RuningDustEffectControl.cs" />
     <Compile Include="Assets\Scripts\Settings.cs" />
     <Compile Include="Assets\Scripts\Shop Scripts\ShopController.cs" />
