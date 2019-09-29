@@ -11,6 +11,7 @@ public class Titan : Character
     [SerializeField] private int goldReward;
     private float timeBtwAttack;
 
+
     public int getGoldReward()
     {
         return this.goldReward;

@@ -10,6 +10,7 @@ public class PlayerController : MonoBehaviour
     private Rigidbody2D rigidBody;
     public Animator animator;
     private bool facingRight = true;
+    public AudioSource jump;
 
     private static bool isGrounded;
     public Transform groundCheck;
@@ -43,6 +44,10 @@ public class PlayerController : MonoBehaviour
     public static void setIsAttacking(bool attacking)
     {
         isAttacking = attacking;
+    }
+    public void Play_jump()
+    {
+        jump.Play();
     }
 
     //Use this for initialization
@@ -79,6 +84,7 @@ public class PlayerController : MonoBehaviour
         {
             animator.SetBool("isJumping", false);
             extraJumps = extraJumpValue;
+            Play_jump();
         }
         else
         {

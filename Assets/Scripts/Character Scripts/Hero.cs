@@ -9,6 +9,7 @@ using UnityEngine;
  */
 public class Hero : Character
 {
+    public AudioSource slash;
     private string desc;
     private float timeBtwAttack;
 
@@ -23,7 +24,7 @@ public class Hero : Character
                 // Set to Is Attacking to be true so that the hero stops moving
                 PlayerController.setIsAttacking(true);
                 anim.SetTrigger("attack");
-
+                Play_slash();
                 // detects how many enemies are to be damaged
                 enemiesToDamage = Physics2D.OverlapCircleAll(attackPos.position, range, whatIsEnemies);
                 for (int counter = 0; counter < enemiesToDamage.Length; counter++)
@@ -52,7 +53,10 @@ public class Hero : Character
         return this.desc;
     }
 
-
+    public void Play_slash()
+    {
+        slash.Play();
+    }
 
     // Start is called before the first frame update
     void Start()
