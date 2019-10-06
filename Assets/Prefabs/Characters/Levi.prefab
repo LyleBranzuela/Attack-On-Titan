@@ -15414,10 +15414,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hp: 8
   health: {fileID: 0}
-  damage: 4
+  damage: 1
   armor: 2
   moveSpeed: 5
-  attackSpeed: 1.5
+  attackSpeed: 0.2
   range: 2.1
   charDesc: 
   anim: {fileID: 7399328423124144746}
@@ -15425,6 +15425,7 @@ MonoBehaviour:
   whatIsEnemies:
     serializedVersion: 2
     m_Bits: 49152
+  slash: {fileID: 0}
 --- !u!114 &7399328423124144747
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15440,6 +15441,7 @@ MonoBehaviour:
   specifiedHero: {fileID: 8329574115765567041}
   jumpSpeed: 5
   animator: {fileID: 7399328423124144746}
+  jump: {fileID: 0}
   groundCheck: {fileID: 7399328423482654350}
   CheckRadius: 0.5
   whatIsGround:
