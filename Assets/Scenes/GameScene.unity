@@ -538,7 +538,7 @@ PrefabInstance:
     - target: {fileID: 55439135480083704, guid: b72f1a2d4b832bb48933b26a94d4d3e6,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -19.879284
+      value: -19.933615
       objectReference: {fileID: 0}
     - target: {fileID: 55439135480083704, guid: b72f1a2d4b832bb48933b26a94d4d3e6,
         type: 3}
@@ -553,7 +553,7 @@ PrefabInstance:
     - target: {fileID: 55439137197524931, guid: b72f1a2d4b832bb48933b26a94d4d3e6,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -19.879284
+      value: -19.933615
       objectReference: {fileID: 0}
     - target: {fileID: 55439137197524931, guid: b72f1a2d4b832bb48933b26a94d4d3e6,
         type: 3}
@@ -1586,6 +1586,26 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wave Manager
       objectReference: {fileID: 0}
+    - target: {fileID: 6701059268281015692, guid: 9892162ae5981604ea6148db400f9328,
+        type: 3}
+      propertyPath: victoryPanel
+      value: 
+      objectReference: {fileID: 204129152}
+    - target: {fileID: 6701059268281015692, guid: 9892162ae5981604ea6148db400f9328,
+        type: 3}
+      propertyPath: defeatPanel
+      value: 
+      objectReference: {fileID: 513204628}
+    - target: {fileID: 6701059268281015692, guid: 9892162ae5981604ea6148db400f9328,
+        type: 3}
+      propertyPath: hero
+      value: 
+      objectReference: {fileID: 1685024788}
+    - target: {fileID: 6701059268281015692, guid: 9892162ae5981604ea6148db400f9328,
+        type: 3}
+      propertyPath: shopPanel
+      value: 
+      objectReference: {fileID: 1585208160}
     - target: {fileID: 6701059268281015693, guid: 9892162ae5981604ea6148db400f9328,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1641,26 +1661,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6701059268281015692, guid: 9892162ae5981604ea6148db400f9328,
-        type: 3}
-      propertyPath: victoryPanel
-      value: 
-      objectReference: {fileID: 204129152}
-    - target: {fileID: 6701059268281015692, guid: 9892162ae5981604ea6148db400f9328,
-        type: 3}
-      propertyPath: defeatPanel
-      value: 
-      objectReference: {fileID: 513204628}
-    - target: {fileID: 6701059268281015692, guid: 9892162ae5981604ea6148db400f9328,
-        type: 3}
-      propertyPath: hero
-      value: 
-      objectReference: {fileID: 1685024788}
-    - target: {fileID: 6701059268281015692, guid: 9892162ae5981604ea6148db400f9328,
-        type: 3}
-      propertyPath: shopPanel
-      value: 
-      objectReference: {fileID: 1585208160}
     - target: {fileID: 5592106132818400520, guid: 9892162ae5981604ea6148db400f9328,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1760,5 +1760,32 @@ PrefabInstance:
       propertyPath: jump
       value: 
       objectReference: {fileID: 623437754}
+    - target: {fileID: 5147951515041165216, guid: 7ba52306741db2f49a80d45d09acd8db,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.7508963
+      objectReference: {fileID: 0}
+    - target: {fileID: 5147951515041165216, guid: 7ba52306741db2f49a80d45d09acd8db,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.6604201
+      objectReference: {fileID: 0}
+    - target: {fileID: 5147951515041165216, guid: 7ba52306741db2f49a80d45d09acd8db,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 97.336006
+      objectReference: {fileID: 0}
+    - target: {fileID: 1758695858, guid: 7ba52306741db2f49a80d45d09acd8db, type: 3}
+      propertyPath: TrailModule.widthOverTrail.minMaxState
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1758695858, guid: 7ba52306741db2f49a80d45d09acd8db, type: 3}
+      propertyPath: InitialModule.startSpeed.scalar
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1758695858, guid: 7ba52306741db2f49a80d45d09acd8db, type: 3}
+      propertyPath: looping
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7ba52306741db2f49a80d45d09acd8db, type: 3}

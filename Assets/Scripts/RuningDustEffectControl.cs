@@ -18,7 +18,7 @@ public class RuningDustEffectControl : MonoBehaviour
       ps = GetComponent<ParticleSystem>();
 
       //Check if the boot has moved more than have frame. If yes, turn on the effect.
-      if(Input.GetKeyDown(KeyCode.RightArrow)||Input.GetKeyDown(KeyCode.LeftArrow))
+      if(Input.GetKeyDown(KeyCode.RightArrow)||Input.GetKeyDown(KeyCode.LeftArrow)||Input.GetKeyDown(KeyCode.A)||Input.GetKeyDown(KeyCode.D))
       {
           ps.Play();
       }
