@@ -538,7 +538,7 @@ PrefabInstance:
     - target: {fileID: 55439135480083704, guid: b72f1a2d4b832bb48933b26a94d4d3e6,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -19.933615
+      value: -19.87446
       objectReference: {fileID: 0}
     - target: {fileID: 55439135480083704, guid: b72f1a2d4b832bb48933b26a94d4d3e6,
         type: 3}
@@ -553,7 +553,7 @@ PrefabInstance:
     - target: {fileID: 55439137197524931, guid: b72f1a2d4b832bb48933b26a94d4d3e6,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -19.933615
+      value: -19.87446
       objectReference: {fileID: 0}
     - target: {fileID: 55439137197524931, guid: b72f1a2d4b832bb48933b26a94d4d3e6,
         type: 3}
@@ -1035,6 +1035,28 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 7782200978237164800, guid: 7ba911bdb8bb6ca41a1c7e26807bf124,
+        type: 3}
+      propertyPath: m_Text
+      value: 'Mute
+
+'
+      objectReference: {fileID: 0}
+    - target: {fileID: 2656706952741457332, guid: 7ba911bdb8bb6ca41a1c7e26807bf124,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 80683120}
+    - target: {fileID: 2656706952741457332, guid: 7ba911bdb8bb6ca41a1c7e26807bf124,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Mute
+      objectReference: {fileID: 0}
+    - target: {fileID: 5394355494643773479, guid: 7ba911bdb8bb6ca41a1c7e26807bf124,
+        type: 3}
+      propertyPath: m_Name
+      value: 'Mute Button '
+      objectReference: {fileID: 0}
     - target: {fileID: 1540124969128544128, guid: 7ba911bdb8bb6ca41a1c7e26807bf124,
         type: 3}
       propertyPath: m_Name

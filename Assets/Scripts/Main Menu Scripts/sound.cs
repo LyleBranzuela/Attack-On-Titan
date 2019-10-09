@@ -71,6 +71,12 @@ public class sound : MonoBehaviour
         backGround.Play();
     }
 
+    public void Mute()
+    {
+        AudioListener.pause = !AudioListener.pause;
+    }
+
+    //set Mater volume size
     public void SetMusicVolume(float volume)
     {
         musicsource.volume = volume;
