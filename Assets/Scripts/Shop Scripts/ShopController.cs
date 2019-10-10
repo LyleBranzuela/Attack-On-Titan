@@ -5,8 +5,9 @@ using UnityEngine.UI;
 
 public class ShopController : MonoBehaviour
 {
-    private int counter = 0;
-    private bool canAffordTroops;
+    private bool isShopOpen;
+    private bool canAffordTroops; 
+
     public GameObject Panel;
     public Account player;
     [SerializeField] BasicTroops basicTroopPrefab;
@@ -19,60 +20,46 @@ public class ShopController : MonoBehaviour
     // Shows and hides the panel
     public void showhidePanel()
     {
-        counter++;
-        if (counter % 2 == 1)
-        {
-            Panel.gameObject.SetActive(false);
-        }
-        else
-            Panel.gameObject.SetActive(true);
+        isShopOpen = Panel.gameObject.activeSelf;  //Check panel current status
+        Panel.gameObject.SetActive(!isShopOpen);   //Open if it's closed and vice versa.
     }
 
-    // Spawns the troop specified
+    // Spawns the specified troop
     public void spawnTroops()
     {
         Account.currentAccount.setGold(Account.currentAccount.getGold() - basicTroopPrefab.getCost());
-
+        
+        // Spawns defender at the location of spawner game object
         FindObjectOfType<DefenderSpawner>().SetSelectedDefender(basicTroopPrefab);
         FindObjectOfType<DefenderSpawner>().SpawnDefender();
     }
 
-    //Check player's gold to see if they can buy that troop
+    // Check if player has enough money to afford a troop 
     public bool canAfford()
     {
-        if (Account.currentAccount.getGold() - basicTroopPrefab.getCost() >= 0)
-        {
-            canAffordTroops = true;
-        }
-        else
-            canAffordTroops = false;
+        canAffordTroops = (Account.currentAccount.getGold() - basicTroopPrefab.getCost() >= 0);
 
         return this.canAffordTroops;
     }
 
+    // Check if player has gems for upgrades
     public bool canUpgrade()
     {
-        if (Account.currentAccount.getCurrentGems() > 0)
-        {
-            return true;
-        }
-        else
-        {
-            return false;
-        }
+        return (Account.currentAccount.getCurrentGems() > 0);
     }
 
+    // Function to upgrade troops if player has gems.
     public void upgradeTroop()
     {
         if (canUpgrade())
         {
-            // Reduce the Gmes
+           // Subtract gems from account for each upgrade.
             Account.currentAccount.setCurrentGems(Account.currentAccount.getCurrentGems() - 1);
 
             int upgradeIndex = 0;
             switch (whichTroop)
             { 
-                case "sword": // The Troop is The Sword Troop word,Sniper,Siege]
+                case "sword": // The Troop is The Sword Troop [Sword,Sniper,Siege]
                     upgradeIndex = 0;
                     break;
 
@@ -92,11 +79,6 @@ public class ShopController : MonoBehaviour
             basicTroopPrefab.updateTroop();
         }
     }
-    
-    // Start is called before the first frame update
-    void Start()
-    {
-    }
 
     // Update is called once per frame
     void Update()
@@ -104,11 +86,13 @@ public class ShopController : MonoBehaviour
         // Hide the buttons if it's not the shop button
         if (!isShopButton)
         {
+            // If it's not the shop button, then it's either the buy or upgrade button
             buyButton.interactable = canAfford() ? true : false;
             upgradeButton.interactable = canUpgrade() ? true : false;
         }
         else
         {
+            // If it's a shop button, get the gold and gem texts
             goldText.text = Account.currentAccount.getGold().ToString();
             gemText.text = Account.currentAccount.getCurrentGems().ToString();
         }

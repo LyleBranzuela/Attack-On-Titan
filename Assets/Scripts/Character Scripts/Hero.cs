@@ -36,10 +36,6 @@ public class Hero : Character
                 }
                 timeBtwAttack = attackSpeed;
             }
-            else
-            {
-                // PlayerController.setIsAttacking(false);
-            }
         }
         else
         {

@@ -11,16 +11,13 @@ public class PlayerController : MonoBehaviour
     public Animator animator;
     private bool facingRight = true;
     public AudioSource jump;
-
     private static bool isGrounded;
     public Transform groundCheck;
     public float CheckRadius;
     public LayerMask whatIsGround;
-
     public int extraJumps;
     private int extraJumpValue; //for fly if the hero shoot the rope out
     private static bool isAttacking;
-
 
     public void Flip()
     {
@@ -78,9 +75,7 @@ public class PlayerController : MonoBehaviour
         {
             rigidBody.velocity = new Vector2(0, rigidBody.velocity.y);
         }
-
-        //Jump Function
-        if (isGrounded == true)
+        if (isGrounded == true)        //Jump Function
         {
             animator.SetBool("isJumping", false);
             extraJumps = extraJumpValue;
@@ -90,7 +85,6 @@ public class PlayerController : MonoBehaviour
         {
             animator.SetBool("isJumping", true);
         }
-
         if (Input.GetButtonDown("Jump") && extraJumps == extraJumpValue && isGrounded == true) //normal jump
         {
             animator.SetTrigger("takeOf");
@@ -111,9 +105,5 @@ public class PlayerController : MonoBehaviour
         {
             this.Flip();
         }
-
-        
-
     }
-
 }
