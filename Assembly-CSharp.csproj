@@ -78,6 +78,7 @@
     <Compile Include="Assets\Scripts\Database Scripts\AccountData.cs" />
     <Compile Include="Assets\Scripts\Database Scripts\DatabaseManager.cs" />
     <Compile Include="Assets\Scripts\Effect Control Scripts\DustEffectControl.cs" />
+    <Compile Include="Assets\Scripts\Effect Control Scripts\TrailEffectControlForTroops.cs" />
     <Compile Include="Assets\Scripts\Effect Control Scripts\TrailEffectControll.cs" />
     <Compile Include="Assets\Scripts\HealthBarController.cs" />
     <Compile Include="Assets\Scripts\HealthSystem.cs" />

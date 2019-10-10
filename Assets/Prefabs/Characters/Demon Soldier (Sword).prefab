@@ -1382,7 +1382,7 @@ GameObject:
   - component: {fileID: 9046184538969676623}
   - component: {fileID: 4809612257968497100}
   m_Layer: 12
-  m_Name: Trail effect
+  m_Name: Trail effect(troops)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1395,13 +1395,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5280725355949662543}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.74, y: 0.085, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0.10998027, w: 0.9939338}
+  m_LocalPosition: {x: 0.7399998, y: 0.08499983, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 334818857018874758}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -12.628}
 --- !u!198 &9046184538969676623
 ParticleSystem:
   m_ObjectHideFlags: 0
@@ -1410,7 +1410,7 @@ ParticleSystem:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5280725355949662543}
   serializedVersion: 6
-  lengthInSec: 0.3
+  lengthInSec: 0.5
   simulationSpeed: 1
   stopAction: 0
   cullingMode: 0
@@ -6194,6 +6194,7 @@ GameObject:
   - component: {fileID: 3904525618568348738}
   - component: {fileID: 5658002576591279204}
   - component: {fileID: 421321435871696133}
+  - component: {fileID: 7366504760560311498}
   m_Layer: 11
   m_Name: Demon Soldier (Sword)
   m_TagString: Untagged
@@ -6328,6 +6329,18 @@ MonoBehaviour:
   ranged: 0
   projectile: {fileID: 0}
   gun: {fileID: 0}
+--- !u!114 &7366504760560311498
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5364029645581127724}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a0b66fb108014c94a87330a4a65bc25e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &5602261413393858438
 GameObject:
   m_ObjectHideFlags: 0
@@ -6805,9 +6818,8 @@ GameObject:
   - component: {fileID: 3197132345260686693}
   - component: {fileID: 6361037200185736492}
   - component: {fileID: 9217486163500227545}
-  - component: {fileID: 4478376493266718084}
   m_Layer: 12
-  m_Name: Trail effect
+  m_Name: Trail effect(troops)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6820,13 +6832,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6762651879877962849}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.697, y: 0.018, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0.20827514, w: 0.9780703}
+  m_LocalPosition: {x: 0.747, y: 0.029, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 3804662300121220032}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -24.043001}
 --- !u!198 &6361037200185736492
 ParticleSystem:
   m_ObjectHideFlags: 0
@@ -6835,7 +6847,7 @@ ParticleSystem:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6762651879877962849}
   serializedVersion: 6
-  lengthInSec: 0.3
+  lengthInSec: 0.5
   simulationSpeed: 1
   stopAction: 0
   cullingMode: 0
@@ -10736,7 +10748,7 @@ ParticleSystem:
     lifetime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 0.05
+      scalar: 0.1
       minScalar: 1
       maxCurve:
         serializedVersion: 2
@@ -11606,18 +11618,6 @@ ParticleSystemRenderer:
   m_Mesh2: {fileID: 0}
   m_Mesh3: {fileID: 0}
   m_MaskInteraction: 0
---- !u!114 &4478376493266718084
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6762651879877962849}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5d0244b450acbf647a012fabb2f241be, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &7042763943907487872
 GameObject:
   m_ObjectHideFlags: 0
