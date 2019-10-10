@@ -10020,10 +10020,10 @@ GameObject:
   - component: {fileID: 5033710361571091338}
   - component: {fileID: 2349244219584323268}
   - component: {fileID: 2420009227082827674}
-  - component: {fileID: 2788207439693832014}
   - component: {fileID: 1417245871848189465}
+  - component: {fileID: 4080330181988793772}
   m_Layer: 12
-  m_Name: FlyingDustEffect
+  m_Name: FlyingDustEffect(1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -14822,18 +14822,6 @@ ParticleSystemRenderer:
   m_Mesh2: {fileID: 0}
   m_Mesh3: {fileID: 0}
   m_MaskInteraction: 0
---- !u!114 &2788207439693832014
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 804764333555540277}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 62596a6c918721d4785baad91d8169a1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1417245871848189465
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14841,9 +14829,21 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 804764333555540277}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5d0244b450acbf647a012fabb2f241be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &4080330181988793772
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 804764333555540277}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cfd3bee09c1296a4db89b017bee408ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &879331372715866939
@@ -15747,7 +15747,7 @@ GameObject:
   - component: {fileID: 1188567032204114221}
   - component: {fileID: 4542618798783685641}
   - component: {fileID: 3351773140463987269}
-  - component: {fileID: 8654394837680516010}
+  - component: {fileID: 8724108500807943633}
   m_Layer: 12
   m_Name: JumpintDustEffect(1)
   m_TagString: Untagged
@@ -15763,8 +15763,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5285679149064853971}
   m_LocalRotation: {x: 0.95098996, y: 0.22606112, z: 0.20673007, w: -0.0421566}
-  m_LocalPosition: {x: -0.548, y: 1.672, z: 0.415}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -0.38, y: 1.705, z: 0.49}
+  m_LocalScale: {x: 1.3431, y: 0.56951, z: 1}
   m_Children: []
   m_Father: {fileID: 6120871403773708124}
   m_RootOrder: 21
@@ -20548,7 +20548,7 @@ ParticleSystemRenderer:
   m_Mesh2: {fileID: 0}
   m_Mesh3: {fileID: 0}
   m_MaskInteraction: 0
---- !u!114 &8654394837680516010
+--- !u!114 &8724108500807943633
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -20557,7 +20557,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 5285679149064853971}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b88febbb8aa5caa46836eef62a526a17, type: 3}
+  m_Script: {fileID: 11500000, guid: cfd3bee09c1296a4db89b017bee408ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &5444232213047253599
@@ -21124,8 +21124,8 @@ GameObject:
   - component: {fileID: 2928067519448623146}
   - component: {fileID: 8375846449582089575}
   - component: {fileID: 4377240653530149867}
-  - component: {fileID: 409251652733744966}
   - component: {fileID: 1274580801874187794}
+  - component: {fileID: 5782193364436107039}
   m_Layer: 12
   m_Name: FlyingDustEffect
   m_TagString: Untagged
@@ -25926,18 +25926,6 @@ ParticleSystemRenderer:
   m_Mesh2: {fileID: 0}
   m_Mesh3: {fileID: 0}
   m_MaskInteraction: 0
---- !u!114 &409251652733744966
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6787956546819253902}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 62596a6c918721d4785baad91d8169a1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1274580801874187794
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25945,9 +25933,21 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6787956546819253902}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5d0244b450acbf647a012fabb2f241be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &5782193364436107039
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6787956546819253902}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cfd3bee09c1296a4db89b017bee408ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &6902692504677101713
@@ -25961,7 +25961,7 @@ GameObject:
   - component: {fileID: 5682419114800027698}
   - component: {fileID: 547006465565978656}
   - component: {fileID: 6558525467506301296}
-  - component: {fileID: 4062552710560646902}
+  - component: {fileID: 6316226221461372883}
   m_Layer: 12
   m_Name: StopRuningDustEffect
   m_TagString: Untagged
@@ -25976,13 +25976,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6902692504677101713}
-  m_LocalRotation: {x: 0.8570772, y: -0.48504126, z: 0.17364179, w: -0.001495361}
-  m_LocalPosition: {x: -0.72, y: 1.646, z: -0.13}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: 0.9818594, y: -0.07614815, z: 0.15664703, w: -0.074936084}
+  m_LocalPosition: {x: -0.7199998, y: 1.6459999, z: -0.13}
+  m_LocalScale: {x: 0.67586, y: 0.87742, z: 6.3074}
   m_Children: []
   m_Father: {fileID: 6120871403773708124}
   m_RootOrder: 19
-  m_LocalEulerAnglesHint: {x: 180, y: -20, z: 30}
+  m_LocalEulerAnglesHint: {x: 187.082, y: -18.752014, z: 10.039993}
 --- !u!198 &547006465565978656
 ParticleSystem:
   m_ObjectHideFlags: 0
@@ -26006,7 +26006,7 @@ ParticleSystem:
   startDelay:
     serializedVersion: 2
     minMaxState: 0
-    scalar: 0.3
+    scalar: 0.2
     minScalar: 0
     maxCurve:
       serializedVersion: 2
@@ -26119,7 +26119,7 @@ ParticleSystem:
     startSpeed:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 5
+      scalar: 1
       minScalar: 5
       maxCurve:
         serializedVersion: 2
@@ -30762,7 +30762,7 @@ ParticleSystemRenderer:
   m_Mesh2: {fileID: 0}
   m_Mesh3: {fileID: 0}
   m_MaskInteraction: 0
---- !u!114 &4062552710560646902
+--- !u!114 &6316226221461372883
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -30771,7 +30771,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 6902692504677101713}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fc69b8220d3ad6e46aca9b9977f0ac78, type: 3}
+  m_Script: {fileID: 11500000, guid: cfd3bee09c1296a4db89b017bee408ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &6942858853389819551
@@ -31188,7 +31188,7 @@ GameObject:
   - component: {fileID: 3469958944569838192}
   - component: {fileID: 4866506455937443416}
   - component: {fileID: 8487052748954259585}
-  - component: {fileID: 6757719264037150140}
+  - component: {fileID: 5577626018619950213}
   m_Layer: 12
   m_Name: StartRuningDustEffect
   m_TagString: Untagged
@@ -35989,7 +35989,7 @@ ParticleSystemRenderer:
   m_Mesh2: {fileID: 0}
   m_Mesh3: {fileID: 0}
   m_MaskInteraction: 0
---- !u!114 &6757719264037150140
+--- !u!114 &5577626018619950213
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -35998,7 +35998,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 8013337161551280438}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 62596a6c918721d4785baad91d8169a1, type: 3}
+  m_Script: {fileID: 11500000, guid: cfd3bee09c1296a4db89b017bee408ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &8258649476273753061
@@ -36315,7 +36315,7 @@ GameObject:
   - component: {fileID: 7518643739840725709}
   - component: {fileID: 2978504735566932625}
   - component: {fileID: 7025439648881392491}
-  - component: {fileID: 9002283424243237929}
+  - component: {fileID: 2701562614636577935}
   m_Layer: 12
   m_Name: JumpintDustEffect
   m_TagString: Untagged
@@ -36331,8 +36331,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9187899555587873028}
   m_LocalRotation: {x: 0.09087309, y: 0.2033446, z: -0.08239088, w: -0.9713932}
-  m_LocalPosition: {x: -2.573, y: 1.69, z: -0.289}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -2.992, y: 1.69, z: -0.48}
+  m_LocalScale: {x: 1.430862, y: 0.60688967, z: 1.8605466}
   m_Children: []
   m_Father: {fileID: 6120871403773708124}
   m_RootOrder: 20
@@ -41116,7 +41116,7 @@ ParticleSystemRenderer:
   m_Mesh2: {fileID: 0}
   m_Mesh3: {fileID: 0}
   m_MaskInteraction: 0
---- !u!114 &9002283424243237929
+--- !u!114 &2701562614636577935
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -41125,6 +41125,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 9187899555587873028}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b88febbb8aa5caa46836eef62a526a17, type: 3}
+  m_Script: {fileID: 11500000, guid: cfd3bee09c1296a4db89b017bee408ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
