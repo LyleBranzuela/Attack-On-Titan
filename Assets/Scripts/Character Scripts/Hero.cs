@@ -19,7 +19,8 @@ public class Hero : Character
         if (timeBtwAttack <= 0)
         {
             // They can attack when they're on the ground with 'Q'
-            if (Input.GetKey(KeyCode.Q) && PlayerController.getIsGrounded() == true)
+            //if (Input.GetKey(KeyCode.Q) && PlayerController.getIsGrounded() == true)
+            if (Input.GetKey(KeyCode.Q) && PlayerController.getIsBlocking() == false)
             {
                 // Set to Is Attacking to be true so that the hero stops moving
                 PlayerController.setIsAttacking(true);
