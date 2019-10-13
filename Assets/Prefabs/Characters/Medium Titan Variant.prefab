@@ -103,6 +103,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3169437385429968592, guid: 4b3abaaffb82e56419fcf0ffab41b9f1,
+        type: 3}
+      propertyPath: m_Name
+      value: Medium Titan Variant
+      objectReference: {fileID: 0}
     - target: {fileID: 948532510001034867, guid: 4b3abaaffb82e56419fcf0ffab41b9f1,
         type: 3}
       propertyPath: health
@@ -132,11 +137,6 @@ PrefabInstance:
         type: 3}
       propertyPath: goldReward
       value: 200
-      objectReference: {fileID: 0}
-    - target: {fileID: 3169437385429968592, guid: 4b3abaaffb82e56419fcf0ffab41b9f1,
-        type: 3}
-      propertyPath: m_Name
-      value: Medium Titan Variant
       objectReference: {fileID: 0}
     - target: {fileID: 810141087, guid: 4b3abaaffb82e56419fcf0ffab41b9f1, type: 3}
       propertyPath: m_LocalPosition.x
@@ -228,6 +228,10 @@ PrefabInstance:
     - target: {fileID: 594324915, guid: 4b3abaaffb82e56419fcf0ffab41b9f1, type: 3}
       propertyPath: m_Mass
       value: 55
+      objectReference: {fileID: 0}
+    - target: {fileID: 594324915, guid: 4b3abaaffb82e56419fcf0ffab41b9f1, type: 3}
+      propertyPath: m_Constraints
+      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4b3abaaffb82e56419fcf0ffab41b9f1, type: 3}

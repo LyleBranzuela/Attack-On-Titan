@@ -1164,7 +1164,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!114 &1130454183042716584
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1191,7 +1191,6 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 49152
   cost: 200
-  upgrades: 0
   ranged: 1
   projectile: {fileID: 122910054, guid: 7eb01e06963c9bd419a5caf528513c17, type: 3}
   gun: {fileID: 1130454184198151571}

@@ -75,20 +75,33 @@ public abstract class Character : MonoBehaviour
         }
         Invoke("resetColor", 0.3f);
 
-        //Current health = health - damage;
-        hp -= damage;
-        if (hp <= 0)
+        damage = damage - armor;
+        if (damage > 0)
         {
-            // Ensures the HP stays to 0
-            hp = 0;
-
-            // Checking if it's a titan or not, add the gold to the account if it was
-            Titan titan = gameObject.GetComponent<Titan>();
-            if (titan)
+            //Current health = health - damage;
+            hp -= damage;
+            if (hp <= 0)
             {
-                Account.currentAccount.setGold(titan.getGoldReward() + Account.currentAccount.getGold());
+                // Ensures the HP stays to 0
+                hp = 0;
+
+                // Checking if it's a titan or not, add the gold to the account if it was
+                Titan titan = gameObject.GetComponent<Titan>();
+                if (titan)
+                {
+                    Account.currentAccount.setGold(titan.getGoldReward() + Account.currentAccount.getGold());
+                }
+                Destroy(gameObject);
             }
-            Destroy(gameObject);
+        }
+        else
+        {
+            // Turns the sprite red when hit
+            foreach (SpriteRenderer renderer in spriteRenderers)
+            {
+                renderer.color = Color.grey;
+                Invoke("resetColor", 0.3f);
+            }
         }
     }
 

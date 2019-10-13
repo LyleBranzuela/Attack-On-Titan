@@ -15354,7 +15354,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 1
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!61 &7399328423124144741
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -15414,7 +15414,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hp: 8
   health: {fileID: 0}
-  damage: 1
+  damage: 2
   armor: 2
   moveSpeed: 5
   attackSpeed: 0.2

@@ -129,13 +129,16 @@ public class BasicTroops : Character
     void Update()
     {
         enemiesToDamage = Physics2D.OverlapCircleAll(attackPos.position, range, whatIsEnemies);
-        attack();
-
+        
         // Checks if there's any enemies in the vicinity
         if (enemiesToDamage.Length <= 0)
         {
             anim.SetBool("isAttacking", false);
             transform.Translate(Vector2.right * moveSpeed * Time.deltaTime);
+        }
+        else
+        {
+            attack();
         }
     }
 }
