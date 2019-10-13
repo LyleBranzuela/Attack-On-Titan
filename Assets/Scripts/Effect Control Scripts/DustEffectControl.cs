@@ -19,17 +19,6 @@ public class DustEffectControl : MonoBehaviour
     void Update()
     {
 
-      //Check if the Space has presseed. If yes, turn on the effect.
-      if(Input.GetKeyDown(KeyCode.Space))
-      {
-        if(transform.position.y<=1.5)
-        {
-          ps1 = GameObject.Find("JumpintDustEffect").GetComponent<ParticleSystem>();
-          ps2 = GameObject.Find("JumpintDustEffect(1)").GetComponent<ParticleSystem>();
-          ps1.Play();
-          ps2.Play();
-        }
-      }
 
       //Check if the charater moves has presseed. If yes, turn on the effect.
       if(Input.GetKeyDown(KeyCode.RightArrow)||Input.GetKeyDown(KeyCode.LeftArrow)||Input.GetKeyDown(KeyCode.A)||Input.GetKeyDown(KeyCode.D))
