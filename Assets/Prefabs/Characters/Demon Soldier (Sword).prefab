@@ -6325,6 +6325,8 @@ MonoBehaviour:
   whatIsEnemies:
     serializedVersion: 2
     m_Bits: 49152
+  bloodEffect: {fileID: 5898934246411736626, guid: 8a10f48fb6909d54b8fd927741238323,
+    type: 3}
   cost: 150
   ranged: 0
   projectile: {fileID: 0}

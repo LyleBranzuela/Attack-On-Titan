@@ -213,20 +213,15 @@ PrefabInstance:
       propertyPath: m_Name
       value: Blood Effect
       objectReference: {fileID: 0}
-    - target: {fileID: 5898934246411736626, guid: 8a10f48fb6909d54b8fd927741238323,
-        type: 3}
-      propertyPath: m_Layer
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 1356471568508989648, guid: 8a10f48fb6909d54b8fd927741238323,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -15.6
+      value: -15.2
       objectReference: {fileID: 0}
     - target: {fileID: 1356471568508989648, guid: 8a10f48fb6909d54b8fd927741238323,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.62
+      value: -2.63
       objectReference: {fileID: 0}
     - target: {fileID: 1356471568508989648, guid: 8a10f48fb6909d54b8fd927741238323,
         type: 3}
@@ -390,31 +385,31 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 55439135480083704, guid: b72f1a2d4b832bb48933b26a94d4d3e6,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -19.81268
+      objectReference: {fileID: 0}
+    - target: {fileID: 55439135480083704, guid: b72f1a2d4b832bb48933b26a94d4d3e6,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 9.92
+      objectReference: {fileID: 0}
+    - target: {fileID: 55439137197524931, guid: b72f1a2d4b832bb48933b26a94d4d3e6,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -19.81268
+      objectReference: {fileID: 0}
+    - target: {fileID: 55439137197524931, guid: b72f1a2d4b832bb48933b26a94d4d3e6,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 9.92
+      objectReference: {fileID: 0}
     - target: {fileID: 55439137197524930, guid: b72f1a2d4b832bb48933b26a94d4d3e6,
         type: 3}
       propertyPath: m_Follow
       value: 
       objectReference: {fileID: 211623599}
-    - target: {fileID: 55439135480083704, guid: b72f1a2d4b832bb48933b26a94d4d3e6,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -19.878796
-      objectReference: {fileID: 0}
-    - target: {fileID: 55439135480083704, guid: b72f1a2d4b832bb48933b26a94d4d3e6,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 9.92
-      objectReference: {fileID: 0}
-    - target: {fileID: 55439137197524931, guid: b72f1a2d4b832bb48933b26a94d4d3e6,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -19.878796
-      objectReference: {fileID: 0}
-    - target: {fileID: 55439137197524931, guid: b72f1a2d4b832bb48933b26a94d4d3e6,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 9.92
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b72f1a2d4b832bb48933b26a94d4d3e6, type: 3}
 --- !u!82 &1414801227 stripped
@@ -900,21 +895,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wave Manager
       objectReference: {fileID: 0}
-    - target: {fileID: 6701059268281015692, guid: 9892162ae5981604ea6148db400f9328,
-        type: 3}
-      propertyPath: victoryPanel
-      value: 
-      objectReference: {fileID: 204129152}
-    - target: {fileID: 6701059268281015692, guid: 9892162ae5981604ea6148db400f9328,
-        type: 3}
-      propertyPath: defeatPanel
-      value: 
-      objectReference: {fileID: 513204628}
-    - target: {fileID: 6701059268281015692, guid: 9892162ae5981604ea6148db400f9328,
-        type: 3}
-      propertyPath: hero
-      value: 
-      objectReference: {fileID: 1685024788}
     - target: {fileID: 6701059268281015693, guid: 9892162ae5981604ea6148db400f9328,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -970,6 +950,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6701059268281015692, guid: 9892162ae5981604ea6148db400f9328,
+        type: 3}
+      propertyPath: victoryPanel
+      value: 
+      objectReference: {fileID: 204129152}
+    - target: {fileID: 6701059268281015692, guid: 9892162ae5981604ea6148db400f9328,
+        type: 3}
+      propertyPath: defeatPanel
+      value: 
+      objectReference: {fileID: 513204628}
+    - target: {fileID: 6701059268281015692, guid: 9892162ae5981604ea6148db400f9328,
+        type: 3}
+      propertyPath: hero
+      value: 
+      objectReference: {fileID: 1685024788}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9892162ae5981604ea6148db400f9328, type: 3}
 --- !u!1001 &7399328422423871469
@@ -1044,5 +1039,10 @@ PrefabInstance:
       propertyPath: slash
       value: 
       objectReference: {fileID: 950802607}
+    - target: {fileID: 6316226221461372883, guid: 7ba52306741db2f49a80d45d09acd8db,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7ba52306741db2f49a80d45d09acd8db, type: 3}
