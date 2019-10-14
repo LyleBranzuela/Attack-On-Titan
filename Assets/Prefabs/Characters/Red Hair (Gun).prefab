@@ -554,7 +554,7 @@ MonoBehaviour:
   damage: 3
   armor: 0
   moveSpeed: 3
-  attackSpeed: 4
+  attackSpeed: 5
   range: 14.8
   charDesc: sniper
   anim: {fileID: 1745661210100728354}
