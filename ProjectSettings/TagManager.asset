@@ -22,7 +22,7 @@ TagManager:
   - 
   - Titan
   - BossTitan
-  - 
+  - Building
   - 
   - 
   - 
@@ -59,4 +59,7 @@ TagManager:
     locked: 0
   - name: Character (Hero)
     uniqueID: 1090041753
+    locked: 0
+  - name: building
+    uniqueID: 2907685761
     locked: 0
