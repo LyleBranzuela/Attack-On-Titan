@@ -88,100 +88,72 @@ public class Wave : MonoBehaviour
     //Function that returns a brief description of the upcoming enemies.
     public string getEnemyInfo()
     {
-        switch (waveLevel)
+        string[] waveDesc =
         {
-            case 1:
-                waveDesc = "1 x Low Level Titan";
-                break;
+            "1 x Low Level Titan",
+            "2 x Low Level Titan",
+            "2 x Medium Level Titan",
+            "1 x Boss Level Titan",
+        };
 
-    
-            case 2:
-                waveDesc = "2 x Low Level Titan";
-                break;
-     
-       
-            case 3:
-                waveDesc = "1 x Medium Level Titan";
-                break;
-
-        
-            case 4:
-                waveDesc = "2 x Medium Level Titan";
-                break;
-
-     
-            case 5:
-                waveDesc = "1 x Boss Level Titan";
-                break;
-
-            default:
-                waveDesc = "1 x Low Level Titan";
-                break;
-        }
-
-        return waveDesc;
+        return waveDesc[waveLevel-1];
     }
 
     //Function that returns the current array of Titans for that wave.
     public ArrayList getEnemyArray()
     {
-      return this.titans;
+        return this.titans;
     }
 
     //Function that sets the enemyArray for current wave.
     public void setEnemyArray(ArrayList enemyArray)
     {
-      this.titans = enemyArray;
+        this.titans = enemyArray;
     }
 
     // Updates the wave depending on the wave level
     private void updateWave()
     {
-        ArrayList titansToSpawn = new ArrayList();
+        // Set the Gem Reward of each Wave
+        int[] waveRewardArray = { 1, 1, 1, 2, 0, 1 };
+        waveReward = waveRewardArray[waveLevel-1];
 
-        // Adds the stage modifiers and spawns then deletes them
-        switch (waveLevel)
+        // All The Available Titan Types
+        Titan[] allTitanTypes = { lowLevelTitan, mediumLevelTitan, bossTitan };
+
+        // Index[0,1,2] (5 Waves, 3 Titan Types):
+        // 0 = Low Level Titan
+        // 1 = Medium Level Titan
+        // 2 = Boss Level Titan
+        int[,] whatToSpawn = new int[5, 3]
         {
-            // 1 Low Level Titan and 1 Gem Reward
-            case 1:
-                waveReward = 1;
-                titansToSpawn.Add(lowLevelTitan);
-                break;
+            {1,0,0}, // 1 Low Level Titan
+            {2,0,0}, // 2 Low Level Titans
+            {0,1,0}, // 1 Medium Level Titan 
+            {0,2,0}, // 2 Medium Level Titans
+            {0,0,1} // 1 Boss Level Titan
+        };
 
-            // 2 Low Level Titan and 1 Gem Reward
-            case 2:
-                waveReward = 1;
-                titansToSpawn.Add(lowLevelTitan);
-                titansToSpawn.Add(lowLevelTitan);
-                break;
 
-            // 1 Medium Level Titan and 1 Gem Reward
-            case 3:
-                waveReward = 1;
-                titansToSpawn.Add(mediumLevelTitan);
-                break;
-
-            // 2 Medium Level Titan and 2 Gems Reward
-            case 4:
-                waveReward = 2;
-                titansToSpawn.Add(mediumLevelTitan);
-                titansToSpawn.Add(mediumLevelTitan);
-                break;
-
-            // 1 Boss Level Titan
-            case 5:
-                titansToSpawn.Add(bossTitan);
-                break;
-
-            default:
-                waveReward = 1;
-                titansToSpawn.Add(lowLevelTitan);
-                break;
+        ArrayList titansToSpawn = new ArrayList();
+        for (int counter = 0; counter < allTitanTypes.Length; counter++)
+        {
+            titansToSpawn = titanFactory(titansToSpawn, allTitanTypes[counter], whatToSpawn[waveLevel - 1, counter]);
         }
 
         // Setting what titans to spawn in the spawner
         titans = titansToSpawn;
         attackerSpawner.setTitansToSpawn(titans);
+    }
+
+    private ArrayList titanFactory(ArrayList titanList, Titan titanType, int amount)
+    {
+        for (int counter = 0; counter < amount; counter++)
+        {
+            titanList.Add(titanType);
+        }
+
+        return titanList;
     }
 
     // Restarts the Game Scene and Wave
