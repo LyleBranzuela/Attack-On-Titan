@@ -513,6 +513,8 @@ MonoBehaviour:
     m_Bits: 6144
   bloodEffect: {fileID: 5898934246411736626, guid: 8a10f48fb6909d54b8fd927741238323,
     type: 3}
+  bloodSplash: {fileID: 5182014241545112341, guid: e5cd03c4d7d21d045bf244caa637f885,
+    type: 3}
   goldReward: 150
 --- !u!1 &3444124935054255088
 GameObject:
