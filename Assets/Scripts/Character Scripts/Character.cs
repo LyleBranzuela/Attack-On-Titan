@@ -28,7 +28,6 @@ public abstract class Character : MonoBehaviour
     protected Color[] spriteOriginalColors;
 
     public GameObject bloodEffect;
-    public GameObject bloodSplash;
 
     protected void setupCharacter()
     {
@@ -94,7 +93,6 @@ public abstract class Character : MonoBehaviour
                 {
                     Account.currentAccount.setGold(titan.getGoldReward() + Account.currentAccount.getGold());
                 }
-                Instantiate(bloodSplash, transform.position, Quaternion.identity);//blood effect
                 Instantiate(bloodEffect, transform.position, Quaternion.identity);//blood effect
                 Destroy(gameObject);
             }
