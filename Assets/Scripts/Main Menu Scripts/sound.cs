@@ -20,7 +20,7 @@ public class sound : MonoBehaviour
     public AudioSource musicsource;
     public AudioSource backGround;
     public float selectedSoundVolume = 1.0f;
-
+    public static AudioSource audio;
     public void PlayBlock_sound()
     {
         block.Play();
@@ -86,5 +86,30 @@ public class sound : MonoBehaviour
     private void Update()
     {
         AudioListener.volume = selectedSoundVolume;
+    }
+
+    private void Start()
+    {
+        audio = gameObject.AddComponent<AudioSource>();
+
+    }
+
+    public static void PlaySound(string clip)
+    {
+        switch (clip)
+        {
+            case "titan_attacked":               
+                audio.PlayOneShot((AudioClip)Resources.Load("titan_attacked"));
+                break;
+            case "gun":
+                audio.PlayOneShot((AudioClip)Resources.Load("gun"));
+                break;
+            case "cannon":
+                audio.PlayOneShot((AudioClip)Resources.Load("cannon"));
+                break;
+            case "Titan_Voice2":
+                audio.PlayOneShot((AudioClip)Resources.Load("Titan_Voice2"));
+                break;
+        }
     }
 }
