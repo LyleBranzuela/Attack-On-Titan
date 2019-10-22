@@ -2,13 +2,52 @@
 using System.IO;
 using System.Runtime.Serialization.Formatters.Binary;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 /*
  * Manages the Database with the AccountData Class
  */
 public class DatabaseManager : MonoBehaviour
 {
-    // NOTE: Application.persistentDataPath points to %userprofile%\AppData\Local\Packages\<productname>\LocalState
+    public Button slot1, slot2, slot3, slot4;
+    // NOTE: Application.persistentDataPath points to %userprofile%\AppData\LocalLow\DefaultCompany\Attack On Titan
+
+
+    // Updates the states of the save slots depending if it contains a save or not
+    public void updateButtons()
+    {
+        for (int saveSlotCounter = 1; saveSlotCounter <= 4; saveSlotCounter++)
+        {
+            string path = Application.persistentDataPath + "/Save" + saveSlotCounter + ".save";
+            bool available = false;
+            if (File.Exists(path))
+            {
+                available = true;
+            }
+
+            switch (saveSlotCounter)
+            {
+                case 1:
+                    slot1.interactable = available;
+                    break;
+
+                case 2:
+                    slot2.interactable = available;
+                    break;
+
+                case 3:
+                    slot3.interactable = available;
+                    break;
+
+                case 4:
+                    slot4.interactable = available;
+                    break;
+
+                default:
+                    break;
+            }
+        }
+    }
 
     // Function for saving accounts
     public void saveAccount(int saveSlot)
@@ -69,7 +108,11 @@ public class DatabaseManager : MonoBehaviour
             allAccountNames[counter] = file.Name;
             counter++;
         }
-
-        //return allAccountNames;
     }
+
+    void Update()
+    {
+        updateButtons();
+    }
+
 }

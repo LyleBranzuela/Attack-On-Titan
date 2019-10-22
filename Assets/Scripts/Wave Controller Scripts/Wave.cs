@@ -71,6 +71,11 @@ public class Wave : MonoBehaviour
 
         if (titanDeadCount == titans.Count) // All titans are dead = Win
         {
+            if (Account.currentAccount.getCurrentWave() < 10)
+            {
+                Account.currentAccount.setCurrentWave(Account.currentAccount.getCurrentWave() + 1);
+                Account.currentAccount.setCurrentGems(Account.currentAccount.getCurrentGems() + waveReward);
+            }
             shopPanel.gameObject.SetActive(false);
             isCompleted = true;
             victoryPanel.gameObject.SetActive(true);
@@ -191,8 +196,6 @@ public class Wave : MonoBehaviour
     {
         if (Account.currentAccount.getCurrentWave() < 10)
         {
-            Account.currentAccount.setCurrentWave(Account.currentAccount.getCurrentWave() + 1);
-            Account.currentAccount.setCurrentGems(Account.currentAccount.getCurrentGems() + waveReward);
             SceneManager.LoadScene("GameScene");
         }
         else
