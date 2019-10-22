@@ -12,16 +12,8 @@ public class PlayerController : MonoBehaviour
     public float CheckRadius;
     private static bool isBlocking;
     private static bool isAttacking;
-
-
-    // Jump Parameters
-    //public float jumpSpeed = 5f;
-    //public Transform groundCheck;
-    //public LayerMask whatIsGround;
-    //public AudioSource jump;
-    //private static bool isGrounded;
-    //public int extraJumps;
-    //private int extraJumpValue; //for fly if the hero shoot the rope out
+    private int initialArmor;
+    public GameObject guardObject;
 
     public void Flip()
     {
@@ -41,15 +33,6 @@ public class PlayerController : MonoBehaviour
         return isBlocking;
     }
 
-    //public static bool getIsGrounded()
-    //{
-    //    return isGrounded;
-    //}
-
-    //public void Play_jump()
-    //{
-    //    jump.Play();
-    //}
 
     // Set is attacking boolean
     public static void setIsAttacking(bool attacking)
@@ -65,34 +48,13 @@ public class PlayerController : MonoBehaviour
         //extraJumpValue = extraJumps;
         isAttacking = false;
         isBlocking = false;
+        initialArmor = specifiedHero.armor;
     }
 
     //Update is called once per frame
     void Update()
     {
-        //isGrounded = Physics2D.OverlapCircle(groundCheck.position, CheckRadius, whatIsGround);
-
-        //if (isGrounded == true) //Jump Function
-        //{
-        //    animator.SetBool("isJumping", false);
-        //    extraJumps = extraJumpValue;
-        //    Play_jump();
-        //}
-        //else
-        //{
-        //    animator.SetBool("isJumping", true);
-        //}
-        //if (Input.GetButtonDown("Jump") && extraJumps == extraJumpValue && isGrounded == true) //normal jump
-        //{
-        //    animator.SetTrigger("takeOf");
-        //    rigidBody.velocity = new Vector2(rigidBody.velocity.x, jumpSpeed);
-        //}
-        //else if (Input.GetButtonDown("Jump") && extraJumps > 0) //fly
-        //{
-        //    rigidBody.velocity = new Vector2(rigidBody.velocity.x, jumpSpeed);
-        //    extraJumps--;
-        //}
-
+        // Movement for left and right (X-Axis)
         movement = Input.GetAxis("Horizontal");
         animator.SetFloat("Speed", Mathf.Abs(movement * specifiedHero.moveSpeed));
         bool isBusyCheck = (isAttacking == false && isBlocking == false);
@@ -113,14 +75,18 @@ public class PlayerController : MonoBehaviour
         // Blocking by pressing Space
         if (Input.GetKeyUp(KeyCode.Space))
         {
+            specifiedHero.armor = initialArmor;
             isBlocking = false;
             animator.SetBool("isBlocking", false);
+            guardObject.SetActive(false);
         }
         else if (Input.GetKeyDown(KeyCode.Space))
         {
+            specifiedHero.armor = 100;
             isBlocking = true;
             animator.SetTrigger("block");
             animator.SetBool("isBlocking", true);
+            guardObject.SetActive(true);
         }
 
         //Flip the character if it is moving left

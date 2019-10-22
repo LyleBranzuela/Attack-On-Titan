@@ -49,10 +49,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0cd36cd7becc7e45b3cfe105f3a5af1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bgManager: {fileID: 1560062153}
   attackerSpawner: {fileID: 6701059268611641191}
   victoryPanel: {fileID: 0}
   defeatPanel: {fileID: 0}
+  shopPanel: {fileID: 0}
+  bgManager: {fileID: 1560062153}
   hero: {fileID: 0}
   lowLevelTitan: {fileID: 7757249836490996674, guid: df58ee0fc64c16545881b7df5e242733,
     type: 3}
@@ -323,12 +324,12 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.01
       objectReference: {fileID: 0}
-    - target: {fileID: 2419964208435731143, guid: d0a7fff240bd9984c947c3afb7802493,
+    - target: {fileID: 4623258258912061429, guid: d0a7fff240bd9984c947c3afb7802493,
         type: 3}
       propertyPath: m_Size.y
       value: 0.98
       objectReference: {fileID: 0}
-    - target: {fileID: 4623258258912061429, guid: d0a7fff240bd9984c947c3afb7802493,
+    - target: {fileID: 2419964208435731143, guid: d0a7fff240bd9984c947c3afb7802493,
         type: 3}
       propertyPath: m_Size.y
       value: 0.98
@@ -549,16 +550,6 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.01
       objectReference: {fileID: 0}
-    - target: {fileID: 7135440523942801009, guid: db172f8d931718c4d98fe4ce0b445b30,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -4.77
-      objectReference: {fileID: 0}
-    - target: {fileID: 7135440523942801009, guid: db172f8d931718c4d98fe4ce0b445b30,
-        type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1.234526
-      objectReference: {fileID: 0}
     - target: {fileID: 5492382246070932393, guid: db172f8d931718c4d98fe4ce0b445b30,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -568,6 +559,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.x
       value: 1.231532
+      objectReference: {fileID: 0}
+    - target: {fileID: 7135440523942801009, guid: db172f8d931718c4d98fe4ce0b445b30,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -4.77
+      objectReference: {fileID: 0}
+    - target: {fileID: 7135440523942801009, guid: db172f8d931718c4d98fe4ce0b445b30,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.234526
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: db172f8d931718c4d98fe4ce0b445b30, type: 3}

@@ -8,7 +8,6 @@ using UnityEngine;
 [System.Serializable]
 public class AccountData
 {
-    public string accountName;
     public int currentWave;
     public int currentGems;
     public int[] currentUpgrades;
@@ -16,7 +15,6 @@ public class AccountData
 
     public AccountData (Account account)
     {
-        accountName = account.getName();
         currentWave = account.getCurrentWave();
         currentGems = account.getCurrentGems();
         currentUpgrades = account.getUpgrades();

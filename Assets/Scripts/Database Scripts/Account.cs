@@ -10,17 +10,15 @@ public class Account
     // This account will be the current account that will be running across all states
     public static Account currentAccount;
 
-    private string accountName;
     private int currentWave;
     private int currentGems;
     private int[] currentUpgrades; // 000 (1st Number = Sword, 2nd Number = Sniper, 3rd Number = Siege)
     private int gold;
 
-    public static void newAccount(string name)
+    public static void newAccount()
     {
         Account newAccount = new Account();
 
-        newAccount.setName(name);
         newAccount.setCurrentWave(1);
         newAccount.setCurrentGems(0);
         int[] upgrades = { 0, 0, 0 };
@@ -28,18 +26,6 @@ public class Account
         newAccount.setGold(0);
 
         currentAccount = newAccount;
-    }
-
-    // Returns the name
-    public string getName()
-    {
-        return accountName;
-    }
-
-    // Sets the name
-    public void setName(string name)
-    {
-        accountName = name; 
     }
 
     // Returns the wave

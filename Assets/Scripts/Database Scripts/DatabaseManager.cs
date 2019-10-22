@@ -1,18 +1,19 @@
 ﻿using UnityEngine;
 using System.IO;
 using System.Runtime.Serialization.Formatters.Binary;
+using UnityEngine.SceneManagement;
 
 /*
  * Manages the Database with the AccountData Class
  */
-public static class DatabaseManager
+public class DatabaseManager : MonoBehaviour
 {
     // NOTE: Application.persistentDataPath points to %userprofile%\AppData\Local\Packages\<productname>\LocalState
 
     // Function for saving accounts
-    public static void saveAccount()
+    public void saveAccount(int saveSlot)
     {
-        string path = Application.persistentDataPath + "/" + Account.currentAccount.getName() + ".save";
+        string path = Application.persistentDataPath + "/Save" + saveSlot + ".save";
         BinaryFormatter formatter = new BinaryFormatter();
         // File Mode = Create, means to create a new save file if it doesn't exist, and overwrite if it does exist
         FileStream stream = new FileStream(path, FileMode.Create);
@@ -24,9 +25,9 @@ public static class DatabaseManager
     }
 
     // Function for loading a specific account based on the name
-    public static void loadAcccount(string accountName)
+    public void loadAcccount(int saveSlot)
     {
-        string path = Application.persistentDataPath + "/" + accountName + ".save";
+        string path = Application.persistentDataPath + "/Save" + saveSlot + ".save";
         if (File.Exists(path))
         {
             BinaryFormatter formatter = new BinaryFormatter();
@@ -39,7 +40,6 @@ public static class DatabaseManager
 
             // Convert AccountData into Account
             Account account = new Account();
-            account.setName(data.accountName);
             account.setCurrentWave(data.currentWave);
             account.setCurrentGems(data.currentGems);
             account.setUpgrades(data.currentUpgrades);
@@ -52,9 +52,11 @@ public static class DatabaseManager
         {
             Debug.LogError("Save File not found in " + path);
         }
+
+        SceneManager.LoadScene("GameScene");
     }
 
-    public static string[] getAllAccountNames()
+    public void getAllAccountNames()
     {
         DirectoryInfo d = new DirectoryInfo(Application.persistentDataPath); 
         FileInfo[] Files = d.GetFiles("*.save"); //Getting all the files that ends with .save
@@ -68,6 +70,6 @@ public static class DatabaseManager
             counter++;
         }
 
-        return allAccountNames;
+        //return allAccountNames;
     }
 }
