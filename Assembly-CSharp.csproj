@@ -73,6 +73,7 @@
     <Compile Include="Assets\Scripts\Character Scripts\PlayerController.cs" />
     <Compile Include="Assets\Scripts\Character Scripts\Projectile.cs" />
     <Compile Include="Assets\Scripts\Character Scripts\Titan.cs" />
+    <Compile Include="Assets\Scripts\ConsoleAdd.cs" />
     <Compile Include="Assets\Scripts\Database Scripts\Account.cs" />
     <Compile Include="Assets\Scripts\Database Scripts\AccountData.cs" />
     <Compile Include="Assets\Scripts\Database Scripts\DatabaseManager.cs" />
