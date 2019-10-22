@@ -40,13 +40,13 @@ public class Wave : MonoBehaviour
     public void startWave()
     {
         // Save the starting gold in case they restart
-        startingGold = Account.currentAccount.getGold() - 250;
 
         // Sets up what the wave needs before starting the spawners
         waveLevel = Account.currentAccount.getCurrentWave();
         isFinishedSpawning = false;
         Account.currentAccount.setGold(250 + Account.currentAccount.getGold());
 
+        startingGold = Account.currentAccount.getGold();
 
         updateWave();
         attackerSpawner.startWaveSpawners();
@@ -71,6 +71,11 @@ public class Wave : MonoBehaviour
 
         if (titanDeadCount == titans.Count) // All titans are dead = Win
         {
+            if (Account.currentAccount.getCurrentWave() < 10)
+            {
+                Account.currentAccount.setCurrentWave(Account.currentAccount.getCurrentWave() + 1);
+                Account.currentAccount.setCurrentGems(Account.currentAccount.getCurrentGems() + waveReward);
+            }
             shopPanel.gameObject.SetActive(false);
             isCompleted = true;
             victoryPanel.gameObject.SetActive(true);
@@ -181,9 +186,10 @@ public class Wave : MonoBehaviour
     // Restarts the Game Scene and Wave
     public void restartWave()
     {
-        SceneManager.LoadScene("GameScene");
-        Account.currentAccount.setGold(startingGold);
+        int preWaveGold = startingGold;
         startWave();
+        Account.currentAccount.setGold(preWaveGold);
+        SceneManager.LoadScene("GameScene");
     }
 
     // Starts the next wave
@@ -191,8 +197,6 @@ public class Wave : MonoBehaviour
     {
         if (Account.currentAccount.getCurrentWave() < 10)
         {
-            Account.currentAccount.setCurrentWave(Account.currentAccount.getCurrentWave() + 1);
-            Account.currentAccount.setCurrentGems(Account.currentAccount.getCurrentGems() + waveReward);
             SceneManager.LoadScene("GameScene");
         }
         else

@@ -835,7 +835,7 @@ MonoBehaviour:
   arrow: {fileID: 5797060435459477448}
   musicsource: {fileID: 5797060435488311400}
   backGround: {fileID: 5797060435488311400}
-  selectedSoundVolume: 0.6
+  selectedSoundVolume: 0.2
 --- !u!1 &5797060433727540581
 GameObject:
   m_ObjectHideFlags: 0

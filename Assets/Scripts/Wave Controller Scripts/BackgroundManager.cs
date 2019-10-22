@@ -25,7 +25,7 @@ public class BackgroundManager : MonoBehaviour
             darkMountainBG.SetActive(false);
         }
         // Forest Night Stages
-        else if (Wave.waveLevel > 5 && Wave.waveLevel < 5)
+        else if (Wave.waveLevel > 5 && Wave.waveLevel < 10)
         {
             sunsetMountainBG.SetActive(false);
             forestNightBG.SetActive(true);

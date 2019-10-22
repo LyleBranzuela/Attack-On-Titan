@@ -77,8 +77,11 @@ public abstract class Character : MonoBehaviour
         }
         Invoke("resetColor", 0.3f);
 
+        Random random = new Random();
+        float randomNumber = Random.Range(0f, 100f);
+
         damage = damage - armor;
-        if (damage > 0)
+        if (damage > 0 && randomNumber <= 50)
         {
             //Current health = health - damage;
             hp -= damage;

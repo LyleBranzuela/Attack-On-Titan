@@ -2,13 +2,61 @@
 using System.IO;
 using System.Runtime.Serialization.Formatters.Binary;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 /*
  * Manages the Database with the AccountData Class
  */
 public class DatabaseManager : MonoBehaviour
 {
-    // NOTE: Application.persistentDataPath points to %userprofile%\AppData\Local\Packages\<productname>\LocalState
+    public bool isSaveMenu;
+    public Button save1, save2, save3, save4;
+    // NOTE: Application.persistentDataPath points to %userprofile%\AppData\LocalLow\DefaultCompany\Attack On Titan
+
+    // Function to update the Database Menu Buttons
+    public void updateDBMenuButtons()
+    {
+        if (!isSaveMenu)
+        {
+            for (int saveCounter = 1; saveCounter <= 4; saveCounter++)
+            {
+                bool isAvailable = false;
+                string path = Application.persistentDataPath + "/Save" + saveCounter + ".save";
+                if (File.Exists(path))
+                {
+                    isAvailable = true;
+                }
+
+                // Sets the availability color
+                Color color = (isAvailable) ? new Color(96, 0, 0) : new Color(0, 0, 0);
+                switch (saveCounter)
+                {
+                    case 1:
+                        save1.GetComponent<Image>().color = color;
+                        save1.interactable = isAvailable;
+                        break;
+
+                    case 2:
+                        save2.interactable = isAvailable;
+                        save2.GetComponent<Image>().color = color;
+                        break;
+
+                    case 3:
+                        save3.interactable = isAvailable;
+                        save3.GetComponent<Image>().color = color;
+                        break;
+
+                    case 4:
+                        save4.interactable = isAvailable;
+                        save4.GetComponent<Image>().color = color;
+                        break;
+
+                    default:
+                        break;
+                }
+            }
+        }
+    }
 
     // Function for saving accounts
     public void saveAccount(int saveSlot)
@@ -58,7 +106,7 @@ public class DatabaseManager : MonoBehaviour
 
     public void getAllAccountNames()
     {
-        DirectoryInfo d = new DirectoryInfo(Application.persistentDataPath); 
+        DirectoryInfo d = new DirectoryInfo(Application.persistentDataPath);
         FileInfo[] Files = d.GetFiles("*.save"); //Getting all the files that ends with .save
         string[] allAccountNames = new string[Files.Length];
         int counter = 0;
@@ -71,5 +119,10 @@ public class DatabaseManager : MonoBehaviour
         }
 
         //return allAccountNames;
+    }
+
+    void Update()
+    {
+        updateDBMenuButtons();
     }
 }
