@@ -19,12 +19,9 @@ public class TrailEffectControll : MonoBehaviour
 
         ps = GetComponent<ParticleSystem>();
 
-        if(Input.GetKeyDown(KeyCode.Q))
+        if(Input.GetKey(KeyCode.Q))
         {
           ps.Play();
         }
-
-
-
     }
 }
