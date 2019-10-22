@@ -10,8 +10,7 @@ public class Titan : Character
 {
     [SerializeField] private int goldReward;
     private float timeBtwAttack;
-
-
+                              
     public int getGoldReward()
     {
         return this.goldReward;
@@ -42,13 +41,13 @@ public class Titan : Character
                 if (enemiesToDamage[counter].GetComponent<Character>().GetType() == typeof(Hero) ||
                     enemiesToDamage[counter].GetComponent<Character>().GetType() == typeof(BasicTroops))
                 {
+                    sound.PlaySound("titan_attacked");
                     // Ensures they dont attack twice in a row
                     if (hasAttacked == false)
                     {                        
                         // Deal Damage to Hero or Basic Troops and Trigger the Animation
                         anim.SetTrigger("attack");
                         anim.SetBool("isAttacking", true);
-
                         enemiesToDamage[counter].GetComponent<Character>().receiveDamage(damage);
                         hasAttacked = true;
                     }
@@ -79,7 +78,7 @@ public class Titan : Character
 
         // Checks if there's any enemies in the vicinity
         if (enemiesToDamage.Length == 0)
-        {
+        {           
             anim.SetBool("isAttacking", false);
             transform.Translate(Vector2.left * moveSpeed * Time.deltaTime);
         }
