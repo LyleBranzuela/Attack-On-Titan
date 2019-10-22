@@ -9,6 +9,7 @@ public class ShowStory : MonoBehaviour
 {
 
     public Text Story;
+    public bool show = true;
     // Start is called before the first frame update
     void Start()
     {
@@ -20,14 +21,10 @@ public class ShowStory : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-      if (Input.GetKeyDown(KeyCode.E))
+      if (Input.GetKeyDown(KeyCode.T))
       {
-        Story.enabled = true;
-      }
-
-      if (Input.GetKeyUp(KeyCode.E))
-      {
-        Story.enabled = false;
+          show=!show;
+          Story.enabled = show;
       }
     }
 }
