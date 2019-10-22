@@ -650,7 +650,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1067203385
   m_SortingLayer: 5
-  m_SortingOrder: 2
+  m_SortingOrder: 1
   m_Sprite: {fileID: -3223119048482839375, guid: a4ae53dffb7de11478973a2ebb4d06b6,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -921,7 +921,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.25829244, y: 4.720862}
+  m_Offset: {x: 0.2417649, y: 4.720862}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -932,7 +932,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 3.060873, y: 4.6954412}
+  m_Size: {x: 2.0607584, y: 4.6954412}
   m_EdgeRadius: 0
 --- !u!50 &7757249836490996673
 Rigidbody2D:
@@ -946,7 +946,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 50
+  m_Mass: 70
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 1
@@ -982,7 +982,6 @@ MonoBehaviour:
     m_Bits: 6144
   bloodEffect: {fileID: 5898934246411736626, guid: 8a10f48fb6909d54b8fd927741238323,
     type: 3}
-  bloodSplash: {fileID: 0}
   goldReward: 150
 --- !u!1 &6841511171879911968
 GameObject:

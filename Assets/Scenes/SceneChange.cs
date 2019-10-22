@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class SceneChange : MonoBehaviour
 {
@@ -17,7 +18,7 @@ public class SceneChange : MonoBehaviour
 
     void startGame()
     {
-        Application.LoadLevel("GameScene");
+        SceneManager.LoadScene("GameScene");
     }
 
     public void backToMainButton()
@@ -26,6 +27,6 @@ public class SceneChange : MonoBehaviour
     }
     void backToMain()
     {
-        Application.LoadLevel("MainMenu");
+        SceneManager.LoadScene("MainMenu");
     }
 }

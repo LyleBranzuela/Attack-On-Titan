@@ -549,10 +549,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c980e811417751944a260ef08656c731, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hp: 2
+  hp: 3
   health: {fileID: 0}
-  damage: 3
-  armor: 0
+  damage: 4
+  armor: 1
   moveSpeed: 3
   attackSpeed: 5
   range: 14.8

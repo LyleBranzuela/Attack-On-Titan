@@ -7,7 +7,8 @@ using UnityEngine.SceneManagement;
 */
 public class Wave : MonoBehaviour
 {
-    private int waveLevel;   //ID or Level of the wave.
+    public static int waveLevel;   //ID or Level of the wave.
+    public BackgroundManager bgManager;
     private int waveReward;  //Amount of gems rewarded for wave completion.
     private int waveModifier;  //Modifier applied to Titan based on background.
     private bool isCompleted;  //Boolean to check if wave was won or lost.
@@ -90,10 +91,16 @@ public class Wave : MonoBehaviour
     {
         string[] waveDesc =
         {
-            "1 x Low Level Titan",
-            "2 x Low Level Titan",
-            "2 x Medium Level Titan",
-            "1 x Boss Level Titan",
+            "1x Low Level Titan",
+            "2x Low Level Titan",
+            "1x Medium Level Titan",
+            "2x Medium Level Titan",
+            "1x Boss Level Titan",
+            "3x Medium Level Titan and 2x Low Level Titan",
+            "5x Medium Level Titan and 3x Low Level Titan",
+            "7x Medium Level Titan and 5x Low Level Titan",
+            "10x Medium Level Titan and 7x Low Level Titan",
+            "1 Boss Level Titan, 10x Medium Level Titan and 10x Low Level Titan"
         };
 
         return waveDesc[waveLevel-1];
@@ -114,9 +121,11 @@ public class Wave : MonoBehaviour
     // Updates the wave depending on the wave level
     private void updateWave()
     {
+        bgManager.updateBackground();
+
         // Set the Gem Reward of each Wave
-        int[] waveRewardArray = { 1, 1, 1, 2, 0, 1 };
-        waveReward = waveRewardArray[waveLevel-1];
+        int[] gemRewardArray = { 1, 1, 1, 2, 3, 1, 2, 2, 5 };
+        waveReward = gemRewardArray[waveLevel-1];
 
         // All The Available Titan Types
         Titan[] allTitanTypes = { lowLevelTitan, mediumLevelTitan, bossTitan };
@@ -134,7 +143,7 @@ public class Wave : MonoBehaviour
             {0,0,1} // 1 Boss Level Titan
         };
 
-
+        // Set what titan to add
         ArrayList titansToSpawn = new ArrayList();
         for (int counter = 0; counter < allTitanTypes.Length; counter++)
         {
@@ -167,10 +176,10 @@ public class Wave : MonoBehaviour
     // Starts the next wave
     public void nextWave()
     {
-        if (Account.currentAccount.getCurrentWave() < 5)
+        if (Account.currentAccount.getCurrentWave() < 10)
         {
             Account.currentAccount.setCurrentWave(Account.currentAccount.getCurrentWave() + 1);
-            Account.currentAccount.setCurrentGems(Account.currentAccount.getCurrentGems() + 1);
+            Account.currentAccount.setCurrentGems(Account.currentAccount.getCurrentGems() + waveReward);
             SceneManager.LoadScene("GameScene");
         }
         else
