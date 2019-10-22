@@ -17,7 +17,6 @@ public class TrailEffectControlForTroops : MonoBehaviour
     {
        if (anim.GetCurrentAnimatorStateInfo(0).IsName("DemonSword Attack"))
         {
-          print("play");
           ps = GameObject.Find("Trail effect(troops)").GetComponent<ParticleSystem>();
           ps.Play();
         }
