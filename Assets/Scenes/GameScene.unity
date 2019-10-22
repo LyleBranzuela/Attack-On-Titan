@@ -274,12 +274,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 7399328422423871469}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &372433179 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4169688068530700496, guid: 9892162ae5981604ea6148db400f9328,
-    type: 3}
-  m_PrefabInstance: {fileID: 6701059269880589703}
-  m_PrefabAsset: {fileID: 0}
 --- !u!114 &372842048 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7531638345210336285, guid: 8db602335eae6704e87c8c2d3a9aa598,
@@ -346,12 +340,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0cd36cd7becc7e45b3cfe105f3a5af1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1 &1038245335 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 670099898062818419, guid: 9892162ae5981604ea6148db400f9328,
-    type: 3}
-  m_PrefabInstance: {fileID: 6701059269880589703}
-  m_PrefabAsset: {fileID: 0}
 --- !u!114 &1148538315 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 3701082835163084742, guid: 8db602335eae6704e87c8c2d3a9aa598,
@@ -475,6 +463,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Victory/Defeat Manager
+      objectReference: {fileID: 0}
+    - target: {fileID: 1930791802781830333, guid: 8db602335eae6704e87c8c2d3a9aa598,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 69417612289332049, guid: 8db602335eae6704e87c8c2d3a9aa598,
         type: 3}
@@ -880,11 +873,6 @@ PrefabInstance:
       objectReference: {fileID: 513204628}
     - target: {fileID: 6701059268281015692, guid: 9892162ae5981604ea6148db400f9328,
         type: 3}
-      propertyPath: hero
-      value: 
-      objectReference: {fileID: 1685024788}
-    - target: {fileID: 6701059268281015692, guid: 9892162ae5981604ea6148db400f9328,
-        type: 3}
       propertyPath: shopPanel
       value: 
       objectReference: {fileID: 653785169}
@@ -893,11 +881,11 @@ PrefabInstance:
       propertyPath: waveText
       value: 
       objectReference: {fileID: 447735029}
-    - target: {fileID: 670099898062818419, guid: 9892162ae5981604ea6148db400f9328,
+    - target: {fileID: 6701059268281015692, guid: 9892162ae5981604ea6148db400f9328,
         type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
+      propertyPath: hero
+      value: 
+      objectReference: {fileID: 1685024788}
     - target: {fileID: 6701059268281015693, guid: 9892162ae5981604ea6148db400f9328,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -953,14 +941,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1560062153, guid: 9892162ae5981604ea6148db400f9328, type: 3}
-      propertyPath: sunsetMountainBG
-      value: 
-      objectReference: {fileID: 1038245335}
-    - target: {fileID: 1560062153, guid: 9892162ae5981604ea6148db400f9328, type: 3}
-      propertyPath: forestNightBG
-      value: 
-      objectReference: {fileID: 372433179}
     - target: {fileID: 670099898062818428, guid: 9892162ae5981604ea6148db400f9328,
         type: 3}
       propertyPath: m_Camera
@@ -1045,11 +1025,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8329574115765567041, guid: 7ba52306741db2f49a80d45d09acd8db,
-        type: 3}
-      propertyPath: slash
-      value: 
-      objectReference: {fileID: 950802607}
     - target: {fileID: 7399328423124144741, guid: 7ba52306741db2f49a80d45d09acd8db,
         type: 3}
       propertyPath: m_Offset.y
@@ -1060,5 +1035,10 @@ PrefabInstance:
       propertyPath: m_Size.y
       value: 4.648444
       objectReference: {fileID: 0}
+    - target: {fileID: 8329574115765567041, guid: 7ba52306741db2f49a80d45d09acd8db,
+        type: 3}
+      propertyPath: slash
+      value: 
+      objectReference: {fileID: 950802607}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7ba52306741db2f49a80d45d09acd8db, type: 3}

@@ -77,8 +77,10 @@ public abstract class Character : MonoBehaviour
         }
         Invoke("resetColor", 0.3f);
 
+        // Randomizes for a 50% chance of blocking if the armor is higher than the damage
+        float randomNumber = Random.Range(0f, 100f);
         damage = damage - armor;
-        if (damage > 0)
+        if (damage > 0 && randomNumber < 50)
         {
             //Current health = health - damage;
             hp -= damage;

@@ -18,7 +18,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &5291651941508441309
 RectTransform:
   m_ObjectHideFlags: 0
@@ -112,6 +112,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Dark Mountain (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 4085736318916928398, guid: 84f286c3c1d0573458717d7c35d1afa8,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 2021219334944879880, guid: 84f286c3c1d0573458717d7c35d1afa8,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -167,6 +172,36 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2855425029846996805, guid: 84f286c3c1d0573458717d7c35d1afa8,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -4.98
+      objectReference: {fileID: 0}
+    - target: {fileID: 2855425029846996805, guid: 84f286c3c1d0573458717d7c35d1afa8,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 12.72
+      objectReference: {fileID: 0}
+    - target: {fileID: 2855425029846996805, guid: 84f286c3c1d0573458717d7c35d1afa8,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.991
+      objectReference: {fileID: 0}
+    - target: {fileID: 6578160941394057052, guid: 84f286c3c1d0573458717d7c35d1afa8,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -4.903
+      objectReference: {fileID: 0}
+    - target: {fileID: 6578160941394057052, guid: 84f286c3c1d0573458717d7c35d1afa8,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.2227296
+      objectReference: {fileID: 0}
+    - target: {fileID: 6685506663439480021, guid: 84f286c3c1d0573458717d7c35d1afa8,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 6136749369226786829, guid: 84f286c3c1d0573458717d7c35d1afa8,
         type: 3}
       propertyPath: m_Offset.x
@@ -176,6 +211,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Size.x
       value: 2.8859253
+      objectReference: {fileID: 0}
+    - target: {fileID: 8398258721871343558, guid: 84f286c3c1d0573458717d7c35d1afa8,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -4.903
+      objectReference: {fileID: 0}
+    - target: {fileID: 8398258721871343558, guid: 84f286c3c1d0573458717d7c35d1afa8,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.2227296
       objectReference: {fileID: 0}
     - target: {fileID: 7753049435827369338, guid: 84f286c3c1d0573458717d7c35d1afa8,
         type: 3}
@@ -202,41 +247,6 @@ PrefabInstance:
       propertyPath: m_Size.y
       value: 0.44644785
       objectReference: {fileID: 0}
-    - target: {fileID: 6578160941394057052, guid: 84f286c3c1d0573458717d7c35d1afa8,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -4.903
-      objectReference: {fileID: 0}
-    - target: {fileID: 6578160941394057052, guid: 84f286c3c1d0573458717d7c35d1afa8,
-        type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1.2227296
-      objectReference: {fileID: 0}
-    - target: {fileID: 8398258721871343558, guid: 84f286c3c1d0573458717d7c35d1afa8,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -4.903
-      objectReference: {fileID: 0}
-    - target: {fileID: 8398258721871343558, guid: 84f286c3c1d0573458717d7c35d1afa8,
-        type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1.2227296
-      objectReference: {fileID: 0}
-    - target: {fileID: 2855425029846996805, guid: 84f286c3c1d0573458717d7c35d1afa8,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -4.98
-      objectReference: {fileID: 0}
-    - target: {fileID: 2855425029846996805, guid: 84f286c3c1d0573458717d7c35d1afa8,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 12.72
-      objectReference: {fileID: 0}
-    - target: {fileID: 2855425029846996805, guid: 84f286c3c1d0573458717d7c35d1afa8,
-        type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.991
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 84f286c3c1d0573458717d7c35d1afa8, type: 3}
 --- !u!4 &362598263618777053 stripped
@@ -256,6 +266,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Dark Mountain
+      objectReference: {fileID: 0}
+    - target: {fileID: 4085736318916928398, guid: 84f286c3c1d0573458717d7c35d1afa8,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 2021219334944879880, guid: 84f286c3c1d0573458717d7c35d1afa8,
         type: 3}
@@ -311,6 +326,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6685506663439480021, guid: 84f286c3c1d0573458717d7c35d1afa8,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 84f286c3c1d0573458717d7c35d1afa8, type: 3}
